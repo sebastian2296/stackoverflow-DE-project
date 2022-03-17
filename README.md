@@ -1,0 +1,13 @@
+# Steps 
+
+
+1. Create a pipeline for processing this dataset and putting it to a datalake
+
+2. Create a pipeline for moving the data from the lake to a data warehouse
+3. Transform the data in the data warehouse: prepare it for the dashboard
+4. Create a dashboard
+
+
+### 1. Ingestion Pipeline
+
+`ref: https://cloud.google.com/bigquery/docs/exporting-data`
