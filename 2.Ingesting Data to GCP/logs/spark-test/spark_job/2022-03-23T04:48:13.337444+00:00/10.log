@@ -1,0 +1,138 @@
+[2022-03-23 21:06:00,454] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: spark-test.spark_job manual__2022-03-23T04:48:13.337444+00:00 [queued]>
+[2022-03-23 21:06:00,464] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: spark-test.spark_job manual__2022-03-23T04:48:13.337444+00:00 [queued]>
+[2022-03-23 21:06:00,465] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-23 21:06:00,465] {taskinstance.py:1239} INFO - Starting attempt 10 of 11
+[2022-03-23 21:06:00,465] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-23 21:06:00,476] {taskinstance.py:1259} INFO - Executing <Task(SparkSubmitOperator): spark_job> on 2022-03-23 04:48:13.337444+00:00
+[2022-03-23 21:06:00,480] {standard_task_runner.py:52} INFO - Started process 226 to run task
+[2022-03-23 21:06:00,484] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'spark-test', 'spark_job', 'manual__2022-03-23T04:48:13.337444+00:00', '--job-id', '98', '--raw', '--subdir', 'DAGS_FOLDER/hello_dag.py', '--cfg-path', '/tmp/tmp1ag56wlf', '--error-file', '/tmp/tmp74jmlqvm']
+[2022-03-23 21:06:00,485] {standard_task_runner.py:77} INFO - Job 98: Subtask spark_job
+[2022-03-23 21:06:00,546] {logging_mixin.py:109} INFO - Running <TaskInstance: spark-test.spark_job manual__2022-03-23T04:48:13.337444+00:00 [running]> on host ceac3ac1d407
+[2022-03-23 21:06:00,622] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=***@***.com
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=spark-test
+AIRFLOW_CTX_TASK_ID=spark_job
+AIRFLOW_CTX_EXECUTION_DATE=2022-03-23T04:48:13.337444+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-03-23T04:48:13.337444+00:00
+[2022-03-23 21:06:00,635] {base.py:79} INFO - Using connection to: id: spark_default. Host: spark://spark, Port: 7077, Schema: , Login: , Password: None, extra: {'queue': 'root.default'}
+[2022-03-23 21:06:00,637] {spark_submit.py:335} INFO - Spark-Submit cmd: spark-submit --master spark://spark:7077 --conf spark.master=spark://spark:7077 --name Spark Hello World --verbose --queue root.default /usr/local/spark/app/hello-world.py /usr/local/spark/resources/data/***.cfg
+[2022-03-23 21:06:02,232] {spark_submit.py:488} INFO - Using properties file: null
+[2022-03-23 21:06:02,444] {spark_submit.py:488} INFO - Parsed arguments:
+[2022-03-23 21:06:02,444] {spark_submit.py:488} INFO - master                  spark://spark:7077
+[2022-03-23 21:06:02,444] {spark_submit.py:488} INFO - deployMode              null
+[2022-03-23 21:06:02,444] {spark_submit.py:488} INFO - executorMemory          null
+[2022-03-23 21:06:02,444] {spark_submit.py:488} INFO - executorCores           null
+[2022-03-23 21:06:02,444] {spark_submit.py:488} INFO - totalExecutorCores      null
+[2022-03-23 21:06:02,445] {spark_submit.py:488} INFO - propertiesFile          null
+[2022-03-23 21:06:02,445] {spark_submit.py:488} INFO - driverMemory            null
+[2022-03-23 21:06:02,445] {spark_submit.py:488} INFO - driverCores             null
+[2022-03-23 21:06:02,445] {spark_submit.py:488} INFO - driverExtraClassPath    null
+[2022-03-23 21:06:02,445] {spark_submit.py:488} INFO - driverExtraLibraryPath  null
+[2022-03-23 21:06:02,445] {spark_submit.py:488} INFO - driverExtraJavaOptions  null
+[2022-03-23 21:06:02,445] {spark_submit.py:488} INFO - supervise               false
+[2022-03-23 21:06:02,445] {spark_submit.py:488} INFO - queue                   root.default
+[2022-03-23 21:06:02,445] {spark_submit.py:488} INFO - numExecutors            null
+[2022-03-23 21:06:02,445] {spark_submit.py:488} INFO - files                   null
+[2022-03-23 21:06:02,445] {spark_submit.py:488} INFO - pyFiles                 null
+[2022-03-23 21:06:02,446] {spark_submit.py:488} INFO - archives                null
+[2022-03-23 21:06:02,446] {spark_submit.py:488} INFO - mainClass               null
+[2022-03-23 21:06:02,446] {spark_submit.py:488} INFO - primaryResource         file:/usr/local/spark/app/hello-world.py
+[2022-03-23 21:06:02,446] {spark_submit.py:488} INFO - name                    Spark Hello World
+[2022-03-23 21:06:02,446] {spark_submit.py:488} INFO - childArgs               [/usr/local/spark/resources/data/***.cfg]
+[2022-03-23 21:06:02,446] {spark_submit.py:488} INFO - jars                    null
+[2022-03-23 21:06:02,446] {spark_submit.py:488} INFO - packages                null
+[2022-03-23 21:06:02,446] {spark_submit.py:488} INFO - packagesExclusions      null
+[2022-03-23 21:06:02,446] {spark_submit.py:488} INFO - repositories            null
+[2022-03-23 21:06:02,446] {spark_submit.py:488} INFO - verbose                 true
+[2022-03-23 21:06:02,446] {spark_submit.py:488} INFO - 
+[2022-03-23 21:06:02,447] {spark_submit.py:488} INFO - Spark properties used, including those specified through
+[2022-03-23 21:06:02,447] {spark_submit.py:488} INFO - --conf and those from the properties file null:
+[2022-03-23 21:06:02,447] {spark_submit.py:488} INFO - (spark.master,spark://spark:7077)
+[2022-03-23 21:06:02,447] {spark_submit.py:488} INFO - 
+[2022-03-23 21:06:02,447] {spark_submit.py:488} INFO - 
+[2022-03-23 21:06:02,910] {spark_submit.py:488} INFO - Main class:
+[2022-03-23 21:06:02,911] {spark_submit.py:488} INFO - org.apache.spark.deploy.PythonRunner
+[2022-03-23 21:06:02,911] {spark_submit.py:488} INFO - Arguments:
+[2022-03-23 21:06:02,911] {spark_submit.py:488} INFO - file:/usr/local/spark/app/hello-world.py
+[2022-03-23 21:06:02,911] {spark_submit.py:488} INFO - null
+[2022-03-23 21:06:02,911] {spark_submit.py:488} INFO - /usr/local/spark/resources/data/***.cfg
+[2022-03-23 21:06:02,914] {spark_submit.py:488} INFO - Spark config:
+[2022-03-23 21:06:02,915] {spark_submit.py:488} INFO - (spark.master,spark://spark:7077)
+[2022-03-23 21:06:02,915] {spark_submit.py:488} INFO - (spark.app.name,Spark Hello World)
+[2022-03-23 21:06:02,915] {spark_submit.py:488} INFO - (spark.submit.pyFiles,)
+[2022-03-23 21:06:02,915] {spark_submit.py:488} INFO - (spark.submit.deployMode,client)
+[2022-03-23 21:06:02,915] {spark_submit.py:488} INFO - Classpath elements:
+[2022-03-23 21:06:02,915] {spark_submit.py:488} INFO - 
+[2022-03-23 21:06:02,916] {spark_submit.py:488} INFO - 
+[2022-03-23 21:06:02,916] {spark_submit.py:488} INFO - 
+[2022-03-23 21:06:02,975] {spark_submit.py:488} INFO - Exception in thread "main" java.io.IOException: Cannot run program "$(which python3)": error=2, No such file or directory
+[2022-03-23 21:06:02,976] {spark_submit.py:488} INFO - at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+[2022-03-23 21:06:02,976] {spark_submit.py:488} INFO - at org.apache.spark.deploy.PythonRunner$.main(PythonRunner.scala:97)
+[2022-03-23 21:06:02,976] {spark_submit.py:488} INFO - at org.apache.spark.deploy.PythonRunner.main(PythonRunner.scala)
+[2022-03-23 21:06:02,976] {spark_submit.py:488} INFO - at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+[2022-03-23 21:06:02,976] {spark_submit.py:488} INFO - at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+[2022-03-23 21:06:02,977] {spark_submit.py:488} INFO - at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+[2022-03-23 21:06:02,977] {spark_submit.py:488} INFO - at java.lang.reflect.Method.invoke(Method.java:498)
+[2022-03-23 21:06:02,977] {spark_submit.py:488} INFO - at org.apache.spark.deploy.JavaMainApplication.start(SparkApplication.scala:52)
+[2022-03-23 21:06:02,977] {spark_submit.py:488} INFO - at org.apache.spark.deploy.SparkSubmit.org$apache$spark$deploy$SparkSubmit$$runMain(SparkSubmit.scala:955)
+[2022-03-23 21:06:02,977] {spark_submit.py:488} INFO - at org.apache.spark.deploy.SparkSubmit.doRunMain$1(SparkSubmit.scala:180)
+[2022-03-23 21:06:02,977] {spark_submit.py:488} INFO - at org.apache.spark.deploy.SparkSubmit.submit(SparkSubmit.scala:203)
+[2022-03-23 21:06:02,978] {spark_submit.py:488} INFO - at org.apache.spark.deploy.SparkSubmit.doSubmit(SparkSubmit.scala:90)
+[2022-03-23 21:06:02,978] {spark_submit.py:488} INFO - at org.apache.spark.deploy.SparkSubmit$$anon$2.doSubmit(SparkSubmit.scala:1043)
+[2022-03-23 21:06:02,978] {spark_submit.py:488} INFO - at org.apache.spark.deploy.SparkSubmit$.main(SparkSubmit.scala:1052)
+[2022-03-23 21:06:02,978] {spark_submit.py:488} INFO - at org.apache.spark.deploy.SparkSubmit.main(SparkSubmit.scala)
+[2022-03-23 21:06:02,978] {spark_submit.py:488} INFO - Caused by: java.io.IOException: error=2, No such file or directory
+[2022-03-23 21:06:02,978] {spark_submit.py:488} INFO - at java.lang.UNIXProcess.forkAndExec(Native Method)
+[2022-03-23 21:06:02,978] {spark_submit.py:488} INFO - at java.lang.UNIXProcess.<init>(UNIXProcess.java:247)
+[2022-03-23 21:06:02,978] {spark_submit.py:488} INFO - at java.lang.ProcessImpl.start(ProcessImpl.java:134)
+[2022-03-23 21:06:02,978] {spark_submit.py:488} INFO - at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+[2022-03-23 21:06:02,979] {spark_submit.py:488} INFO - ... 14 more
+[2022-03-23 21:06:02,983] {spark_submit.py:488} INFO - log4j:WARN No appenders could be found for logger (org.apache.spark.util.ShutdownHookManager).
+[2022-03-23 21:06:02,984] {spark_submit.py:488} INFO - log4j:WARN Please initialize the log4j system properly.
+[2022-03-23 21:06:02,984] {spark_submit.py:488} INFO - log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+[2022-03-23 21:06:03,051] {taskinstance.py:1700} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1329, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1455, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1511, in _execute_task
+    result = execute_callable(context=context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/apache/spark/operators/spark_submit.py", line 157, in execute
+    self._hook.submit(self._application)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/apache/spark/hooks/spark_submit.py", line 420, in submit
+    f"Cannot execute: {self._mask_cmd(spark_submit_cmd)}. Error code is: {returncode}."
+airflow.exceptions.AirflowException: Cannot execute: spark-submit --master spark://spark:7077 --conf spark.master=spark://spark:7077 --name Spark Hello World --verbose --queue root.default /usr/local/spark/app/hello-world.py /usr/local/spark/resources/data/***.cfg. Error code is: 1.
+[2022-03-23 21:06:03,062] {taskinstance.py:1277} INFO - Marking task as UP_FOR_RETRY. dag_id=spark-test, task_id=spark_job, execution_date=20220323T044813, start_date=20220323T210600, end_date=20220323T210603
+[2022-03-23 21:06:03,081] {standard_task_runner.py:92} ERROR - Failed to execute job 98 for task spark_job
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/task/task_runner/standard_task_runner.py", line 85, in _start_by_fork
+    args.func(args, dag=self.dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/cli_parser.py", line 48, in command
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/cli.py", line 92, in wrapper
+    return f(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 298, in task_run
+    _run_task_by_selected_method(args, dag, ti)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 107, in _run_task_by_selected_method
+    _run_raw_task(args, ti)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 184, in _run_raw_task
+    error_file=args.error_file,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1329, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1455, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1511, in _execute_task
+    result = execute_callable(context=context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/apache/spark/operators/spark_submit.py", line 157, in execute
+    self._hook.submit(self._application)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/apache/spark/hooks/spark_submit.py", line 420, in submit
+    f"Cannot execute: {self._mask_cmd(spark_submit_cmd)}. Error code is: {returncode}."
+airflow.exceptions.AirflowException: Cannot execute: spark-submit --master spark://spark:7077 --conf spark.master=spark://spark:7077 --name Spark Hello World --verbose --queue root.default /usr/local/spark/app/hello-world.py /usr/local/spark/resources/data/***.cfg. Error code is: 1.
+[2022-03-23 21:06:03,101] {local_task_job.py:154} INFO - Task exited with return code 1
+[2022-03-23 21:06:03,152] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check
