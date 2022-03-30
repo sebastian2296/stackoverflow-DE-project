@@ -1,0 +1,748 @@
+[2022-03-30 14:53:51,373] {processor.py:163} INFO - Started process (PID=189) to work on /opt/airflow/dags/ingest_dag.py
+[2022-03-30 14:53:51,374] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-03-30 14:53:51,375] {logging_mixin.py:109} INFO - [2022-03-30 14:53:51,375] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 14:53:52,667] {logging_mixin.py:109} INFO - [2022-03-30 14:53:52,665] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/ingest_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ingest_dag.py", line 43, in <module>
+    python_callable=upload_to_gcs
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 158, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 553, in __init__
+    task_group.add(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/task_group.py", line 175, in add
+    raise DuplicateTaskIdFound(f"Task id '{key}' has already been added to the DAG")
+airflow.exceptions.DuplicateTaskIdFound: Task id 'ingest_to_bucket' has already been added to the DAG
+[2022-03-30 14:53:52,687] {processor.py:690} INFO - Deactivated 1 DAGs which are no longer present in /opt/airflow/dags/ingest_dag.py
+[2022-03-30 14:53:52,687] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 14:53:52,715] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 1.346 seconds
+[2022-03-30 14:54:22,870] {processor.py:163} INFO - Started process (PID=236) to work on /opt/airflow/dags/ingest_dag.py
+[2022-03-30 14:54:22,871] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-03-30 14:54:22,872] {logging_mixin.py:109} INFO - [2022-03-30 14:54:22,872] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 14:54:23,229] {logging_mixin.py:109} INFO - [2022-03-30 14:54:23,227] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/ingest_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ingest_dag.py", line 43, in <module>
+    python_callable=upload_to_gcs
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 158, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 553, in __init__
+    task_group.add(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/task_group.py", line 175, in add
+    raise DuplicateTaskIdFound(f"Task id '{key}' has already been added to the DAG")
+airflow.exceptions.DuplicateTaskIdFound: Task id 'ingest_to_bucket' has already been added to the DAG
+[2022-03-30 14:54:23,244] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 14:54:23,254] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.387 seconds
+[2022-03-30 14:54:45,327] {processor.py:163} INFO - Started process (PID=272) to work on /opt/airflow/dags/ingest_dag.py
+[2022-03-30 14:54:45,328] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-03-30 14:54:45,329] {logging_mixin.py:109} INFO - [2022-03-30 14:54:45,329] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 14:54:45,836] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 14:54:46,140] {logging_mixin.py:109} INFO - [2022-03-30 14:54:46,140] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-03-30 14:54:46,167] {logging_mixin.py:109} INFO - [2022-03-30 14:54:46,167] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2022-03-29 00:00:00+00:00
+[2022-03-30 14:54:46,188] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.865 seconds
+[2022-03-30 14:55:16,271] {processor.py:163} INFO - Started process (PID=313) to work on /opt/airflow/dags/ingest_dag.py
+[2022-03-30 14:55:16,275] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-03-30 14:55:16,276] {logging_mixin.py:109} INFO - [2022-03-30 14:55:16,276] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 14:55:16,618] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 14:55:16,630] {logging_mixin.py:109} INFO - [2022-03-30 14:55:16,630] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-03-30 14:55:16,647] {logging_mixin.py:109} INFO - [2022-03-30 14:55:16,647] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2022-03-29 00:00:00+00:00
+[2022-03-30 14:55:16,660] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.392 seconds
+[2022-03-30 14:55:47,535] {processor.py:163} INFO - Started process (PID=364) to work on /opt/airflow/dags/ingest_dag.py
+[2022-03-30 14:55:47,537] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-03-30 14:55:47,537] {logging_mixin.py:109} INFO - [2022-03-30 14:55:47,537] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 14:55:47,944] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 14:55:47,960] {logging_mixin.py:109} INFO - [2022-03-30 14:55:47,960] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-03-30 14:55:47,988] {logging_mixin.py:109} INFO - [2022-03-30 14:55:47,988] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2022-03-29 00:00:00+00:00
+[2022-03-30 14:55:47,998] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.468 seconds
+[2022-03-30 14:56:18,670] {processor.py:163} INFO - Started process (PID=405) to work on /opt/airflow/dags/ingest_dag.py
+[2022-03-30 14:56:18,674] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-03-30 14:56:18,674] {logging_mixin.py:109} INFO - [2022-03-30 14:56:18,674] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 14:56:19,081] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 14:56:19,094] {logging_mixin.py:109} INFO - [2022-03-30 14:56:19,094] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-03-30 14:56:19,109] {logging_mixin.py:109} INFO - [2022-03-30 14:56:19,109] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2022-03-29 00:00:00+00:00
+[2022-03-30 14:56:19,122] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.456 seconds
+[2022-03-30 14:56:49,959] {processor.py:163} INFO - Started process (PID=446) to work on /opt/airflow/dags/ingest_dag.py
+[2022-03-30 14:56:49,967] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-03-30 14:56:49,968] {logging_mixin.py:109} INFO - [2022-03-30 14:56:49,967] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 14:56:50,406] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 14:56:50,417] {logging_mixin.py:109} INFO - [2022-03-30 14:56:50,417] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-03-30 14:56:50,444] {logging_mixin.py:109} INFO - [2022-03-30 14:56:50,443] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2022-03-29 00:00:00+00:00
+[2022-03-30 14:56:50,458] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.503 seconds
+[2022-03-30 14:57:21,093] {processor.py:163} INFO - Started process (PID=497) to work on /opt/airflow/dags/ingest_dag.py
+[2022-03-30 14:57:21,100] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-03-30 14:57:21,101] {logging_mixin.py:109} INFO - [2022-03-30 14:57:21,101] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 14:57:21,433] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 14:57:21,448] {logging_mixin.py:109} INFO - [2022-03-30 14:57:21,448] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-03-30 14:57:21,463] {logging_mixin.py:109} INFO - [2022-03-30 14:57:21,463] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2022-03-29 00:00:00+00:00
+[2022-03-30 14:57:21,473] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.384 seconds
+[2022-03-30 14:57:52,378] {processor.py:163} INFO - Started process (PID=540) to work on /opt/airflow/dags/ingest_dag.py
+[2022-03-30 14:57:52,379] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-03-30 14:57:52,380] {logging_mixin.py:109} INFO - [2022-03-30 14:57:52,380] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 14:57:52,777] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 14:57:52,790] {logging_mixin.py:109} INFO - [2022-03-30 14:57:52,790] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-03-30 14:57:52,807] {logging_mixin.py:109} INFO - [2022-03-30 14:57:52,807] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2022-03-29 00:00:00+00:00
+[2022-03-30 14:57:52,820] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.444 seconds
+[2022-03-30 14:58:23,622] {processor.py:163} INFO - Started process (PID=591) to work on /opt/airflow/dags/ingest_dag.py
+[2022-03-30 14:58:23,626] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-03-30 14:58:23,626] {logging_mixin.py:109} INFO - [2022-03-30 14:58:23,626] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 14:58:23,968] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 14:58:23,978] {logging_mixin.py:109} INFO - [2022-03-30 14:58:23,978] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-03-30 14:58:23,993] {logging_mixin.py:109} INFO - [2022-03-30 14:58:23,993] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2022-03-29 00:00:00+00:00
+[2022-03-30 14:58:24,003] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.384 seconds
+[2022-03-30 14:58:54,882] {processor.py:163} INFO - Started process (PID=638) to work on /opt/airflow/dags/ingest_dag.py
+[2022-03-30 14:58:54,885] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-03-30 14:58:54,886] {logging_mixin.py:109} INFO - [2022-03-30 14:58:54,886] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 14:58:55,235] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 14:58:55,247] {logging_mixin.py:109} INFO - [2022-03-30 14:58:55,247] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-03-30 14:58:55,267] {logging_mixin.py:109} INFO - [2022-03-30 14:58:55,267] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2022-03-29 00:00:00+00:00
+[2022-03-30 14:58:55,276] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.398 seconds
+[2022-03-30 14:59:26,203] {processor.py:163} INFO - Started process (PID=693) to work on /opt/airflow/dags/ingest_dag.py
+[2022-03-30 14:59:26,207] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-03-30 14:59:26,208] {logging_mixin.py:109} INFO - [2022-03-30 14:59:26,208] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 14:59:26,548] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 14:59:26,563] {logging_mixin.py:109} INFO - [2022-03-30 14:59:26,563] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-03-30 14:59:26,579] {logging_mixin.py:109} INFO - [2022-03-30 14:59:26,579] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2022-03-29 00:00:00+00:00
+[2022-03-30 14:59:26,593] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.393 seconds
+[2022-03-30 14:59:57,421] {processor.py:163} INFO - Started process (PID=735) to work on /opt/airflow/dags/ingest_dag.py
+[2022-03-30 14:59:57,429] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-03-30 14:59:57,430] {logging_mixin.py:109} INFO - [2022-03-30 14:59:57,430] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 14:59:57,888] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 14:59:57,908] {logging_mixin.py:109} INFO - [2022-03-30 14:59:57,907] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-03-30 14:59:57,932] {logging_mixin.py:109} INFO - [2022-03-30 14:59:57,932] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2022-03-29 00:00:00+00:00
+[2022-03-30 14:59:57,948] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.531 seconds
+[2022-03-30 15:00:28,566] {processor.py:163} INFO - Started process (PID=785) to work on /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:00:28,567] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-03-30 15:00:28,568] {logging_mixin.py:109} INFO - [2022-03-30 15:00:28,568] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:00:28,913] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:00:28,930] {logging_mixin.py:109} INFO - [2022-03-30 15:00:28,930] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-03-30 15:00:28,952] {logging_mixin.py:109} INFO - [2022-03-30 15:00:28,951] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2022-03-29 00:00:00+00:00
+[2022-03-30 15:00:28,964] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.402 seconds
+[2022-03-30 15:00:59,855] {processor.py:163} INFO - Started process (PID=826) to work on /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:00:59,859] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-03-30 15:00:59,860] {logging_mixin.py:109} INFO - [2022-03-30 15:00:59,860] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:01:00,196] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:01:00,213] {logging_mixin.py:109} INFO - [2022-03-30 15:01:00,213] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-03-30 15:01:00,229] {logging_mixin.py:109} INFO - [2022-03-30 15:01:00,229] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2022-03-29 00:00:00+00:00
+[2022-03-30 15:01:00,239] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.388 seconds
+[2022-03-30 15:01:31,099] {processor.py:163} INFO - Started process (PID=877) to work on /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:01:31,103] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-03-30 15:01:31,104] {logging_mixin.py:109} INFO - [2022-03-30 15:01:31,104] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:01:31,462] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:01:31,471] {logging_mixin.py:109} INFO - [2022-03-30 15:01:31,470] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-03-30 15:01:31,486] {logging_mixin.py:109} INFO - [2022-03-30 15:01:31,485] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2022-03-29 00:00:00+00:00
+[2022-03-30 15:01:31,495] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.400 seconds
+[2022-03-30 15:02:02,312] {processor.py:163} INFO - Started process (PID=918) to work on /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:02:02,313] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-03-30 15:02:02,314] {logging_mixin.py:109} INFO - [2022-03-30 15:02:02,314] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:02:02,677] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:02:02,694] {logging_mixin.py:109} INFO - [2022-03-30 15:02:02,694] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-03-30 15:02:02,714] {logging_mixin.py:109} INFO - [2022-03-30 15:02:02,714] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2022-03-29 00:00:00+00:00
+[2022-03-30 15:02:02,728] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.420 seconds
+[2022-03-30 15:02:33,439] {processor.py:163} INFO - Started process (PID=968) to work on /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:02:33,442] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-03-30 15:02:33,443] {logging_mixin.py:109} INFO - [2022-03-30 15:02:33,443] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:02:33,781] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:02:33,794] {logging_mixin.py:109} INFO - [2022-03-30 15:02:33,794] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-03-30 15:02:33,815] {logging_mixin.py:109} INFO - [2022-03-30 15:02:33,814] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2022-03-29 00:00:00+00:00
+[2022-03-30 15:02:33,826] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.391 seconds
+[2022-03-30 15:03:04,647] {processor.py:163} INFO - Started process (PID=1009) to work on /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:03:04,651] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-03-30 15:03:04,651] {logging_mixin.py:109} INFO - [2022-03-30 15:03:04,651] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:03:05,009] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:03:05,024] {logging_mixin.py:109} INFO - [2022-03-30 15:03:05,024] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-03-30 15:03:05,042] {logging_mixin.py:109} INFO - [2022-03-30 15:03:05,042] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2022-03-29 00:00:00+00:00
+[2022-03-30 15:03:05,055] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.413 seconds
+[2022-03-30 15:03:36,047] {processor.py:163} INFO - Started process (PID=1059) to work on /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:03:36,049] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-03-30 15:03:36,050] {logging_mixin.py:109} INFO - [2022-03-30 15:03:36,049] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:03:36,401] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:03:36,418] {logging_mixin.py:109} INFO - [2022-03-30 15:03:36,418] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-03-30 15:03:36,434] {logging_mixin.py:109} INFO - [2022-03-30 15:03:36,434] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2022-03-29 00:00:00+00:00
+[2022-03-30 15:03:36,447] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.403 seconds
+[2022-03-30 15:04:07,392] {processor.py:163} INFO - Started process (PID=1100) to work on /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:04:07,393] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-03-30 15:04:07,394] {logging_mixin.py:109} INFO - [2022-03-30 15:04:07,394] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:04:07,853] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:04:07,867] {logging_mixin.py:109} INFO - [2022-03-30 15:04:07,866] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-03-30 15:04:07,893] {logging_mixin.py:109} INFO - [2022-03-30 15:04:07,892] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2022-03-29 00:00:00+00:00
+[2022-03-30 15:04:07,907] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.519 seconds
+[2022-03-30 15:04:38,543] {processor.py:163} INFO - Started process (PID=1150) to work on /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:04:38,551] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-03-30 15:04:38,552] {logging_mixin.py:109} INFO - [2022-03-30 15:04:38,552] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:04:38,925] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:04:38,944] {logging_mixin.py:109} INFO - [2022-03-30 15:04:38,943] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-03-30 15:04:38,976] {logging_mixin.py:109} INFO - [2022-03-30 15:04:38,976] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2022-03-29 00:00:00+00:00
+[2022-03-30 15:04:38,993] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.453 seconds
+[2022-03-30 15:05:10,003] {processor.py:163} INFO - Started process (PID=1193) to work on /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:05:10,011] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-03-30 15:05:10,012] {logging_mixin.py:109} INFO - [2022-03-30 15:05:10,012] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:05:10,428] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:05:10,440] {logging_mixin.py:109} INFO - [2022-03-30 15:05:10,440] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-03-30 15:05:10,464] {logging_mixin.py:109} INFO - [2022-03-30 15:05:10,463] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2022-03-29 00:00:00+00:00
+[2022-03-30 15:05:10,478] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.478 seconds
+[2022-03-30 15:05:41,311] {processor.py:163} INFO - Started process (PID=1243) to work on /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:05:41,318] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-03-30 15:05:41,319] {logging_mixin.py:109} INFO - [2022-03-30 15:05:41,319] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:05:41,652] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:05:41,660] {logging_mixin.py:109} INFO - [2022-03-30 15:05:41,660] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-03-30 15:05:41,676] {logging_mixin.py:109} INFO - [2022-03-30 15:05:41,676] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2022-03-29 00:00:00+00:00
+[2022-03-30 15:05:41,686] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.378 seconds
+[2022-03-30 15:06:12,622] {processor.py:163} INFO - Started process (PID=1284) to work on /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:06:12,623] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-03-30 15:06:12,624] {logging_mixin.py:109} INFO - [2022-03-30 15:06:12,624] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:06:13,056] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:06:13,071] {logging_mixin.py:109} INFO - [2022-03-30 15:06:13,071] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-03-30 15:06:13,091] {logging_mixin.py:109} INFO - [2022-03-30 15:06:13,091] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2022-03-29 00:00:00+00:00
+[2022-03-30 15:06:13,101] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.483 seconds
+[2022-03-30 15:06:43,951] {processor.py:163} INFO - Started process (PID=1335) to work on /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:06:43,955] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-03-30 15:06:43,955] {logging_mixin.py:109} INFO - [2022-03-30 15:06:43,955] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:06:44,272] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:06:44,283] {logging_mixin.py:109} INFO - [2022-03-30 15:06:44,283] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-03-30 15:06:44,300] {logging_mixin.py:109} INFO - [2022-03-30 15:06:44,300] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2022-03-29 00:00:00+00:00
+[2022-03-30 15:06:44,313] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.365 seconds
+[2022-03-30 15:07:15,263] {processor.py:163} INFO - Started process (PID=1376) to work on /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:07:15,264] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-03-30 15:07:15,265] {logging_mixin.py:109} INFO - [2022-03-30 15:07:15,265] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:07:15,714] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:07:15,727] {logging_mixin.py:109} INFO - [2022-03-30 15:07:15,727] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-03-30 15:07:15,747] {logging_mixin.py:109} INFO - [2022-03-30 15:07:15,747] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2022-03-29 00:00:00+00:00
+[2022-03-30 15:07:15,763] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.503 seconds
+[2022-03-30 15:07:20,299] {processor.py:163} INFO - Started process (PID=1398) to work on /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:07:20,300] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-03-30 15:07:20,301] {logging_mixin.py:109} INFO - [2022-03-30 15:07:20,301] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:07:20,644] {logging_mixin.py:109} INFO - [2022-03-30 15:07:20,643] {dagbag.py:414} ERROR - Failed to bag_dag: /opt/airflow/dags/ingest_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 402, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 426, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 434, in _bag_dag
+    check_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 76, in check_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 62, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG. Faulty task: processing_tasks_users.ingest_to_bucket_users
+[2022-03-30 15:07:20,658] {processor.py:690} INFO - Deactivated 1 DAGs which are no longer present in /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:07:20,658] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:07:20,672] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.377 seconds
+[2022-03-30 15:07:48,419] {processor.py:163} INFO - Started process (PID=1439) to work on /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:07:48,421] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-03-30 15:07:48,422] {logging_mixin.py:109} INFO - [2022-03-30 15:07:48,422] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:07:48,814] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:07:49,040] {logging_mixin.py:109} INFO - [2022-03-30 15:07:49,040] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-03-30 15:07:49,070] {logging_mixin.py:109} INFO - [2022-03-30 15:07:49,069] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2022-03-29 00:00:00+00:00
+[2022-03-30 15:07:49,094] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.679 seconds
+[2022-03-30 15:08:19,821] {processor.py:163} INFO - Started process (PID=1480) to work on /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:08:19,825] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-03-30 15:08:19,826] {logging_mixin.py:109} INFO - [2022-03-30 15:08:19,826] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:08:20,181] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:08:20,197] {logging_mixin.py:109} INFO - [2022-03-30 15:08:20,196] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-03-30 15:08:20,228] {logging_mixin.py:109} INFO - [2022-03-30 15:08:20,228] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2022-03-29 00:00:00+00:00
+[2022-03-30 15:08:20,243] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.424 seconds
+[2022-03-30 15:08:45,113] {processor.py:163} INFO - Started process (PID=1523) to work on /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:08:45,116] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-03-30 15:08:45,117] {logging_mixin.py:109} INFO - [2022-03-30 15:08:45,117] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:08:45,511] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:08:45,718] {logging_mixin.py:109} INFO - [2022-03-30 15:08:45,718] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-03-30 15:08:45,743] {logging_mixin.py:109} INFO - [2022-03-30 15:08:45,743] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2022-03-29 00:00:00+00:00
+[2022-03-30 15:08:45,761] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.650 seconds
+[2022-03-30 15:09:16,454] {processor.py:163} INFO - Started process (PID=1574) to work on /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:09:16,457] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-03-30 15:09:16,457] {logging_mixin.py:109} INFO - [2022-03-30 15:09:16,457] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:09:16,780] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:09:16,798] {logging_mixin.py:109} INFO - [2022-03-30 15:09:16,797] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-03-30 15:09:16,813] {logging_mixin.py:109} INFO - [2022-03-30 15:09:16,813] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2022-03-29 00:00:00+00:00
+[2022-03-30 15:09:16,826] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.376 seconds
+[2022-03-30 15:09:47,741] {processor.py:163} INFO - Started process (PID=1615) to work on /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:09:47,749] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-03-30 15:09:47,750] {logging_mixin.py:109} INFO - [2022-03-30 15:09:47,750] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:09:48,129] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:09:48,150] {logging_mixin.py:109} INFO - [2022-03-30 15:09:48,150] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-03-30 15:09:48,175] {logging_mixin.py:109} INFO - [2022-03-30 15:09:48,175] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2022-03-29 00:00:00+00:00
+[2022-03-30 15:09:48,191] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.454 seconds
+[2022-03-30 15:10:19,142] {processor.py:163} INFO - Started process (PID=1664) to work on /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:10:19,146] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-03-30 15:10:19,147] {logging_mixin.py:109} INFO - [2022-03-30 15:10:19,147] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:10:19,490] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:10:19,507] {logging_mixin.py:109} INFO - [2022-03-30 15:10:19,507] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-03-30 15:10:19,528] {logging_mixin.py:109} INFO - [2022-03-30 15:10:19,528] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2022-03-29 00:00:00+00:00
+[2022-03-30 15:10:19,540] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.402 seconds
+[2022-03-30 15:10:50,392] {processor.py:163} INFO - Started process (PID=1705) to work on /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:10:50,393] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-03-30 15:10:50,393] {logging_mixin.py:109} INFO - [2022-03-30 15:10:50,393] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:10:50,687] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:10:50,703] {logging_mixin.py:109} INFO - [2022-03-30 15:10:50,703] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-03-30 15:10:50,722] {logging_mixin.py:109} INFO - [2022-03-30 15:10:50,722] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2022-03-29 00:00:00+00:00
+[2022-03-30 15:10:50,739] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.350 seconds
+[2022-03-30 15:11:14,603] {processor.py:163} INFO - Started process (PID=1747) to work on /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:11:14,604] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-03-30 15:11:14,604] {logging_mixin.py:109} INFO - [2022-03-30 15:11:14,604] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:11:14,851] {logging_mixin.py:109} INFO - [2022-03-30 15:11:14,849] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/ingest_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ingest_dag.py", line 41, in <module>
+    bash_command=f'rm {OUTPUT_FILE_TEMPLATE}'
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 143, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 547, in __init__
+    validate_key(task_id)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/helpers.py", line 56, in validate_key
+    "dots and underscores exclusively".format(k=k)
+airflow.exceptions.AirflowException: The key (remove_{table}_csv) has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2022-03-30 15:11:14,872] {processor.py:690} INFO - Deactivated 1 DAGs which are no longer present in /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:11:14,873] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:11:14,883] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.283 seconds
+[2022-03-30 15:11:45,734] {processor.py:163} INFO - Started process (PID=1798) to work on /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:11:45,741] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-03-30 15:11:45,742] {logging_mixin.py:109} INFO - [2022-03-30 15:11:45,742] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:11:45,978] {logging_mixin.py:109} INFO - [2022-03-30 15:11:45,977] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/ingest_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ingest_dag.py", line 41, in <module>
+    bash_command=f'rm {OUTPUT_FILE_TEMPLATE}'
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 143, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 547, in __init__
+    validate_key(task_id)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/helpers.py", line 56, in validate_key
+    "dots and underscores exclusively".format(k=k)
+airflow.exceptions.AirflowException: The key (remove_{table}_csv) has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2022-03-30 15:11:45,996] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:11:46,006] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.276 seconds
+[2022-03-30 15:12:09,988] {processor.py:163} INFO - Started process (PID=1839) to work on /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:12:09,989] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-03-30 15:12:09,990] {logging_mixin.py:109} INFO - [2022-03-30 15:12:09,990] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:12:10,266] {logging_mixin.py:109} INFO - [2022-03-30 15:12:10,265] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/ingest_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ingest_dag.py", line 41, in <module>
+    bash_command=f'rm {OUTPUT_FILE_TEMPLATE}'
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 143, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 547, in __init__
+    validate_key(task_id)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/helpers.py", line 56, in validate_key
+    "dots and underscores exclusively".format(k=k)
+airflow.exceptions.AirflowException: The key (remove_{table}_csv) has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2022-03-30 15:12:10,288] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:12:10,305] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.319 seconds
+[2022-03-30 15:12:41,137] {processor.py:163} INFO - Started process (PID=1880) to work on /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:12:41,141] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-03-30 15:12:41,142] {logging_mixin.py:109} INFO - [2022-03-30 15:12:41,142] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:12:41,471] {logging_mixin.py:109} INFO - [2022-03-30 15:12:41,469] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/ingest_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ingest_dag.py", line 41, in <module>
+    bash_command=f'rm {OUTPUT_FILE_TEMPLATE}'
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 143, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 547, in __init__
+    validate_key(task_id)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/helpers.py", line 56, in validate_key
+    "dots and underscores exclusively".format(k=k)
+airflow.exceptions.AirflowException: The key (remove_{table}_csv) has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2022-03-30 15:12:41,487] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:12:41,501] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.368 seconds
+[2022-03-30 15:13:12,433] {processor.py:163} INFO - Started process (PID=1930) to work on /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:13:12,437] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-03-30 15:13:12,438] {logging_mixin.py:109} INFO - [2022-03-30 15:13:12,437] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:13:12,689] {logging_mixin.py:109} INFO - [2022-03-30 15:13:12,688] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/ingest_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ingest_dag.py", line 41, in <module>
+    bash_command=f'rm {OUTPUT_FILE_TEMPLATE}'
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 143, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 547, in __init__
+    validate_key(task_id)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/helpers.py", line 56, in validate_key
+    "dots and underscores exclusively".format(k=k)
+airflow.exceptions.AirflowException: The key (remove_{table}_csv) has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2022-03-30 15:13:12,703] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:13:12,717] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.286 seconds
+[2022-03-30 15:13:43,689] {processor.py:163} INFO - Started process (PID=1971) to work on /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:13:43,693] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-03-30 15:13:43,694] {logging_mixin.py:109} INFO - [2022-03-30 15:13:43,694] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:13:43,986] {logging_mixin.py:109} INFO - [2022-03-30 15:13:43,984] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/ingest_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ingest_dag.py", line 41, in <module>
+    bash_command=f'rm {OUTPUT_FILE_TEMPLATE}'
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 143, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 547, in __init__
+    validate_key(task_id)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/helpers.py", line 56, in validate_key
+    "dots and underscores exclusively".format(k=k)
+airflow.exceptions.AirflowException: The key (remove_{table}_csv) has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2022-03-30 15:13:44,001] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:13:44,013] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.328 seconds
+[2022-03-30 15:14:14,943] {processor.py:163} INFO - Started process (PID=2021) to work on /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:14:14,947] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-03-30 15:14:14,947] {logging_mixin.py:109} INFO - [2022-03-30 15:14:14,947] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:14:15,194] {logging_mixin.py:109} INFO - [2022-03-30 15:14:15,193] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/ingest_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ingest_dag.py", line 41, in <module>
+    bash_command=f'rm {OUTPUT_FILE_TEMPLATE}'
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 143, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 547, in __init__
+    validate_key(task_id)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/helpers.py", line 56, in validate_key
+    "dots and underscores exclusively".format(k=k)
+airflow.exceptions.AirflowException: The key (remove_{table}_csv) has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2022-03-30 15:14:15,209] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:14:15,223] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.283 seconds
+[2022-03-30 15:14:46,183] {processor.py:163} INFO - Started process (PID=2062) to work on /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:14:46,184] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-03-30 15:14:46,185] {logging_mixin.py:109} INFO - [2022-03-30 15:14:46,185] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:14:46,482] {logging_mixin.py:109} INFO - [2022-03-30 15:14:46,481] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/ingest_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ingest_dag.py", line 41, in <module>
+    bash_command=f'rm {OUTPUT_FILE_TEMPLATE}'
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 143, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 547, in __init__
+    validate_key(task_id)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/helpers.py", line 56, in validate_key
+    "dots and underscores exclusively".format(k=k)
+airflow.exceptions.AirflowException: The key (remove_{table}_csv) has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2022-03-30 15:14:46,499] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:14:46,513] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.334 seconds
+[2022-03-30 15:15:17,427] {processor.py:163} INFO - Started process (PID=2113) to work on /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:15:17,428] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-03-30 15:15:17,429] {logging_mixin.py:109} INFO - [2022-03-30 15:15:17,429] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:15:17,669] {logging_mixin.py:109} INFO - [2022-03-30 15:15:17,668] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/ingest_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ingest_dag.py", line 41, in <module>
+    bash_command=f'rm {OUTPUT_FILE_TEMPLATE}'
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 143, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 547, in __init__
+    validate_key(task_id)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/helpers.py", line 56, in validate_key
+    "dots and underscores exclusively".format(k=k)
+airflow.exceptions.AirflowException: The key (remove_{table}_csv) has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2022-03-30 15:15:17,685] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:15:17,697] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.274 seconds
+[2022-03-30 15:15:27,468] {processor.py:163} INFO - Started process (PID=2135) to work on /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:15:27,472] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-03-30 15:15:27,473] {logging_mixin.py:109} INFO - [2022-03-30 15:15:27,473] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:15:27,758] {logging_mixin.py:109} INFO - [2022-03-30 15:15:27,755] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/ingest_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ingest_dag.py", line 41, in <module>
+    bash_command=f'rm {OUTPUT_FILE_TEMPLATE}'
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 143, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 547, in __init__
+    validate_key(task_id)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/helpers.py", line 56, in validate_key
+    "dots and underscores exclusively".format(k=k)
+airflow.exceptions.AirflowException: The key (remove_{table}_csv) has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2022-03-30 15:15:27,774] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:15:27,789] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.324 seconds
+[2022-03-30 15:15:57,962] {processor.py:163} INFO - Started process (PID=2176) to work on /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:15:57,966] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-03-30 15:15:57,966] {logging_mixin.py:109} INFO - [2022-03-30 15:15:57,966] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:15:58,193] {logging_mixin.py:109} INFO - [2022-03-30 15:15:58,192] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/ingest_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ingest_dag.py", line 41, in <module>
+    bash_command=f'rm {OUTPUT_FILE_TEMPLATE}'
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 143, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 547, in __init__
+    validate_key(task_id)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/helpers.py", line 56, in validate_key
+    "dots and underscores exclusively".format(k=k)
+airflow.exceptions.AirflowException: The key (remove_{table}_csv) has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2022-03-30 15:15:58,206] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:15:58,218] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.260 seconds
+[2022-03-30 15:16:29,235] {processor.py:163} INFO - Started process (PID=2225) to work on /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:16:29,239] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-03-30 15:16:29,240] {logging_mixin.py:109} INFO - [2022-03-30 15:16:29,239] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:16:29,572] {logging_mixin.py:109} INFO - [2022-03-30 15:16:29,571] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/ingest_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ingest_dag.py", line 41, in <module>
+    bash_command=f'rm {OUTPUT_FILE_TEMPLATE}'
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 143, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 188, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 547, in __init__
+    validate_key(task_id)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/helpers.py", line 56, in validate_key
+    "dots and underscores exclusively".format(k=k)
+airflow.exceptions.AirflowException: The key (remove_{table}_csv) has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2022-03-30 15:16:29,590] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:16:29,600] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.367 seconds
+[2022-03-30 15:16:38,290] {processor.py:163} INFO - Started process (PID=2250) to work on /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:16:38,291] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-03-30 15:16:38,292] {logging_mixin.py:109} INFO - [2022-03-30 15:16:38,292] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:16:38,659] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:16:38,866] {logging_mixin.py:109} INFO - [2022-03-30 15:16:38,865] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-03-30 15:16:38,892] {logging_mixin.py:109} INFO - [2022-03-30 15:16:38,892] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2022-03-29 00:00:00+00:00
+[2022-03-30 15:16:38,916] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.630 seconds
+[2022-03-30 15:17:09,579] {processor.py:163} INFO - Started process (PID=2301) to work on /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:17:09,583] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-03-30 15:17:09,584] {logging_mixin.py:109} INFO - [2022-03-30 15:17:09,584] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:17:09,865] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:17:09,881] {logging_mixin.py:109} INFO - [2022-03-30 15:17:09,881] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-03-30 15:17:09,902] {logging_mixin.py:109} INFO - [2022-03-30 15:17:09,902] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2022-03-29 00:00:00+00:00
+[2022-03-30 15:17:09,915] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.340 seconds
+[2022-03-30 15:17:40,710] {processor.py:163} INFO - Started process (PID=2342) to work on /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:17:40,714] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-03-30 15:17:40,714] {logging_mixin.py:109} INFO - [2022-03-30 15:17:40,714] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:17:41,044] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:17:41,063] {logging_mixin.py:109} INFO - [2022-03-30 15:17:41,063] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-03-30 15:17:41,081] {logging_mixin.py:109} INFO - [2022-03-30 15:17:41,081] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2022-03-29 00:00:00+00:00
+[2022-03-30 15:17:41,094] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.388 seconds
+[2022-03-30 15:18:12,041] {processor.py:163} INFO - Started process (PID=2392) to work on /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:18:12,045] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-03-30 15:18:12,045] {logging_mixin.py:109} INFO - [2022-03-30 15:18:12,045] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:18:12,322] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:18:12,340] {logging_mixin.py:109} INFO - [2022-03-30 15:18:12,340] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-03-30 15:18:12,356] {logging_mixin.py:109} INFO - [2022-03-30 15:18:12,356] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2022-03-29 00:00:00+00:00
+[2022-03-30 15:18:12,368] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.330 seconds
+[2022-03-30 15:18:33,141] {processor.py:163} INFO - Started process (PID=2415) to work on /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:18:33,143] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-03-30 15:18:33,144] {logging_mixin.py:109} INFO - [2022-03-30 15:18:33,143] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:18:33,147] {logging_mixin.py:109} INFO - [2022-03-30 15:18:33,146] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/ingest_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ingest_dag.py", line 52
+    bash_command=f'rm {OUTPUT_FILE_TEMPLATE.replace('.csv', '.parquet')}'
+                                                            ^
+SyntaxError: invalid syntax
+[2022-03-30 15:18:33,166] {processor.py:690} INFO - Deactivated 1 DAGs which are no longer present in /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:18:33,166] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:18:33,177] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.041 seconds
+[2022-03-30 15:19:03,407] {processor.py:163} INFO - Started process (PID=2457) to work on /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:19:03,410] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-03-30 15:19:03,410] {logging_mixin.py:109} INFO - [2022-03-30 15:19:03,410] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:19:03,412] {logging_mixin.py:109} INFO - [2022-03-30 15:19:03,411] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/ingest_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ingest_dag.py", line 52
+    bash_command=f'rm {OUTPUT_FILE_TEMPLATE.replace('.csv', '.parquet')}'
+                                                            ^
+SyntaxError: invalid syntax
+[2022-03-30 15:19:03,431] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:19:03,442] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.040 seconds
+[2022-03-30 15:19:33,621] {processor.py:163} INFO - Started process (PID=2490) to work on /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:19:33,623] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-03-30 15:19:33,623] {logging_mixin.py:109} INFO - [2022-03-30 15:19:33,623] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:19:33,626] {logging_mixin.py:109} INFO - [2022-03-30 15:19:33,625] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/ingest_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ingest_dag.py", line 52
+    bash_command=f'rm {OUTPUT_FILE_TEMPLATE.replace('.csv', '.parquet')}'
+                                                            ^
+SyntaxError: invalid syntax
+[2022-03-30 15:19:33,643] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:19:33,657] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.039 seconds
+[2022-03-30 15:19:37,754] {processor.py:163} INFO - Started process (PID=2514) to work on /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:19:37,759] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-03-30 15:19:37,760] {logging_mixin.py:109} INFO - [2022-03-30 15:19:37,760] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:19:37,764] {logging_mixin.py:109} INFO - [2022-03-30 15:19:37,763] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/ingest_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/ingest_dag.py", line 53
+    bash_command=f'rm {OUTPUT_FILE_TEMPLATE.replace('.csv', '.parquet')}'
+                                                            ^
+SyntaxError: invalid syntax
+[2022-03-30 15:19:37,788] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:19:37,803] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.051 seconds
+[2022-03-30 15:19:57,879] {processor.py:163} INFO - Started process (PID=2528) to work on /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:19:57,884] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-03-30 15:19:57,885] {logging_mixin.py:109} INFO - [2022-03-30 15:19:57,884] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:19:58,255] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:19:58,514] {logging_mixin.py:109} INFO - [2022-03-30 15:19:58,513] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-03-30 15:19:58,539] {logging_mixin.py:109} INFO - [2022-03-30 15:19:58,539] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2022-03-29 00:00:00+00:00
+[2022-03-30 15:19:58,573] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.698 seconds
+[2022-03-30 15:20:12,044] {processor.py:163} INFO - Started process (PID=2560) to work on /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:20:12,047] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-03-30 15:20:12,047] {logging_mixin.py:109} INFO - [2022-03-30 15:20:12,047] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:20:12,358] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:20:12,365] {logging_mixin.py:109} INFO - [2022-03-30 15:20:12,365] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-03-30 15:20:12,393] {logging_mixin.py:109} INFO - [2022-03-30 15:20:12,393] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2022-03-29 00:00:00+00:00
+[2022-03-30 15:20:12,408] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.369 seconds
+[2022-03-30 15:20:43,304] {processor.py:163} INFO - Started process (PID=2610) to work on /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:20:43,308] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-03-30 15:20:43,308] {logging_mixin.py:109} INFO - [2022-03-30 15:20:43,308] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:20:43,575] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:20:43,745] {logging_mixin.py:109} INFO - [2022-03-30 15:20:43,745] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-03-30 15:20:43,764] {logging_mixin.py:109} INFO - [2022-03-30 15:20:43,764] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2022-03-29 00:00:00+00:00
+[2022-03-30 15:20:43,781] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.480 seconds
+[2022-03-30 15:21:02,855] {processor.py:163} INFO - Started process (PID=2632) to work on /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:21:02,859] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-03-30 15:21:02,859] {logging_mixin.py:109} INFO - [2022-03-30 15:21:02,859] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:21:03,156] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:21:03,164] {logging_mixin.py:109} INFO - [2022-03-30 15:21:03,163] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-03-30 15:21:03,191] {logging_mixin.py:109} INFO - [2022-03-30 15:21:03,191] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2022-03-29 00:00:00+00:00
+[2022-03-30 15:21:03,203] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.352 seconds
+[2022-03-30 15:21:33,983] {processor.py:163} INFO - Started process (PID=2683) to work on /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:21:33,986] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-03-30 15:21:33,987] {logging_mixin.py:109} INFO - [2022-03-30 15:21:33,987] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:21:34,249] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:21:34,265] {logging_mixin.py:109} INFO - [2022-03-30 15:21:34,265] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-03-30 15:21:34,286] {logging_mixin.py:109} INFO - [2022-03-30 15:21:34,286] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2022-03-29 00:00:00+00:00
+[2022-03-30 15:21:34,301] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.322 seconds
+[2022-03-30 15:22:05,271] {processor.py:163} INFO - Started process (PID=2725) to work on /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:22:05,275] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-03-30 15:22:05,275] {logging_mixin.py:109} INFO - [2022-03-30 15:22:05,275] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:22:05,529] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:22:05,540] {logging_mixin.py:109} INFO - [2022-03-30 15:22:05,540] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-03-30 15:22:05,556] {logging_mixin.py:109} INFO - [2022-03-30 15:22:05,556] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2022-03-29 00:00:00+00:00
+[2022-03-30 15:22:05,567] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.301 seconds
+[2022-03-30 15:22:36,505] {processor.py:163} INFO - Started process (PID=2776) to work on /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:22:36,509] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-03-30 15:22:36,510] {logging_mixin.py:109} INFO - [2022-03-30 15:22:36,509] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:22:36,814] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:22:36,826] {logging_mixin.py:109} INFO - [2022-03-30 15:22:36,826] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-03-30 15:22:36,844] {logging_mixin.py:109} INFO - [2022-03-30 15:22:36,844] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2022-03-29 00:00:00+00:00
+[2022-03-30 15:22:36,854] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.352 seconds
+[2022-03-30 15:23:07,791] {processor.py:163} INFO - Started process (PID=2822) to work on /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:23:07,794] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-03-30 15:23:07,795] {logging_mixin.py:109} INFO - [2022-03-30 15:23:07,795] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:23:08,115] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:23:08,134] {logging_mixin.py:109} INFO - [2022-03-30 15:23:08,134] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-03-30 15:23:08,152] {logging_mixin.py:109} INFO - [2022-03-30 15:23:08,152] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2022-03-29 00:00:00+00:00
+[2022-03-30 15:23:08,165] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.377 seconds
+[2022-03-30 15:23:39,177] {processor.py:163} INFO - Started process (PID=2878) to work on /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:23:39,179] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-03-30 15:23:39,180] {logging_mixin.py:109} INFO - [2022-03-30 15:23:39,180] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:23:39,673] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:23:39,694] {logging_mixin.py:109} INFO - [2022-03-30 15:23:39,694] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-03-30 15:23:39,712] {logging_mixin.py:109} INFO - [2022-03-30 15:23:39,712] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2022-03-29 00:00:00+00:00
+[2022-03-30 15:23:39,724] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.551 seconds
+[2022-03-30 15:24:10,314] {processor.py:163} INFO - Started process (PID=2919) to work on /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:24:10,316] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-03-30 15:24:10,317] {logging_mixin.py:109} INFO - [2022-03-30 15:24:10,316] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:24:10,772] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-03-30 15:24:10,787] {logging_mixin.py:109} INFO - [2022-03-30 15:24:10,787] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-03-30 15:24:10,805] {logging_mixin.py:109} INFO - [2022-03-30 15:24:10,805] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2022-03-29 00:00:00+00:00
+[2022-03-30 15:24:10,817] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.506 seconds

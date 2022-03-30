@@ -8,6 +8,7 @@ from google.cloud import storage
 import pandas as pd
 import os
 import subprocess
+import os
 
 # Initialise a client
 storage_client = storage.Client("DE-stack-overflow")
@@ -51,6 +52,4 @@ for file in files:
     output, error = process.communicate()
     print(f'Finished processing {file}')
 
-bashCommand = "rm *.csv"
-process = subprocess.Popen(bashCommand.split(), stdout=subprocess.PIPE)
-output, error = process.communicate()
+os.system('rm *.csv')
