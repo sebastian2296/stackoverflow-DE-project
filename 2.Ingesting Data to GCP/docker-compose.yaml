@@ -60,8 +60,12 @@ x-airflow-common:
     AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: 'true'
     AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
     AIRFLOW__API__AUTH_BACKEND: 'airflow.api.auth.backend.basic_auth'
-    _PIP_ADDITIONAL_REQUIREMENTS: ${_PIP_ADDITIONAL_REQUIREMENTS:- apache-airflow-providers-apache-spark}
-  
+    _PIP_ADDITIONAL_REQUIREMENTS: ${_PIP_ADDITIONAL_REQUIREMENTS:- apache-airflow-providers-apache-spark pyarrow}
+    GOOGLE_APPLICATION_CREDENTIALS: /.google/credentials/google_credentials_project.json
+    AIRFLOW_CONN_GOOGLE_CLOUD_DEFAULT: 'google-cloud-platform://?extra__google_cloud_platform__key_path=/.google/credentials/google_credentials.json'
+    GCP_PROJECT_ID: 'DE-stack-overflow'
+    GCP_GCS_BUCKET: 'dtc_data_lake_de-stack-overflow'
+
 
   volumes:
     - ./db:/opt/airflow/airflow_db
@@ -70,6 +74,8 @@ x-airflow-common:
     - ./plugins:/opt/airflow/plugins
     - ./spark/app:/usr/local/spark/app #Spark Scripts (Must be the same path in airflow and Spark Cluster)
     - ./spark/resources:/usr/local/spark/resources #Resources folder (Must be the same path in airflow and Spark Cluster)
+    - /home/sebastian2296/.google/credentials/:/.google/credentials:ro
+    
   user: "${AIRFLOW_UID:-50000}:0"
   depends_on:
     &airflow-common-depends-on
