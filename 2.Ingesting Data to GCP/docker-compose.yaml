@@ -60,20 +60,18 @@ x-airflow-common:
     AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: 'true'
     AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
     AIRFLOW__API__AUTH_BACKEND: 'airflow.api.auth.backend.basic_auth'
-    _PIP_ADDITIONAL_REQUIREMENTS: ${_PIP_ADDITIONAL_REQUIREMENTS:- apache-airflow-providers-apache-spark pyarrow}
+    _PIP_ADDITIONAL_REQUIREMENTS: ${_PIP_ADDITIONAL_REQUIREMENTS:- apache-airflow-providers-apache-spark pyarrow notebook}
     GOOGLE_APPLICATION_CREDENTIALS: /.google/credentials/google_credentials_project.json
     AIRFLOW_CONN_GOOGLE_CLOUD_DEFAULT: 'google-cloud-platform://?extra__google_cloud_platform__key_path=/.google/credentials/google_credentials.json'
     GCP_PROJECT_ID: 'DE-stack-overflow'
     GCP_GCS_BUCKET: 'dtc_data_lake_de-stack-overflow'
+  
 
 
   volumes:
-    - ./db:/opt/airflow/airflow_db
     - ./dags:/opt/airflow/dags
     - ./logs:/opt/airflow/logs
     - ./plugins:/opt/airflow/plugins
-    - ./spark/app:/usr/local/spark/app #Spark Scripts (Must be the same path in airflow and Spark Cluster)
-    - ./spark/resources:/usr/local/spark/resources #Resources folder (Must be the same path in airflow and Spark Cluster)
     - /home/sebastian2296/.google/credentials/:/.google/credentials:ro
     
   user: "${AIRFLOW_UID:-50000}:0"
@@ -140,6 +138,9 @@ services:
       <<: *airflow-common-depends-on
       airflow-init:
         condition: service_completed_successfully
+
+    # ports:
+    #   - "127.0.0.1:8888:8888/tcp"
 
   # airflow-worker:
   #   <<: *airflow-common
@@ -283,24 +284,29 @@ services:
   #     airflow-init:
   #       condition: service_completed_successfully
 
-
-  jupyter-spark:
-      image: jupyter/pyspark-notebook:latest
-
-      ports:
-        - "8888:8888"
-        - "4040-4080:4040-4080"
-
-      volumes:
-        - ./notebooks:/home/jovyan/work/notebooks/
-        - ./spark/resources/data:/home/jovyan/work/data/
-        - ./spark/resources/jars:/home/jovyan/work/jars/
-
+  jupyter-notebook:
+    <<: *airflow-common
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+      network: host
+    user: root
+    command: bash -c "jupyter notebook --ip 0.0.0.0 --no-browser --allow-root"
+    ports:
+      - "127.0.0.1:8888:8888/tcp"
+    environment:
+      <<: *airflow-common-env 
+    volumes:
+      - ./notebooks:/opt/airflow/notebooks
+      - ./dags:/opt/airflow/dags
+      - /home/sebastian2296/.google/credentials/:/.google/credentials:ro
+      
 volumes:
   postgres-db-volume:
 
 
 networks:
   default:
+
 
 

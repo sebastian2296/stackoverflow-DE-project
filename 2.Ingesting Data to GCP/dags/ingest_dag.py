@@ -16,7 +16,7 @@ tables = ['badges', 'posts_questions', 'posts_answers', 'users']
 URL_PREFIX = 'https://storage.googleapis.com/dtc_data_lake_de-stack-overflow/processed/'
 
 
-with DAG('IngestToGCP', start_date=datetime(2008, 8, 1), schedule_interval="0 0 1 * *", catchup=True) as \
+with DAG('IngestToGCP', start_date=datetime(2008, 7, 1), schedule_interval="0 0 1 * *", catchup=True, concurrency=20, max_active_runs=10) as \
 dag: 
     for table in tables:
 
@@ -29,7 +29,9 @@ dag:
 
             wget_task = BashOperator(
                 task_id=f'download_files_{table}',
-                bash_command=f'curl -sSfl {URL_TEMPLATE} > {OUTPUT_FILE_TEMPLATE}'
+                bash_command=f'curl -A "Mozilla Chrome Safari" -sSfl --connect-timeout 5 \
+                    --retry 5 \
+                    {URL_TEMPLATE} > {OUTPUT_FILE_TEMPLATE}'
             ) 
 
             format_to_parquet = PythonOperator(

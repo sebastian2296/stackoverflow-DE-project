@@ -1,3 +1,0 @@
-apache-airflow-providers-apache-spark
-pyarrow==7.0.0
-
