@@ -10,5 +10,5 @@
 
 ### Architecture Diagram
 
-![alt text](https://github.com/sebastian2296/stackoverflow-DE-project/tree/main/img/architecture_diagram.jpg)
+![alt text](https://github.com/sebastian2296/stackoverflow-DE-project/blob/main/img/architecture_diagram.jpg)
 
