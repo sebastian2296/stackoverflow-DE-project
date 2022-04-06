@@ -8,6 +8,7 @@
 4. Create a dashboard
 
 
-### 1. Ingestion Pipeline
+### Architecture Diagram
 
-`ref: https://cloud.google.com/bigquery/docs/exporting-data`
+![alt text](https://github.com/sebastian2296/stackoverflow-DE-project/tree/main/img/architecture_diagram.jpg)
+
