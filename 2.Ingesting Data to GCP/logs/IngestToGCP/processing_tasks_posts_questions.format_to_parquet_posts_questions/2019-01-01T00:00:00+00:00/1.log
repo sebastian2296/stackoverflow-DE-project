@@ -1,0 +1,23 @@
+[2022-04-06 02:50:31,152] {taskinstance.py:1043} INFO - Dependencies all met for <TaskInstance: IngestToGCP.processing_tasks_posts_questions.format_to_parquet_posts_questions scheduled__2019-01-01T00:00:00+00:00 [queued]>
+[2022-04-06 02:50:31,260] {taskinstance.py:1043} INFO - Dependencies all met for <TaskInstance: IngestToGCP.processing_tasks_posts_questions.format_to_parquet_posts_questions scheduled__2019-01-01T00:00:00+00:00 [queued]>
+[2022-04-06 02:50:31,260] {taskinstance.py:1249} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-06 02:50:31,260] {taskinstance.py:1250} INFO - Starting attempt 1 of 1
+[2022-04-06 02:50:31,261] {taskinstance.py:1251} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-06 02:50:31,408] {taskinstance.py:1270} INFO - Executing <Task(PythonOperator): processing_tasks_posts_questions.format_to_parquet_posts_questions> on 2019-01-01 00:00:00+00:00
+[2022-04-06 02:50:31,446] {standard_task_runner.py:52} INFO - Started process 189738 to run task
+[2022-04-06 02:50:31,503] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'IngestToGCP', 'processing_tasks_posts_questions.format_to_parquet_posts_questions', 'scheduled__2019-01-01T00:00:00+00:00', '--job-id', '11362', '--raw', '--subdir', 'DAGS_FOLDER/ingest_dag.py', '--cfg-path', '/tmp/tmpp5y96do0', '--error-file', '/tmp/tmpu62f7l4t']
+[2022-04-06 02:50:31,536] {standard_task_runner.py:80} INFO - Job 11362: Subtask processing_tasks_posts_questions.format_to_parquet_posts_questions
+[2022-04-06 02:50:32,188] {logging_mixin.py:109} INFO - Running <TaskInstance: IngestToGCP.processing_tasks_posts_questions.format_to_parquet_posts_questions scheduled__2019-01-01T00:00:00+00:00 [running]> on host 9fe4286b2855
+[2022-04-06 02:50:32,799] {logging_mixin.py:109} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:156 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2022-04-06 02:50:32,999] {taskinstance.py:1448} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=IngestToGCP
+AIRFLOW_CTX_TASK_ID=processing_tasks_posts_questions.format_to_parquet_posts_questions
+AIRFLOW_CTX_EXECUTION_DATE=2019-01-01T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2019-01-01T00:00:00+00:00
+[2022-04-06 02:52:10,020] {python.py:175} INFO - Done. Returned value was: None
+[2022-04-06 02:52:10,275] {taskinstance.py:1288} INFO - Marking task as SUCCESS. dag_id=IngestToGCP, task_id=processing_tasks_posts_questions.format_to_parquet_posts_questions, execution_date=20190101T000000, start_date=20220406T025031, end_date=20220406T025210
+[2022-04-06 02:52:12,474] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-04-06 02:52:13,271] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check

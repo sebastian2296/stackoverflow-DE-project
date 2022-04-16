@@ -1,0 +1,930 @@
+[2022-04-06 01:23:33,450] {taskinstance.py:1043} INFO - Dependencies all met for <TaskInstance: IngestToGCP.processing_tasks_posts_questions.spark_job scheduled__2015-10-01T00:00:00+00:00 [queued]>
+[2022-04-06 01:23:33,595] {taskinstance.py:1043} INFO - Dependencies all met for <TaskInstance: IngestToGCP.processing_tasks_posts_questions.spark_job scheduled__2015-10-01T00:00:00+00:00 [queued]>
+[2022-04-06 01:23:33,595] {taskinstance.py:1249} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-06 01:23:33,595] {taskinstance.py:1250} INFO - Starting attempt 1 of 1
+[2022-04-06 01:23:33,595] {taskinstance.py:1251} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-06 01:23:33,736] {taskinstance.py:1270} INFO - Executing <Task(SparkSubmitOperator): processing_tasks_posts_questions.spark_job> on 2015-10-01 00:00:00+00:00
+[2022-04-06 01:23:33,771] {standard_task_runner.py:52} INFO - Started process 130513 to run task
+[2022-04-06 01:23:33,798] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'IngestToGCP', 'processing_tasks_posts_questions.spark_job', 'scheduled__2015-10-01T00:00:00+00:00', '--job-id', '10438', '--raw', '--subdir', 'DAGS_FOLDER/ingest_dag.py', '--cfg-path', '/tmp/tmpci6pugo3', '--error-file', '/tmp/tmp3ma494rx']
+[2022-04-06 01:23:33,811] {standard_task_runner.py:80} INFO - Job 10438: Subtask processing_tasks_posts_questions.spark_job
+[2022-04-06 01:23:34,091] {logging_mixin.py:109} INFO - Running <TaskInstance: IngestToGCP.processing_tasks_posts_questions.spark_job scheduled__2015-10-01T00:00:00+00:00 [running]> on host 9fe4286b2855
+[2022-04-06 01:23:34,298] {logging_mixin.py:109} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:156 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2022-04-06 01:23:34,419] {taskinstance.py:1448} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=IngestToGCP
+AIRFLOW_CTX_TASK_ID=processing_tasks_posts_questions.spark_job
+AIRFLOW_CTX_EXECUTION_DATE=2015-10-01T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2015-10-01T00:00:00+00:00
+[2022-04-06 01:23:34,449] {base.py:79} INFO - Using connection to: id: spark_project. Host: spark://spark, Port: 7077, Schema: , Login: , Password: None, extra: {'queue': 'root.default'}
+[2022-04-06 01:23:34,451] {spark_submit.py:335} INFO - Spark-Submit cmd: spark-submit --master spark://spark:7077 --conf spark.master=local[*] --name format_schema --verbose --queue root.default ./dags/pyspark_parquet_transformation.py posts_questions 2015-10
+[2022-04-06 01:23:51,998] {spark_submit.py:488} INFO - Using properties file: null
+[2022-04-06 01:23:53,966] {spark_submit.py:488} INFO - WARNING: An illegal reflective access operation has occurred
+[2022-04-06 01:23:53,966] {spark_submit.py:488} INFO - WARNING: Illegal reflective access by org.apache.spark.unsafe.Platform (file:/opt/***/spark/spark-3.2.1-bin-hadoop3.2/jars/spark-unsafe_2.12-3.2.1.jar) to constructor java.nio.DirectByteBuffer(long,int)
+[2022-04-06 01:23:53,966] {spark_submit.py:488} INFO - WARNING: Please consider reporting this to the maintainers of org.apache.spark.unsafe.Platform
+[2022-04-06 01:23:53,966] {spark_submit.py:488} INFO - WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+[2022-04-06 01:23:53,966] {spark_submit.py:488} INFO - WARNING: All illegal access operations will be denied in a future release
+[2022-04-06 01:23:55,010] {spark_submit.py:488} INFO - Parsed arguments:
+[2022-04-06 01:23:55,010] {spark_submit.py:488} INFO - master                  spark://spark:7077
+[2022-04-06 01:23:55,010] {spark_submit.py:488} INFO - deployMode              null
+[2022-04-06 01:23:55,010] {spark_submit.py:488} INFO - executorMemory          null
+[2022-04-06 01:23:55,010] {spark_submit.py:488} INFO - executorCores           null
+[2022-04-06 01:23:55,010] {spark_submit.py:488} INFO - totalExecutorCores      null
+[2022-04-06 01:23:55,010] {spark_submit.py:488} INFO - propertiesFile          null
+[2022-04-06 01:23:55,010] {spark_submit.py:488} INFO - driverMemory            null
+[2022-04-06 01:23:55,010] {spark_submit.py:488} INFO - driverCores             null
+[2022-04-06 01:23:55,011] {spark_submit.py:488} INFO - driverExtraClassPath    null
+[2022-04-06 01:23:55,011] {spark_submit.py:488} INFO - driverExtraLibraryPath  null
+[2022-04-06 01:23:55,011] {spark_submit.py:488} INFO - driverExtraJavaOptions  null
+[2022-04-06 01:23:55,011] {spark_submit.py:488} INFO - supervise               false
+[2022-04-06 01:23:55,011] {spark_submit.py:488} INFO - queue                   root.default
+[2022-04-06 01:23:55,011] {spark_submit.py:488} INFO - numExecutors            null
+[2022-04-06 01:23:55,011] {spark_submit.py:488} INFO - files                   null
+[2022-04-06 01:23:55,011] {spark_submit.py:488} INFO - pyFiles                 null
+[2022-04-06 01:23:55,011] {spark_submit.py:488} INFO - archives                null
+[2022-04-06 01:23:55,011] {spark_submit.py:488} INFO - mainClass               null
+[2022-04-06 01:23:55,011] {spark_submit.py:488} INFO - primaryResource         file:/opt/***/dags/pyspark_parquet_transformation.py
+[2022-04-06 01:23:55,011] {spark_submit.py:488} INFO - name                    format_schema
+[2022-04-06 01:23:55,012] {spark_submit.py:488} INFO - childArgs               [posts_questions 2015-10]
+[2022-04-06 01:23:55,012] {spark_submit.py:488} INFO - jars                    null
+[2022-04-06 01:23:55,012] {spark_submit.py:488} INFO - packages                null
+[2022-04-06 01:23:55,012] {spark_submit.py:488} INFO - packagesExclusions      null
+[2022-04-06 01:23:55,012] {spark_submit.py:488} INFO - repositories            null
+[2022-04-06 01:23:55,012] {spark_submit.py:488} INFO - verbose                 true
+[2022-04-06 01:23:55,012] {spark_submit.py:488} INFO - 
+[2022-04-06 01:23:55,012] {spark_submit.py:488} INFO - Spark properties used, including those specified through
+[2022-04-06 01:23:55,012] {spark_submit.py:488} INFO - --conf and those from the properties file null:
+[2022-04-06 01:23:55,012] {spark_submit.py:488} INFO - (spark.master,local[*])
+[2022-04-06 01:23:55,012] {spark_submit.py:488} INFO - 
+[2022-04-06 01:23:55,012] {spark_submit.py:488} INFO - 
+[2022-04-06 01:23:59,045] {spark_submit.py:488} INFO - Main class:
+[2022-04-06 01:23:59,045] {spark_submit.py:488} INFO - org.apache.spark.deploy.PythonRunner
+[2022-04-06 01:23:59,045] {spark_submit.py:488} INFO - Arguments:
+[2022-04-06 01:23:59,046] {spark_submit.py:488} INFO - file:/opt/***/dags/pyspark_parquet_transformation.py
+[2022-04-06 01:23:59,046] {spark_submit.py:488} INFO - null
+[2022-04-06 01:23:59,046] {spark_submit.py:488} INFO - posts_questions
+[2022-04-06 01:23:59,046] {spark_submit.py:488} INFO - 2015-10
+[2022-04-06 01:23:59,081] {spark_submit.py:488} INFO - Spark config:
+[2022-04-06 01:23:59,081] {spark_submit.py:488} INFO - (spark.master,spark://spark:7077)
+[2022-04-06 01:23:59,081] {spark_submit.py:488} INFO - (spark.submit.pyFiles,)
+[2022-04-06 01:23:59,081] {spark_submit.py:488} INFO - (spark.submit.deployMode,client)
+[2022-04-06 01:23:59,081] {spark_submit.py:488} INFO - (spark.app.name,format_schema)
+[2022-04-06 01:23:59,082] {spark_submit.py:488} INFO - Classpath elements:
+[2022-04-06 01:23:59,112] {spark_submit.py:488} INFO - 
+[2022-04-06 01:23:59,114] {spark_submit.py:488} INFO - 
+[2022-04-06 01:23:59,120] {spark_submit.py:488} INFO - 
+[2022-04-06 01:24:10,743] {spark_submit.py:488} INFO - Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+[2022-04-06 01:24:10,877] {spark_submit.py:488} INFO - 22/04/06 01:24:10 INFO SparkContext: Running Spark version 3.2.1
+[2022-04-06 01:24:12,017] {spark_submit.py:488} INFO - 22/04/06 01:24:12 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[2022-04-06 01:24:14,327] {spark_submit.py:488} INFO - 22/04/06 01:24:14 INFO ResourceUtils: ==============================================================
+[2022-04-06 01:24:14,372] {spark_submit.py:488} INFO - 22/04/06 01:24:14 INFO ResourceUtils: No custom resources configured for spark.driver.
+[2022-04-06 01:24:14,374] {spark_submit.py:488} INFO - 22/04/06 01:24:14 INFO ResourceUtils: ==============================================================
+[2022-04-06 01:24:14,375] {spark_submit.py:488} INFO - 22/04/06 01:24:14 INFO SparkContext: Submitted application: Modidy Schema
+[2022-04-06 01:24:14,907] {spark_submit.py:488} INFO - 22/04/06 01:24:14 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+[2022-04-06 01:24:15,306] {spark_submit.py:488} INFO - 22/04/06 01:24:15 INFO ResourceProfile: Limiting resource is cpu
+[2022-04-06 01:24:15,307] {spark_submit.py:488} INFO - 22/04/06 01:24:15 INFO ResourceProfileManager: Added ResourceProfile id: 0
+[2022-04-06 01:24:16,515] {spark_submit.py:488} INFO - 22/04/06 01:24:16 INFO SecurityManager: Changing view acls to: default
+[2022-04-06 01:24:16,636] {spark_submit.py:488} INFO - 22/04/06 01:24:16 INFO SecurityManager: Changing modify acls to: default
+[2022-04-06 01:24:16,638] {spark_submit.py:488} INFO - 22/04/06 01:24:16 INFO SecurityManager: Changing view acls groups to:
+[2022-04-06 01:24:16,640] {spark_submit.py:488} INFO - 22/04/06 01:24:16 INFO SecurityManager: Changing modify acls groups to:
+[2022-04-06 01:24:16,699] {spark_submit.py:488} INFO - 22/04/06 01:24:16 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(default); groups with view permissions: Set(); users  with modify permissions: Set(default); groups with modify permissions: Set()
+[2022-04-06 01:24:25,397] {spark_submit.py:488} INFO - 22/04/06 01:24:25 INFO Utils: Successfully started service 'sparkDriver' on port 44643.
+[2022-04-06 01:24:26,075] {spark_submit.py:488} INFO - 22/04/06 01:24:26 INFO SparkEnv: Registering MapOutputTracker
+[2022-04-06 01:24:26,841] {spark_submit.py:488} INFO - 22/04/06 01:24:26 INFO SparkEnv: Registering BlockManagerMaster
+[2022-04-06 01:24:27,192] {spark_submit.py:488} INFO - 22/04/06 01:24:27 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+[2022-04-06 01:24:27,193] {spark_submit.py:488} INFO - 22/04/06 01:24:27 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+[2022-04-06 01:24:27,309] {spark_submit.py:488} INFO - 22/04/06 01:24:27 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+[2022-04-06 01:24:27,860] {spark_submit.py:488} INFO - 22/04/06 01:24:27 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-c9691588-95a3-4533-944c-7519367361a7
+[2022-04-06 01:24:28,629] {spark_submit.py:488} INFO - 22/04/06 01:24:28 INFO MemoryStore: MemoryStore started with capacity 434.4 MiB
+[2022-04-06 01:24:29,034] {spark_submit.py:488} INFO - 22/04/06 01:24:29 INFO SparkEnv: Registering OutputCommitCoordinator
+[2022-04-06 01:24:33,932] {spark_submit.py:488} INFO - 22/04/06 01:24:33 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+[2022-04-06 01:24:33,938] {spark_submit.py:488} INFO - 22/04/06 01:24:33 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+[2022-04-06 01:24:33,939] {spark_submit.py:488} INFO - 22/04/06 01:24:33 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
+[2022-04-06 01:24:33,949] {spark_submit.py:488} INFO - 22/04/06 01:24:33 WARN Utils: Service 'SparkUI' could not bind on port 4043. Attempting port 4044.
+[2022-04-06 01:24:33,953] {spark_submit.py:488} INFO - 22/04/06 01:24:33 WARN Utils: Service 'SparkUI' could not bind on port 4044. Attempting port 4045.
+[2022-04-06 01:24:33,957] {spark_submit.py:488} INFO - 22/04/06 01:24:33 WARN Utils: Service 'SparkUI' could not bind on port 4045. Attempting port 4046.
+[2022-04-06 01:24:33,962] {spark_submit.py:488} INFO - 22/04/06 01:24:33 WARN Utils: Service 'SparkUI' could not bind on port 4046. Attempting port 4047.
+[2022-04-06 01:24:33,963] {spark_submit.py:488} INFO - 22/04/06 01:24:33 WARN Utils: Service 'SparkUI' could not bind on port 4047. Attempting port 4048.
+[2022-04-06 01:24:33,967] {spark_submit.py:488} INFO - 22/04/06 01:24:33 WARN Utils: Service 'SparkUI' could not bind on port 4048. Attempting port 4049.
+[2022-04-06 01:24:33,971] {spark_submit.py:488} INFO - 22/04/06 01:24:33 WARN Utils: Service 'SparkUI' could not bind on port 4049. Attempting port 4050.
+[2022-04-06 01:24:34,040] {spark_submit.py:488} INFO - 22/04/06 01:24:34 INFO Utils: Successfully started service 'SparkUI' on port 4050.
+[2022-04-06 01:24:36,191] {spark_submit.py:488} INFO - 22/04/06 01:24:36 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://9fe4286b2855:4050
+[2022-04-06 01:24:40,220] {spark_submit.py:488} INFO - 22/04/06 01:24:40 INFO Executor: Starting executor ID driver on host 9fe4286b2855
+[2022-04-06 01:24:40,940] {spark_submit.py:488} INFO - 22/04/06 01:24:40 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 39773.
+[2022-04-06 01:24:40,940] {spark_submit.py:488} INFO - 22/04/06 01:24:40 INFO NettyBlockTransferService: Server created on 9fe4286b2855:39773
+[2022-04-06 01:24:40,951] {spark_submit.py:488} INFO - 22/04/06 01:24:40 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+[2022-04-06 01:24:41,146] {spark_submit.py:488} INFO - 22/04/06 01:24:41 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 9fe4286b2855, 39773, None)
+[2022-04-06 01:24:41,224] {spark_submit.py:488} INFO - 22/04/06 01:24:41 INFO BlockManagerMasterEndpoint: Registering block manager 9fe4286b2855:39773 with 434.4 MiB RAM, BlockManagerId(driver, 9fe4286b2855, 39773, None)
+[2022-04-06 01:24:41,236] {spark_submit.py:488} INFO - 22/04/06 01:24:41 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 9fe4286b2855, 39773, None)
+[2022-04-06 01:24:41,278] {spark_submit.py:488} INFO - 22/04/06 01:24:41 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 9fe4286b2855, 39773, None)
+[2022-04-06 01:24:58,090] {spark_submit.py:488} INFO - 22/04/06 01:24:58 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir.
+[2022-04-06 01:24:58,857] {spark_submit.py:488} INFO - 22/04/06 01:24:58 INFO SharedState: Warehouse path is 'file:/opt/***/spark-warehouse'.
+[2022-04-06 01:25:30,044] {spark_submit.py:488} INFO - 22/04/06 01:25:30 INFO InMemoryFileIndex: It took 1023 ms to list leaf files for 1 paths.
+[2022-04-06 01:25:36,298] {spark_submit.py:488} INFO - 22/04/06 01:25:36 INFO SparkContext: Starting job: parquet at NativeMethodAccessorImpl.java:0
+[2022-04-06 01:25:36,472] {spark_submit.py:488} INFO - 22/04/06 01:25:36 INFO DAGScheduler: Got job 0 (parquet at NativeMethodAccessorImpl.java:0) with 1 output partitions
+[2022-04-06 01:25:36,500] {spark_submit.py:488} INFO - 22/04/06 01:25:36 INFO DAGScheduler: Final stage: ResultStage 0 (parquet at NativeMethodAccessorImpl.java:0)
+[2022-04-06 01:25:36,505] {spark_submit.py:488} INFO - 22/04/06 01:25:36 INFO DAGScheduler: Parents of final stage: List()
+[2022-04-06 01:25:36,526] {spark_submit.py:488} INFO - 22/04/06 01:25:36 INFO DAGScheduler: Missing parents: List()
+[2022-04-06 01:25:36,601] {spark_submit.py:488} INFO - 22/04/06 01:25:36 INFO DAGScheduler: Submitting ResultStage 0 (MapPartitionsRDD[1] at parquet at NativeMethodAccessorImpl.java:0), which has no missing parents
+[2022-04-06 01:25:37,118] {spark_submit.py:488} INFO - 22/04/06 01:25:37 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 100.1 KiB, free 434.3 MiB)
+[2022-04-06 01:25:37,304] {spark_submit.py:488} INFO - 22/04/06 01:25:37 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 35.7 KiB, free 434.3 MiB)
+[2022-04-06 01:25:37,314] {spark_submit.py:488} INFO - 22/04/06 01:25:37 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 9fe4286b2855:39773 (size: 35.7 KiB, free: 434.4 MiB)
+[2022-04-06 01:25:37,332] {spark_submit.py:488} INFO - 22/04/06 01:25:37 INFO SparkContext: Created broadcast 0 from broadcast at DAGScheduler.scala:1478
+[2022-04-06 01:25:37,446] {spark_submit.py:488} INFO - 22/04/06 01:25:37 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 0 (MapPartitionsRDD[1] at parquet at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+[2022-04-06 01:25:37,462] {spark_submit.py:488} INFO - 22/04/06 01:25:37 INFO TaskSchedulerImpl: Adding task set 0.0 with 1 tasks resource profile 0
+[2022-04-06 01:25:38,309] {spark_submit.py:488} INFO - 22/04/06 01:25:38 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0) (9fe4286b2855, executor driver, partition 0, PROCESS_LOCAL, 4624 bytes) taskResourceAssignments Map()
+[2022-04-06 01:25:38,487] {spark_submit.py:488} INFO - 22/04/06 01:25:38 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+[2022-04-06 01:25:45,277] {spark_submit.py:488} INFO - 22/04/06 01:25:45 INFO Executor: Finished task 0.0 in stage 0.0 (TID 0). 2409 bytes result sent to driver
+[2022-04-06 01:25:45,379] {spark_submit.py:488} INFO - 22/04/06 01:25:45 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 7491 ms on 9fe4286b2855 (executor driver) (1/1)
+[2022-04-06 01:25:45,395] {spark_submit.py:488} INFO - 22/04/06 01:25:45 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool
+[2022-04-06 01:25:45,432] {spark_submit.py:488} INFO - 22/04/06 01:25:45 INFO DAGScheduler: ResultStage 0 (parquet at NativeMethodAccessorImpl.java:0) finished in 8.719 s
+[2022-04-06 01:25:45,476] {spark_submit.py:488} INFO - 22/04/06 01:25:45 INFO DAGScheduler: Job 0 is finished. Cancelling potential speculative or zombie tasks for this job
+[2022-04-06 01:25:45,477] {spark_submit.py:488} INFO - 22/04/06 01:25:45 INFO TaskSchedulerImpl: Killing all running tasks in stage 0: Stage finished
+[2022-04-06 01:25:45,488] {spark_submit.py:488} INFO - 22/04/06 01:25:45 INFO DAGScheduler: Job 0 finished: parquet at NativeMethodAccessorImpl.java:0, took 9.180643 s
+[2022-04-06 01:25:46,925] {spark_submit.py:488} INFO - 22/04/06 01:25:46 INFO BlockManagerInfo: Removed broadcast_0_piece0 on 9fe4286b2855:39773 in memory (size: 35.7 KiB, free: 434.4 MiB)
+[2022-04-06 01:26:31,810] {spark_submit.py:488} INFO - 22/04/06 01:26:31 INFO FileSourceStrategy: Pushed Filters:
+[2022-04-06 01:26:31,824] {spark_submit.py:488} INFO - 22/04/06 01:26:31 INFO FileSourceStrategy: Post-Scan Filters:
+[2022-04-06 01:26:31,836] {spark_submit.py:488} INFO - 22/04/06 01:26:31 INFO FileSourceStrategy: Output Data Schema: struct<id: bigint, title: string, body: string, accepted_answer_id: double, answer_count: bigint ... 19 more fields>
+[2022-04-06 01:26:34,399] {spark_submit.py:488} INFO - 22/04/06 01:26:34 INFO ParquetFileFormat: Using default output committer for Parquet: org.apache.parquet.hadoop.ParquetOutputCommitter
+[2022-04-06 01:26:34,701] {spark_submit.py:488} INFO - 22/04/06 01:26:34 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+[2022-04-06 01:26:34,702] {spark_submit.py:488} INFO - 22/04/06 01:26:34 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+[2022-04-06 01:26:34,751] {spark_submit.py:488} INFO - 22/04/06 01:26:34 INFO SQLHadoopMapReduceCommitProtocol: Using user defined output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+[2022-04-06 01:26:34,752] {spark_submit.py:488} INFO - 22/04/06 01:26:34 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+[2022-04-06 01:26:34,752] {spark_submit.py:488} INFO - 22/04/06 01:26:34 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+[2022-04-06 01:26:34,797] {spark_submit.py:488} INFO - 22/04/06 01:26:34 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+[2022-04-06 01:26:41,137] {spark_submit.py:488} INFO - 22/04/06 01:26:41 INFO CodeGenerator: Code generated in 3920.785137 ms
+[2022-04-06 01:26:41,543] {spark_submit.py:488} INFO - 22/04/06 01:26:41 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 194.3 KiB, free 434.2 MiB)
+[2022-04-06 01:26:41,953] {spark_submit.py:488} INFO - 22/04/06 01:26:41 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 34.3 KiB, free 434.2 MiB)
+[2022-04-06 01:26:41,955] {spark_submit.py:488} INFO - 22/04/06 01:26:41 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on 9fe4286b2855:39773 (size: 34.3 KiB, free: 434.4 MiB)
+[2022-04-06 01:26:41,976] {spark_submit.py:488} INFO - 22/04/06 01:26:41 INFO SparkContext: Created broadcast 1 from save at NativeMethodAccessorImpl.java:0
+[2022-04-06 01:26:42,253] {spark_submit.py:488} INFO - 22/04/06 01:26:42 INFO FileSourceScanExec: Planning scan with bin packing, max size: 17259560 bytes, open cost is considered as scanning 4194304 bytes.
+[2022-04-06 01:26:43,371] {spark_submit.py:488} INFO - 22/04/06 01:26:43 INFO DAGScheduler: Registering RDD 6 (save at NativeMethodAccessorImpl.java:0) as input to shuffle 0
+[2022-04-06 01:26:43,377] {spark_submit.py:488} INFO - 22/04/06 01:26:43 INFO DAGScheduler: Got map stage job 1 (save at NativeMethodAccessorImpl.java:0) with 4 output partitions
+[2022-04-06 01:26:43,408] {spark_submit.py:488} INFO - 22/04/06 01:26:43 INFO DAGScheduler: Final stage: ShuffleMapStage 1 (save at NativeMethodAccessorImpl.java:0)
+[2022-04-06 01:26:43,409] {spark_submit.py:488} INFO - 22/04/06 01:26:43 INFO DAGScheduler: Parents of final stage: List()
+[2022-04-06 01:26:43,411] {spark_submit.py:488} INFO - 22/04/06 01:26:43 INFO DAGScheduler: Missing parents: List()
+[2022-04-06 01:26:43,470] {spark_submit.py:488} INFO - 22/04/06 01:26:43 INFO DAGScheduler: Submitting ShuffleMapStage 1 (MapPartitionsRDD[6] at save at NativeMethodAccessorImpl.java:0), which has no missing parents
+[2022-04-06 01:26:44,259] {spark_submit.py:488} INFO - 22/04/06 01:26:44 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 32.2 KiB, free 434.1 MiB)
+[2022-04-06 01:26:44,359] {spark_submit.py:488} INFO - 22/04/06 01:26:44 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 10.4 KiB, free 434.1 MiB)
+[2022-04-06 01:26:44,359] {spark_submit.py:488} INFO - 22/04/06 01:26:44 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on 9fe4286b2855:39773 (size: 10.4 KiB, free: 434.4 MiB)
+[2022-04-06 01:26:44,361] {spark_submit.py:488} INFO - 22/04/06 01:26:44 INFO SparkContext: Created broadcast 2 from broadcast at DAGScheduler.scala:1478
+[2022-04-06 01:26:44,363] {spark_submit.py:488} INFO - 22/04/06 01:26:44 INFO DAGScheduler: Submitting 4 missing tasks from ShuffleMapStage 1 (MapPartitionsRDD[6] at save at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0, 1, 2, 3))
+[2022-04-06 01:26:44,363] {spark_submit.py:488} INFO - 22/04/06 01:26:44 INFO TaskSchedulerImpl: Adding task set 1.0 with 4 tasks resource profile 0
+[2022-04-06 01:26:44,534] {spark_submit.py:488} INFO - 22/04/06 01:26:44 INFO TaskSetManager: Starting task 0.0 in stage 1.0 (TID 1) (9fe4286b2855, executor driver, partition 0, PROCESS_LOCAL, 4890 bytes) taskResourceAssignments Map()
+[2022-04-06 01:26:44,538] {spark_submit.py:488} INFO - 22/04/06 01:26:44 INFO TaskSetManager: Starting task 1.0 in stage 1.0 (TID 2) (9fe4286b2855, executor driver, partition 1, PROCESS_LOCAL, 4890 bytes) taskResourceAssignments Map()
+[2022-04-06 01:26:44,567] {spark_submit.py:488} INFO - 22/04/06 01:26:44 INFO TaskSetManager: Starting task 2.0 in stage 1.0 (TID 3) (9fe4286b2855, executor driver, partition 2, PROCESS_LOCAL, 4890 bytes) taskResourceAssignments Map()
+[2022-04-06 01:26:44,568] {spark_submit.py:488} INFO - 22/04/06 01:26:44 INFO TaskSetManager: Starting task 3.0 in stage 1.0 (TID 4) (9fe4286b2855, executor driver, partition 3, PROCESS_LOCAL, 4890 bytes) taskResourceAssignments Map()
+[2022-04-06 01:26:44,572] {spark_submit.py:488} INFO - 22/04/06 01:26:44 INFO Executor: Running task 0.0 in stage 1.0 (TID 1)
+[2022-04-06 01:26:44,704] {spark_submit.py:488} INFO - 22/04/06 01:26:44 INFO Executor: Running task 1.0 in stage 1.0 (TID 2)
+[2022-04-06 01:26:44,706] {spark_submit.py:488} INFO - 22/04/06 01:26:44 INFO Executor: Running task 2.0 in stage 1.0 (TID 3)
+[2022-04-06 01:26:44,799] {spark_submit.py:488} INFO - 22/04/06 01:26:44 INFO Executor: Running task 3.0 in stage 1.0 (TID 4)
+[2022-04-06 01:26:45,329] {spark_submit.py:488} INFO - 22/04/06 01:26:45 INFO FileScanRDD: Reading File path: gs://dtc_data_lake_de-stack-overflow/parquet/posts_questions-2015-10.parquet, range: 0-17259560, partition values: [empty row]
+[2022-04-06 01:26:45,333] {spark_submit.py:488} INFO - 22/04/06 01:26:45 INFO FileScanRDD: Reading File path: gs://dtc_data_lake_de-stack-overflow/parquet/posts_questions-2015-10.parquet, range: 51778680-64843939, partition values: [empty row]
+[2022-04-06 01:26:45,357] {spark_submit.py:488} INFO - 22/04/06 01:26:45 INFO FileScanRDD: Reading File path: gs://dtc_data_lake_de-stack-overflow/parquet/posts_questions-2015-10.parquet, range: 17259560-34519120, partition values: [empty row]
+[2022-04-06 01:26:45,373] {spark_submit.py:488} INFO - 22/04/06 01:26:45 INFO FileScanRDD: Reading File path: gs://dtc_data_lake_de-stack-overflow/parquet/posts_questions-2015-10.parquet, range: 34519120-51778680, partition values: [empty row]
+[2022-04-06 01:26:48,368] {spark_submit.py:488} INFO - 22/04/06 01:26:48 INFO Executor: Finished task 2.0 in stage 1.0 (TID 3). 1900 bytes result sent to driver
+[2022-04-06 01:26:48,403] {spark_submit.py:488} INFO - 22/04/06 01:26:48 INFO TaskSetManager: Finished task 2.0 in stage 1.0 (TID 3) in 3864 ms on 9fe4286b2855 (executor driver) (1/4)
+[2022-04-06 01:26:48,408] {spark_submit.py:488} INFO - 22/04/06 01:26:48 INFO Executor: Finished task 3.0 in stage 1.0 (TID 4). 1857 bytes result sent to driver
+[2022-04-06 01:26:48,441] {spark_submit.py:488} INFO - 22/04/06 01:26:48 INFO Executor: Finished task 0.0 in stage 1.0 (TID 1). 1857 bytes result sent to driver
+[2022-04-06 01:26:48,441] {spark_submit.py:488} INFO - 22/04/06 01:26:48 INFO TaskSetManager: Finished task 3.0 in stage 1.0 (TID 4) in 3873 ms on 9fe4286b2855 (executor driver) (2/4)
+[2022-04-06 01:26:48,461] {spark_submit.py:488} INFO - 22/04/06 01:26:48 INFO TaskSetManager: Finished task 0.0 in stage 1.0 (TID 1) in 3939 ms on 9fe4286b2855 (executor driver) (3/4)
+[2022-04-06 01:26:58,270] {spark_submit.py:488} INFO - 22/04/06 01:26:58 INFO CodecPool: Got brand-new decompressor [.snappy]
+[2022-04-06 01:27:32,827] {spark_submit.py:488} INFO - 22/04/06 01:27:32 INFO Executor: Finished task 1.0 in stage 1.0 (TID 2). 2029 bytes result sent to driver
+[2022-04-06 01:27:32,855] {spark_submit.py:488} INFO - 22/04/06 01:27:32 INFO TaskSetManager: Finished task 1.0 in stage 1.0 (TID 2) in 48319 ms on 9fe4286b2855 (executor driver) (4/4)
+[2022-04-06 01:27:32,855] {spark_submit.py:488} INFO - 22/04/06 01:27:32 INFO TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool
+[2022-04-06 01:27:32,862] {spark_submit.py:488} INFO - 22/04/06 01:27:32 INFO DAGScheduler: ShuffleMapStage 1 (save at NativeMethodAccessorImpl.java:0) finished in 49.301 s
+[2022-04-06 01:27:32,862] {spark_submit.py:488} INFO - 22/04/06 01:27:32 INFO DAGScheduler: looking for newly runnable stages
+[2022-04-06 01:27:32,862] {spark_submit.py:488} INFO - 22/04/06 01:27:32 INFO DAGScheduler: running: Set()
+[2022-04-06 01:27:32,862] {spark_submit.py:488} INFO - 22/04/06 01:27:32 INFO DAGScheduler: waiting: Set()
+[2022-04-06 01:27:32,862] {spark_submit.py:488} INFO - 22/04/06 01:27:32 INFO DAGScheduler: failed: Set()
+[2022-04-06 01:27:33,649] {spark_submit.py:488} INFO - 22/04/06 01:27:33 INFO SparkContext: Starting job: save at NativeMethodAccessorImpl.java:0
+[2022-04-06 01:27:33,655] {spark_submit.py:488} INFO - 22/04/06 01:27:33 INFO DAGScheduler: Got job 2 (save at NativeMethodAccessorImpl.java:0) with 4 output partitions
+[2022-04-06 01:27:33,656] {spark_submit.py:488} INFO - 22/04/06 01:27:33 INFO DAGScheduler: Final stage: ResultStage 3 (save at NativeMethodAccessorImpl.java:0)
+[2022-04-06 01:27:33,656] {spark_submit.py:488} INFO - 22/04/06 01:27:33 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 2)
+[2022-04-06 01:27:33,656] {spark_submit.py:488} INFO - 22/04/06 01:27:33 INFO DAGScheduler: Missing parents: List()
+[2022-04-06 01:27:33,664] {spark_submit.py:488} INFO - 22/04/06 01:27:33 INFO DAGScheduler: Submitting ResultStage 3 (ShuffledRowRDD[7] at save at NativeMethodAccessorImpl.java:0), which has no missing parents
+[2022-04-06 01:27:34,142] {spark_submit.py:488} INFO - 22/04/06 01:27:34 INFO MemoryStore: Block broadcast_3 stored as values in memory (estimated size 204.2 KiB, free 433.9 MiB)
+[2022-04-06 01:27:34,169] {spark_submit.py:488} INFO - 22/04/06 01:27:34 INFO MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 72.9 KiB, free 433.9 MiB)
+[2022-04-06 01:27:34,170] {spark_submit.py:488} INFO - 22/04/06 01:27:34 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on 9fe4286b2855:39773 (size: 72.9 KiB, free: 434.3 MiB)
+[2022-04-06 01:27:34,172] {spark_submit.py:488} INFO - 22/04/06 01:27:34 INFO SparkContext: Created broadcast 3 from broadcast at DAGScheduler.scala:1478
+[2022-04-06 01:27:34,186] {spark_submit.py:488} INFO - 22/04/06 01:27:34 INFO DAGScheduler: Submitting 4 missing tasks from ResultStage 3 (ShuffledRowRDD[7] at save at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0, 1, 2, 3))
+[2022-04-06 01:27:34,186] {spark_submit.py:488} INFO - 22/04/06 01:27:34 INFO TaskSchedulerImpl: Adding task set 3.0 with 4 tasks resource profile 0
+[2022-04-06 01:27:34,242] {spark_submit.py:488} INFO - 22/04/06 01:27:34 INFO TaskSetManager: Starting task 0.0 in stage 3.0 (TID 5) (9fe4286b2855, executor driver, partition 0, NODE_LOCAL, 4453 bytes) taskResourceAssignments Map()
+[2022-04-06 01:27:34,245] {spark_submit.py:488} INFO - 22/04/06 01:27:34 INFO TaskSetManager: Starting task 1.0 in stage 3.0 (TID 6) (9fe4286b2855, executor driver, partition 1, NODE_LOCAL, 4453 bytes) taskResourceAssignments Map()
+[2022-04-06 01:27:34,246] {spark_submit.py:488} INFO - 22/04/06 01:27:34 INFO TaskSetManager: Starting task 2.0 in stage 3.0 (TID 7) (9fe4286b2855, executor driver, partition 2, NODE_LOCAL, 4453 bytes) taskResourceAssignments Map()
+[2022-04-06 01:27:34,248] {spark_submit.py:488} INFO - 22/04/06 01:27:34 INFO TaskSetManager: Starting task 3.0 in stage 3.0 (TID 8) (9fe4286b2855, executor driver, partition 3, NODE_LOCAL, 4453 bytes) taskResourceAssignments Map()
+[2022-04-06 01:27:34,249] {spark_submit.py:488} INFO - 22/04/06 01:27:34 INFO Executor: Running task 0.0 in stage 3.0 (TID 5)
+[2022-04-06 01:27:34,256] {spark_submit.py:488} INFO - 22/04/06 01:27:34 INFO Executor: Running task 3.0 in stage 3.0 (TID 8)
+[2022-04-06 01:27:34,256] {spark_submit.py:488} INFO - 22/04/06 01:27:34 INFO Executor: Running task 1.0 in stage 3.0 (TID 6)
+[2022-04-06 01:27:34,256] {spark_submit.py:488} INFO - 22/04/06 01:27:34 INFO Executor: Running task 2.0 in stage 3.0 (TID 7)
+[2022-04-06 01:27:34,751] {spark_submit.py:488} INFO - 22/04/06 01:27:34 INFO ShuffleBlockFetcherIterator: Getting 1 (16.7 MiB) non-empty blocks including 1 (16.7 MiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+[2022-04-06 01:27:34,785] {spark_submit.py:488} INFO - 22/04/06 01:27:34 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 47 ms
+[2022-04-06 01:27:34,816] {spark_submit.py:488} INFO - 22/04/06 01:27:34 INFO ShuffleBlockFetcherIterator: Getting 1 (16.7 MiB) non-empty blocks including 1 (16.7 MiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+[2022-04-06 01:27:34,816] {spark_submit.py:488} INFO - 22/04/06 01:27:34 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 76 ms
+[2022-04-06 01:27:34,829] {spark_submit.py:488} INFO - 22/04/06 01:27:34 INFO ShuffleBlockFetcherIterator: Getting 1 (16.7 MiB) non-empty blocks including 1 (16.7 MiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+[2022-04-06 01:27:34,830] {spark_submit.py:488} INFO - 22/04/06 01:27:34 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 98 ms
+[2022-04-06 01:27:34,836] {spark_submit.py:488} INFO - 22/04/06 01:27:34 INFO ShuffleBlockFetcherIterator: Getting 1 (16.7 MiB) non-empty blocks including 1 (16.7 MiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+[2022-04-06 01:27:34,836] {spark_submit.py:488} INFO - 22/04/06 01:27:34 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 64 ms
+[2022-04-06 01:27:34,880] {spark_submit.py:488} INFO - 22/04/06 01:27:34 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+[2022-04-06 01:27:34,880] {spark_submit.py:488} INFO - 22/04/06 01:27:34 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+[2022-04-06 01:27:34,881] {spark_submit.py:488} INFO - 22/04/06 01:27:34 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+[2022-04-06 01:27:34,881] {spark_submit.py:488} INFO - 22/04/06 01:27:34 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+[2022-04-06 01:27:34,882] {spark_submit.py:488} INFO - 22/04/06 01:27:34 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+[2022-04-06 01:27:34,882] {spark_submit.py:488} INFO - 22/04/06 01:27:34 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+[2022-04-06 01:27:34,884] {spark_submit.py:488} INFO - 22/04/06 01:27:34 INFO SQLHadoopMapReduceCommitProtocol: Using user defined output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+[2022-04-06 01:27:34,884] {spark_submit.py:488} INFO - 22/04/06 01:27:34 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+[2022-04-06 01:27:34,884] {spark_submit.py:488} INFO - 22/04/06 01:27:34 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+[2022-04-06 01:27:34,885] {spark_submit.py:488} INFO - 22/04/06 01:27:34 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+[2022-04-06 01:27:34,892] {spark_submit.py:488} INFO - 22/04/06 01:27:34 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+[2022-04-06 01:27:34,892] {spark_submit.py:488} INFO - 22/04/06 01:27:34 INFO SQLHadoopMapReduceCommitProtocol: Using user defined output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+[2022-04-06 01:27:34,893] {spark_submit.py:488} INFO - 22/04/06 01:27:34 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+[2022-04-06 01:27:34,893] {spark_submit.py:488} INFO - 22/04/06 01:27:34 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+[2022-04-06 01:27:34,894] {spark_submit.py:488} INFO - 22/04/06 01:27:34 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+[2022-04-06 01:27:34,896] {spark_submit.py:488} INFO - 22/04/06 01:27:34 INFO SQLHadoopMapReduceCommitProtocol: Using user defined output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+[2022-04-06 01:27:34,896] {spark_submit.py:488} INFO - 22/04/06 01:27:34 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+[2022-04-06 01:27:34,896] {spark_submit.py:488} INFO - 22/04/06 01:27:34 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+[2022-04-06 01:27:34,896] {spark_submit.py:488} INFO - 22/04/06 01:27:34 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+[2022-04-06 01:27:34,896] {spark_submit.py:488} INFO - 22/04/06 01:27:34 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+[2022-04-06 01:27:34,896] {spark_submit.py:488} INFO - 22/04/06 01:27:34 INFO SQLHadoopMapReduceCommitProtocol: Using user defined output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+[2022-04-06 01:27:34,897] {spark_submit.py:488} INFO - 22/04/06 01:27:34 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+[2022-04-06 01:27:34,897] {spark_submit.py:488} INFO - 22/04/06 01:27:34 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+[2022-04-06 01:27:34,898] {spark_submit.py:488} INFO - 22/04/06 01:27:34 INFO SQLHadoopMapReduceCommitProtocol: Using output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+[2022-04-06 01:27:35,008] {spark_submit.py:488} INFO - 22/04/06 01:27:35 INFO CodecConfig: Compression: SNAPPY
+[2022-04-06 01:27:35,011] {spark_submit.py:488} INFO - 22/04/06 01:27:35 INFO CodecConfig: Compression: SNAPPY
+[2022-04-06 01:27:35,012] {spark_submit.py:488} INFO - 22/04/06 01:27:35 INFO CodecConfig: Compression: SNAPPY
+[2022-04-06 01:27:35,025] {spark_submit.py:488} INFO - 22/04/06 01:27:35 INFO CodecConfig: Compression: SNAPPY
+[2022-04-06 01:27:35,032] {spark_submit.py:488} INFO - 22/04/06 01:27:35 INFO CodecConfig: Compression: SNAPPY
+[2022-04-06 01:27:35,036] {spark_submit.py:488} INFO - 22/04/06 01:27:35 INFO CodecConfig: Compression: SNAPPY
+[2022-04-06 01:27:35,039] {spark_submit.py:488} INFO - 22/04/06 01:27:35 INFO CodecConfig: Compression: SNAPPY
+[2022-04-06 01:27:35,041] {spark_submit.py:488} INFO - 22/04/06 01:27:35 INFO CodecConfig: Compression: SNAPPY
+[2022-04-06 01:27:35,429] {spark_submit.py:488} INFO - 22/04/06 01:27:35 INFO ParquetOutputFormat: Parquet block size to 134217728
+[2022-04-06 01:27:35,578] {spark_submit.py:488} INFO - 22/04/06 01:27:35 INFO ParquetOutputFormat: Validation is off
+[2022-04-06 01:27:35,578] {spark_submit.py:488} INFO - 22/04/06 01:27:35 INFO ParquetOutputFormat: Maximum row group padding size is 8388608 bytes
+[2022-04-06 01:27:35,578] {spark_submit.py:488} INFO - 22/04/06 01:27:35 INFO ParquetOutputFormat: Parquet properties are:
+[2022-04-06 01:27:35,578] {spark_submit.py:488} INFO - Parquet page size to 1048576
+[2022-04-06 01:27:35,579] {spark_submit.py:488} INFO - Parquet dictionary page size to 1048576
+[2022-04-06 01:27:35,579] {spark_submit.py:488} INFO - Dictionary is true
+[2022-04-06 01:27:35,579] {spark_submit.py:488} INFO - Writer version is: PARQUET_1_0
+[2022-04-06 01:27:35,579] {spark_submit.py:488} INFO - Page size checking is: estimated
+[2022-04-06 01:27:35,579] {spark_submit.py:488} INFO - Min row count for page size check is: 100
+[2022-04-06 01:27:35,579] {spark_submit.py:488} INFO - Max row count for page size check is: 10000
+[2022-04-06 01:27:35,579] {spark_submit.py:488} INFO - Truncate length for column indexes is: 64
+[2022-04-06 01:27:35,579] {spark_submit.py:488} INFO - Truncate length for statistics min/max  is: 2147483647
+[2022-04-06 01:27:35,579] {spark_submit.py:488} INFO - Bloom filter enabled: false
+[2022-04-06 01:27:35,579] {spark_submit.py:488} INFO - Max Bloom filter size for a column is 1048576
+[2022-04-06 01:27:35,579] {spark_submit.py:488} INFO - Bloom filter expected number of distinct values are: null
+[2022-04-06 01:27:35,579] {spark_submit.py:488} INFO - Page row count limit to 20000
+[2022-04-06 01:27:35,579] {spark_submit.py:488} INFO - Writing page checksums is: on
+[2022-04-06 01:27:35,579] {spark_submit.py:488} INFO - 22/04/06 01:27:35 INFO BlockManagerInfo: Removed broadcast_2_piece0 on 9fe4286b2855:39773 in memory (size: 10.4 KiB, free: 434.3 MiB)
+[2022-04-06 01:27:35,579] {spark_submit.py:488} INFO - 22/04/06 01:27:35 INFO ParquetOutputFormat: Parquet block size to 134217728
+[2022-04-06 01:27:35,580] {spark_submit.py:488} INFO - 22/04/06 01:27:35 INFO ParquetOutputFormat: Validation is off
+[2022-04-06 01:27:35,580] {spark_submit.py:488} INFO - 22/04/06 01:27:35 INFO ParquetOutputFormat: Maximum row group padding size is 8388608 bytes
+[2022-04-06 01:27:35,580] {spark_submit.py:488} INFO - 22/04/06 01:27:35 INFO ParquetOutputFormat: Parquet properties are:
+[2022-04-06 01:27:35,580] {spark_submit.py:488} INFO - Parquet page size to 1048576
+[2022-04-06 01:27:35,580] {spark_submit.py:488} INFO - Parquet dictionary page size to 1048576
+[2022-04-06 01:27:35,580] {spark_submit.py:488} INFO - Dictionary is true
+[2022-04-06 01:27:35,580] {spark_submit.py:488} INFO - Writer version is: PARQUET_1_0
+[2022-04-06 01:27:35,580] {spark_submit.py:488} INFO - Page size checking is: estimated
+[2022-04-06 01:27:35,580] {spark_submit.py:488} INFO - Min row count for page size check is: 100
+[2022-04-06 01:27:35,580] {spark_submit.py:488} INFO - Max row count for page size check is: 10000
+[2022-04-06 01:27:35,580] {spark_submit.py:488} INFO - Truncate length for column indexes is: 64
+[2022-04-06 01:27:35,580] {spark_submit.py:488} INFO - Truncate length for statistics min/max  is: 2147483647
+[2022-04-06 01:27:35,580] {spark_submit.py:488} INFO - Bloom filter enabled: false
+[2022-04-06 01:27:35,580] {spark_submit.py:488} INFO - Max Bloom filter size for a column is 1048576
+[2022-04-06 01:27:35,580] {spark_submit.py:488} INFO - Bloom filter expected number of distinct values are: null
+[2022-04-06 01:27:35,580] {spark_submit.py:488} INFO - Page row count limit to 20000
+[2022-04-06 01:27:35,581] {spark_submit.py:488} INFO - Writing page checksums is: on
+[2022-04-06 01:27:35,581] {spark_submit.py:488} INFO - 22/04/06 01:27:35 INFO ParquetOutputFormat: Parquet block size to 134217728
+[2022-04-06 01:27:35,581] {spark_submit.py:488} INFO - 22/04/06 01:27:35 INFO ParquetOutputFormat: Parquet block size to 134217728
+[2022-04-06 01:27:35,581] {spark_submit.py:488} INFO - 22/04/06 01:27:35 INFO ParquetOutputFormat: Validation is off
+[2022-04-06 01:27:35,581] {spark_submit.py:488} INFO - 22/04/06 01:27:35 INFO ParquetOutputFormat: Maximum row group padding size is 8388608 bytes
+[2022-04-06 01:27:35,581] {spark_submit.py:488} INFO - 22/04/06 01:27:35 INFO ParquetOutputFormat: Parquet properties are:
+[2022-04-06 01:27:35,581] {spark_submit.py:488} INFO - Parquet page size to 1048576
+[2022-04-06 01:27:35,581] {spark_submit.py:488} INFO - Parquet dictionary page size to 1048576
+[2022-04-06 01:27:35,581] {spark_submit.py:488} INFO - Dictionary is true
+[2022-04-06 01:27:35,581] {spark_submit.py:488} INFO - Writer version is: PARQUET_1_0
+[2022-04-06 01:27:35,581] {spark_submit.py:488} INFO - Page size checking is: estimated
+[2022-04-06 01:27:35,581] {spark_submit.py:488} INFO - Min row count for page size check is: 100
+[2022-04-06 01:27:35,581] {spark_submit.py:488} INFO - Max row count for page size check is: 10000
+[2022-04-06 01:27:35,581] {spark_submit.py:488} INFO - Truncate length for column indexes is: 64
+[2022-04-06 01:27:35,581] {spark_submit.py:488} INFO - Truncate length for statistics min/max  is: 2147483647
+[2022-04-06 01:27:35,582] {spark_submit.py:488} INFO - Bloom filter enabled: false
+[2022-04-06 01:27:35,592] {spark_submit.py:488} INFO - Max Bloom filter size for a column is 1048576
+[2022-04-06 01:27:35,593] {spark_submit.py:488} INFO - Bloom filter expected number of distinct values are: null
+[2022-04-06 01:27:35,593] {spark_submit.py:488} INFO - Page row count limit to 20000
+[2022-04-06 01:27:35,593] {spark_submit.py:488} INFO - Writing page checksums is: on
+[2022-04-06 01:27:35,593] {spark_submit.py:488} INFO - 22/04/06 01:27:35 INFO ParquetOutputFormat: Validation is off
+[2022-04-06 01:27:35,593] {spark_submit.py:488} INFO - 22/04/06 01:27:35 INFO ParquetOutputFormat: Maximum row group padding size is 8388608 bytes
+[2022-04-06 01:27:35,593] {spark_submit.py:488} INFO - 22/04/06 01:27:35 INFO ParquetOutputFormat: Parquet properties are:
+[2022-04-06 01:27:35,593] {spark_submit.py:488} INFO - Parquet page size to 1048576
+[2022-04-06 01:27:35,593] {spark_submit.py:488} INFO - Parquet dictionary page size to 1048576
+[2022-04-06 01:27:35,593] {spark_submit.py:488} INFO - Dictionary is true
+[2022-04-06 01:27:35,593] {spark_submit.py:488} INFO - Writer version is: PARQUET_1_0
+[2022-04-06 01:27:35,593] {spark_submit.py:488} INFO - Page size checking is: estimated
+[2022-04-06 01:27:35,593] {spark_submit.py:488} INFO - Min row count for page size check is: 100
+[2022-04-06 01:27:35,593] {spark_submit.py:488} INFO - Max row count for page size check is: 10000
+[2022-04-06 01:27:35,594] {spark_submit.py:488} INFO - Truncate length for column indexes is: 64
+[2022-04-06 01:27:35,594] {spark_submit.py:488} INFO - Truncate length for statistics min/max  is: 2147483647
+[2022-04-06 01:27:35,594] {spark_submit.py:488} INFO - Bloom filter enabled: false
+[2022-04-06 01:27:35,594] {spark_submit.py:488} INFO - Max Bloom filter size for a column is 1048576
+[2022-04-06 01:27:35,594] {spark_submit.py:488} INFO - Bloom filter expected number of distinct values are: null
+[2022-04-06 01:27:35,594] {spark_submit.py:488} INFO - Page row count limit to 20000
+[2022-04-06 01:27:35,594] {spark_submit.py:488} INFO - Writing page checksums is: on
+[2022-04-06 01:27:35,708] {spark_submit.py:488} INFO - 22/04/06 01:27:35 INFO ParquetWriteSupport: Initialized Parquet WriteSupport with Catalyst schema:
+[2022-04-06 01:27:35,747] {spark_submit.py:488} INFO - {
+[2022-04-06 01:27:35,747] {spark_submit.py:488} INFO - "type" : "struct",
+[2022-04-06 01:27:35,748] {spark_submit.py:488} INFO - "fields" : [ {
+[2022-04-06 01:27:35,748] {spark_submit.py:488} INFO - "name" : "id",
+[2022-04-06 01:27:35,748] {spark_submit.py:488} INFO - "type" : "integer",
+[2022-04-06 01:27:35,748] {spark_submit.py:488} INFO - "nullable" : true,
+[2022-04-06 01:27:35,748] {spark_submit.py:488} INFO - "metadata" : { }
+[2022-04-06 01:27:35,748] {spark_submit.py:488} INFO - }, {
+[2022-04-06 01:27:35,748] {spark_submit.py:488} INFO - "name" : "title",
+[2022-04-06 01:27:35,748] {spark_submit.py:488} INFO - "type" : "string",
+[2022-04-06 01:27:35,748] {spark_submit.py:488} INFO - "nullable" : true,
+[2022-04-06 01:27:35,748] {spark_submit.py:488} INFO - "metadata" : { }
+[2022-04-06 01:27:35,748] {spark_submit.py:488} INFO - }, {
+[2022-04-06 01:27:35,748] {spark_submit.py:488} INFO - "name" : "body",
+[2022-04-06 01:27:35,748] {spark_submit.py:488} INFO - "type" : "string",
+[2022-04-06 01:27:35,748] {spark_submit.py:488} INFO - "nullable" : true,
+[2022-04-06 01:27:35,749] {spark_submit.py:488} INFO - "metadata" : { }
+[2022-04-06 01:27:35,749] {spark_submit.py:488} INFO - }, {
+[2022-04-06 01:27:35,749] {spark_submit.py:488} INFO - "name" : "accepted_answer_id",
+[2022-04-06 01:27:35,749] {spark_submit.py:488} INFO - "type" : "integer",
+[2022-04-06 01:27:35,749] {spark_submit.py:488} INFO - "nullable" : true,
+[2022-04-06 01:27:35,749] {spark_submit.py:488} INFO - "metadata" : { }
+[2022-04-06 01:27:35,749] {spark_submit.py:488} INFO - }, {
+[2022-04-06 01:27:35,749] {spark_submit.py:488} INFO - "name" : "answer_count",
+[2022-04-06 01:27:35,749] {spark_submit.py:488} INFO - "type" : "integer",
+[2022-04-06 01:27:35,749] {spark_submit.py:488} INFO - "nullable" : true,
+[2022-04-06 01:27:35,749] {spark_submit.py:488} INFO - "metadata" : { }
+[2022-04-06 01:27:35,749] {spark_submit.py:488} INFO - }, {
+[2022-04-06 01:27:35,749] {spark_submit.py:488} INFO - "name" : "comment_count",
+[2022-04-06 01:27:35,749] {spark_submit.py:488} INFO - "type" : "integer",
+[2022-04-06 01:27:35,749] {spark_submit.py:488} INFO - "nullable" : true,
+[2022-04-06 01:27:35,749] {spark_submit.py:488} INFO - "metadata" : { }
+[2022-04-06 01:27:35,750] {spark_submit.py:488} INFO - }, {
+[2022-04-06 01:27:35,750] {spark_submit.py:488} INFO - "name" : "community_owned_date",
+[2022-04-06 01:27:35,750] {spark_submit.py:488} INFO - "type" : "timestamp",
+[2022-04-06 01:27:35,750] {spark_submit.py:488} INFO - "nullable" : true,
+[2022-04-06 01:27:35,750] {spark_submit.py:488} INFO - "metadata" : { }
+[2022-04-06 01:27:35,750] {spark_submit.py:488} INFO - }, {
+[2022-04-06 01:27:35,750] {spark_submit.py:488} INFO - "name" : "creation_date",
+[2022-04-06 01:27:35,750] {spark_submit.py:488} INFO - "type" : "timestamp",
+[2022-04-06 01:27:35,750] {spark_submit.py:488} INFO - "nullable" : true,
+[2022-04-06 01:27:35,750] {spark_submit.py:488} INFO - "metadata" : { }
+[2022-04-06 01:27:35,750] {spark_submit.py:488} INFO - }, {
+[2022-04-06 01:27:35,750] {spark_submit.py:488} INFO - "name" : "favorite_count",
+[2022-04-06 01:27:35,750] {spark_submit.py:488} INFO - "type" : "integer",
+[2022-04-06 01:27:35,751] {spark_submit.py:488} INFO - "nullable" : true,
+[2022-04-06 01:27:35,751] {spark_submit.py:488} INFO - "metadata" : { }
+[2022-04-06 01:27:35,751] {spark_submit.py:488} INFO - }, {
+[2022-04-06 01:27:35,751] {spark_submit.py:488} INFO - "name" : "last_activity_date",
+[2022-04-06 01:27:35,751] {spark_submit.py:488} INFO - "type" : "timestamp",
+[2022-04-06 01:27:35,751] {spark_submit.py:488} INFO - "nullable" : true,
+[2022-04-06 01:27:35,751] {spark_submit.py:488} INFO - "metadata" : { }
+[2022-04-06 01:27:35,751] {spark_submit.py:488} INFO - }, {
+[2022-04-06 01:27:35,751] {spark_submit.py:488} INFO - "name" : "last_edit_date",
+[2022-04-06 01:27:35,751] {spark_submit.py:488} INFO - "type" : "timestamp",
+[2022-04-06 01:27:35,751] {spark_submit.py:488} INFO - "nullable" : true,
+[2022-04-06 01:27:35,751] {spark_submit.py:488} INFO - "metadata" : { }
+[2022-04-06 01:27:35,751] {spark_submit.py:488} INFO - }, {
+[2022-04-06 01:27:35,751] {spark_submit.py:488} INFO - "name" : "last_editor_display_name",
+[2022-04-06 01:27:35,751] {spark_submit.py:488} INFO - "type" : "string",
+[2022-04-06 01:27:35,752] {spark_submit.py:488} INFO - "nullable" : true,
+[2022-04-06 01:27:35,752] {spark_submit.py:488} INFO - "metadata" : { }
+[2022-04-06 01:27:35,752] {spark_submit.py:488} INFO - }, {
+[2022-04-06 01:27:35,752] {spark_submit.py:488} INFO - "name" : "last_editor_user_id",
+[2022-04-06 01:27:35,752] {spark_submit.py:488} INFO - "type" : "integer",
+[2022-04-06 01:27:35,752] {spark_submit.py:488} INFO - "nullable" : true,
+[2022-04-06 01:27:35,752] {spark_submit.py:488} INFO - "metadata" : { }
+[2022-04-06 01:27:35,752] {spark_submit.py:488} INFO - }, {
+[2022-04-06 01:27:35,752] {spark_submit.py:488} INFO - "name" : "owner_display_name",
+[2022-04-06 01:27:35,752] {spark_submit.py:488} INFO - "type" : "string",
+[2022-04-06 01:27:35,752] {spark_submit.py:488} INFO - "nullable" : true,
+[2022-04-06 01:27:35,752] {spark_submit.py:488} INFO - "metadata" : { }
+[2022-04-06 01:27:35,752] {spark_submit.py:488} INFO - }, {
+[2022-04-06 01:27:35,752] {spark_submit.py:488} INFO - "name" : "owner_user_id",
+[2022-04-06 01:27:35,753] {spark_submit.py:488} INFO - "type" : "integer",
+[2022-04-06 01:27:35,753] {spark_submit.py:488} INFO - "nullable" : true,
+[2022-04-06 01:27:35,753] {spark_submit.py:488} INFO - "metadata" : { }
+[2022-04-06 01:27:35,753] {spark_submit.py:488} INFO - }, {
+[2022-04-06 01:27:35,753] {spark_submit.py:488} INFO - "name" : "parent_id",
+[2022-04-06 01:27:35,753] {spark_submit.py:488} INFO - "type" : "integer",
+[2022-04-06 01:27:35,753] {spark_submit.py:488} INFO - "nullable" : true,
+[2022-04-06 01:27:35,753] {spark_submit.py:488} INFO - "metadata" : { }
+[2022-04-06 01:27:35,753] {spark_submit.py:488} INFO - }, {
+[2022-04-06 01:27:35,753] {spark_submit.py:488} INFO - "name" : "post_type_id",
+[2022-04-06 01:27:35,753] {spark_submit.py:488} INFO - "type" : "integer",
+[2022-04-06 01:27:35,753] {spark_submit.py:488} INFO - "nullable" : true,
+[2022-04-06 01:27:35,753] {spark_submit.py:488} INFO - "metadata" : { }
+[2022-04-06 01:27:35,754] {spark_submit.py:488} INFO - }, {
+[2022-04-06 01:27:35,754] {spark_submit.py:488} INFO - "name" : "score",
+[2022-04-06 01:27:35,754] {spark_submit.py:488} INFO - "type" : "integer",
+[2022-04-06 01:27:35,754] {spark_submit.py:488} INFO - "nullable" : true,
+[2022-04-06 01:27:35,754] {spark_submit.py:488} INFO - "metadata" : { }
+[2022-04-06 01:27:35,754] {spark_submit.py:488} INFO - }, {
+[2022-04-06 01:27:35,754] {spark_submit.py:488} INFO - "name" : "tags",
+[2022-04-06 01:27:35,754] {spark_submit.py:488} INFO - "type" : "string",
+[2022-04-06 01:27:35,754] {spark_submit.py:488} INFO - "nullable" : true,
+[2022-04-06 01:27:35,754] {spark_submit.py:488} INFO - "metadata" : { }
+[2022-04-06 01:27:35,754] {spark_submit.py:488} INFO - }, {
+[2022-04-06 01:27:35,754] {spark_submit.py:488} INFO - "name" : "view_count",
+[2022-04-06 01:27:35,754] {spark_submit.py:488} INFO - "type" : "integer",
+[2022-04-06 01:27:35,754] {spark_submit.py:488} INFO - "nullable" : true,
+[2022-04-06 01:27:35,755] {spark_submit.py:488} INFO - "metadata" : { }
+[2022-04-06 01:27:35,755] {spark_submit.py:488} INFO - }, {
+[2022-04-06 01:27:35,755] {spark_submit.py:488} INFO - "name" : "group_by_date",
+[2022-04-06 01:27:35,755] {spark_submit.py:488} INFO - "type" : "timestamp",
+[2022-04-06 01:27:35,755] {spark_submit.py:488} INFO - "nullable" : true,
+[2022-04-06 01:27:35,755] {spark_submit.py:488} INFO - "metadata" : { }
+[2022-04-06 01:27:35,755] {spark_submit.py:488} INFO - } ]
+[2022-04-06 01:27:35,755] {spark_submit.py:488} INFO - }
+[2022-04-06 01:27:35,755] {spark_submit.py:488} INFO - and corresponding Parquet message type:
+[2022-04-06 01:27:35,755] {spark_submit.py:488} INFO - message spark_schema {
+[2022-04-06 01:27:35,755] {spark_submit.py:488} INFO - optional int32 id;
+[2022-04-06 01:27:35,759] {spark_submit.py:488} INFO - optional binary title (STRING);
+[2022-04-06 01:27:35,759] {spark_submit.py:488} INFO - optional binary body (STRING);
+[2022-04-06 01:27:35,759] {spark_submit.py:488} INFO - optional int32 accepted_answer_id;
+[2022-04-06 01:27:35,759] {spark_submit.py:488} INFO - optional int32 answer_count;
+[2022-04-06 01:27:35,759] {spark_submit.py:488} INFO - optional int32 comment_count;
+[2022-04-06 01:27:35,759] {spark_submit.py:488} INFO - optional int96 community_owned_date;
+[2022-04-06 01:27:35,759] {spark_submit.py:488} INFO - optional int96 creation_date;
+[2022-04-06 01:27:35,759] {spark_submit.py:488} INFO - optional int32 favorite_count;
+[2022-04-06 01:27:35,760] {spark_submit.py:488} INFO - optional int96 last_activity_date;
+[2022-04-06 01:27:35,760] {spark_submit.py:488} INFO - optional int96 last_edit_date;
+[2022-04-06 01:27:35,760] {spark_submit.py:488} INFO - optional binary last_editor_display_name (STRING);
+[2022-04-06 01:27:35,760] {spark_submit.py:488} INFO - optional int32 last_editor_user_id;
+[2022-04-06 01:27:35,760] {spark_submit.py:488} INFO - optional binary owner_display_name (STRING);
+[2022-04-06 01:27:35,760] {spark_submit.py:488} INFO - optional int32 owner_user_id;
+[2022-04-06 01:27:35,760] {spark_submit.py:488} INFO - optional int32 parent_id;
+[2022-04-06 01:27:35,760] {spark_submit.py:488} INFO - optional int32 post_type_id;
+[2022-04-06 01:27:35,761] {spark_submit.py:488} INFO - optional int32 score;
+[2022-04-06 01:27:35,761] {spark_submit.py:488} INFO - optional binary tags (STRING);
+[2022-04-06 01:27:35,761] {spark_submit.py:488} INFO - optional int32 view_count;
+[2022-04-06 01:27:35,761] {spark_submit.py:488} INFO - optional int96 group_by_date;
+[2022-04-06 01:27:35,761] {spark_submit.py:488} INFO - }
+[2022-04-06 01:27:35,761] {spark_submit.py:488} INFO - 
+[2022-04-06 01:27:35,761] {spark_submit.py:488} INFO - 
+[2022-04-06 01:27:35,761] {spark_submit.py:488} INFO - 22/04/06 01:27:35 INFO ParquetWriteSupport: Initialized Parquet WriteSupport with Catalyst schema:
+[2022-04-06 01:27:35,761] {spark_submit.py:488} INFO - {
+[2022-04-06 01:27:35,761] {spark_submit.py:488} INFO - "type" : "struct",
+[2022-04-06 01:27:35,761] {spark_submit.py:488} INFO - "fields" : [ {
+[2022-04-06 01:27:35,761] {spark_submit.py:488} INFO - "name" : "id",
+[2022-04-06 01:27:35,762] {spark_submit.py:488} INFO - "type" : "integer",
+[2022-04-06 01:27:35,762] {spark_submit.py:488} INFO - "nullable" : true,
+[2022-04-06 01:27:35,762] {spark_submit.py:488} INFO - "metadata" : { }
+[2022-04-06 01:27:35,762] {spark_submit.py:488} INFO - }, {
+[2022-04-06 01:27:35,762] {spark_submit.py:488} INFO - "name" : "title",
+[2022-04-06 01:27:35,762] {spark_submit.py:488} INFO - "type" : "string",
+[2022-04-06 01:27:35,762] {spark_submit.py:488} INFO - "nullable" : true,
+[2022-04-06 01:27:35,762] {spark_submit.py:488} INFO - "metadata" : { }
+[2022-04-06 01:27:35,762] {spark_submit.py:488} INFO - }, {
+[2022-04-06 01:27:35,762] {spark_submit.py:488} INFO - "name" : "body",
+[2022-04-06 01:27:35,762] {spark_submit.py:488} INFO - "type" : "string",
+[2022-04-06 01:27:35,762] {spark_submit.py:488} INFO - "nullable" : true,
+[2022-04-06 01:27:35,763] {spark_submit.py:488} INFO - "metadata" : { }
+[2022-04-06 01:27:35,763] {spark_submit.py:488} INFO - }, {
+[2022-04-06 01:27:35,763] {spark_submit.py:488} INFO - "name" : "accepted_answer_id",
+[2022-04-06 01:27:35,763] {spark_submit.py:488} INFO - "type" : "integer",
+[2022-04-06 01:27:35,763] {spark_submit.py:488} INFO - "nullable" : true,
+[2022-04-06 01:27:35,763] {spark_submit.py:488} INFO - "metadata" : { }
+[2022-04-06 01:27:35,763] {spark_submit.py:488} INFO - }, {
+[2022-04-06 01:27:35,763] {spark_submit.py:488} INFO - "name" : "answer_count",
+[2022-04-06 01:27:35,763] {spark_submit.py:488} INFO - "type" : "integer",
+[2022-04-06 01:27:35,763] {spark_submit.py:488} INFO - "nullable" : true,
+[2022-04-06 01:27:35,763] {spark_submit.py:488} INFO - "metadata" : { }
+[2022-04-06 01:27:35,868] {spark_submit.py:488} INFO - }, {
+[2022-04-06 01:27:35,869] {spark_submit.py:488} INFO - "name" : "comment_count",
+[2022-04-06 01:27:35,869] {spark_submit.py:488} INFO - "type" : "integer",
+[2022-04-06 01:27:35,869] {spark_submit.py:488} INFO - "nullable" : true,
+[2022-04-06 01:27:35,869] {spark_submit.py:488} INFO - "metadata" : { }
+[2022-04-06 01:27:35,869] {spark_submit.py:488} INFO - }, {
+[2022-04-06 01:27:35,869] {spark_submit.py:488} INFO - "name" : "community_owned_date",
+[2022-04-06 01:27:35,869] {spark_submit.py:488} INFO - "type" : "timestamp",
+[2022-04-06 01:27:35,869] {spark_submit.py:488} INFO - "nullable" : true,
+[2022-04-06 01:27:35,869] {spark_submit.py:488} INFO - "metadata" : { }
+[2022-04-06 01:27:35,869] {spark_submit.py:488} INFO - }, {
+[2022-04-06 01:27:35,869] {spark_submit.py:488} INFO - "name" : "creation_date",
+[2022-04-06 01:27:35,869] {spark_submit.py:488} INFO - "type" : "timestamp",
+[2022-04-06 01:27:35,869] {spark_submit.py:488} INFO - "nullable" : true,
+[2022-04-06 01:27:35,869] {spark_submit.py:488} INFO - "metadata" : { }
+[2022-04-06 01:27:35,870] {spark_submit.py:488} INFO - }, {
+[2022-04-06 01:27:35,870] {spark_submit.py:488} INFO - "name" : "favorite_count",
+[2022-04-06 01:27:35,870] {spark_submit.py:488} INFO - "type" : "integer",
+[2022-04-06 01:27:35,870] {spark_submit.py:488} INFO - "nullable" : true,
+[2022-04-06 01:27:35,870] {spark_submit.py:488} INFO - "metadata" : { }
+[2022-04-06 01:27:35,870] {spark_submit.py:488} INFO - }, {
+[2022-04-06 01:27:35,870] {spark_submit.py:488} INFO - "name" : "last_activity_date",
+[2022-04-06 01:27:35,870] {spark_submit.py:488} INFO - "type" : "timestamp",
+[2022-04-06 01:27:35,870] {spark_submit.py:488} INFO - "nullable" : true,
+[2022-04-06 01:27:35,870] {spark_submit.py:488} INFO - "metadata" : { }
+[2022-04-06 01:27:35,870] {spark_submit.py:488} INFO - }, {
+[2022-04-06 01:27:35,870] {spark_submit.py:488} INFO - "name" : "last_edit_date",
+[2022-04-06 01:27:35,870] {spark_submit.py:488} INFO - "type" : "timestamp",
+[2022-04-06 01:27:35,870] {spark_submit.py:488} INFO - "nullable" : true,
+[2022-04-06 01:27:35,870] {spark_submit.py:488} INFO - "metadata" : { }
+[2022-04-06 01:27:35,871] {spark_submit.py:488} INFO - }, {
+[2022-04-06 01:27:35,871] {spark_submit.py:488} INFO - "name" : "last_editor_display_name",
+[2022-04-06 01:27:35,871] {spark_submit.py:488} INFO - "type" : "string",
+[2022-04-06 01:27:35,871] {spark_submit.py:488} INFO - "nullable" : true,
+[2022-04-06 01:27:35,871] {spark_submit.py:488} INFO - "metadata" : { }
+[2022-04-06 01:27:35,871] {spark_submit.py:488} INFO - }, {
+[2022-04-06 01:27:35,871] {spark_submit.py:488} INFO - "name" : "last_editor_user_id",
+[2022-04-06 01:27:35,871] {spark_submit.py:488} INFO - "type" : "integer",
+[2022-04-06 01:27:35,871] {spark_submit.py:488} INFO - "nullable" : true,
+[2022-04-06 01:27:35,871] {spark_submit.py:488} INFO - "metadata" : { }
+[2022-04-06 01:27:35,871] {spark_submit.py:488} INFO - }, {
+[2022-04-06 01:27:35,871] {spark_submit.py:488} INFO - "name" : "owner_display_name",
+[2022-04-06 01:27:35,871] {spark_submit.py:488} INFO - "type" : "string",
+[2022-04-06 01:27:35,871] {spark_submit.py:488} INFO - "nullable" : true,
+[2022-04-06 01:27:35,904] {spark_submit.py:488} INFO - "metadata" : { }
+[2022-04-06 01:27:35,904] {spark_submit.py:488} INFO - }, {
+[2022-04-06 01:27:35,904] {spark_submit.py:488} INFO - "name" : "owner_user_id",
+[2022-04-06 01:27:35,904] {spark_submit.py:488} INFO - "type" : "integer",
+[2022-04-06 01:27:35,904] {spark_submit.py:488} INFO - "nullable" : true,
+[2022-04-06 01:27:35,904] {spark_submit.py:488} INFO - "metadata" : { }
+[2022-04-06 01:27:35,904] {spark_submit.py:488} INFO - }, {
+[2022-04-06 01:27:35,904] {spark_submit.py:488} INFO - "name" : "parent_id",
+[2022-04-06 01:27:35,904] {spark_submit.py:488} INFO - "type" : "integer",
+[2022-04-06 01:27:35,904] {spark_submit.py:488} INFO - "nullable" : true,
+[2022-04-06 01:27:35,905] {spark_submit.py:488} INFO - "metadata" : { }
+[2022-04-06 01:27:35,905] {spark_submit.py:488} INFO - }, {
+[2022-04-06 01:27:35,905] {spark_submit.py:488} INFO - "name" : "post_type_id",
+[2022-04-06 01:27:35,905] {spark_submit.py:488} INFO - "type" : "integer",
+[2022-04-06 01:27:35,905] {spark_submit.py:488} INFO - "nullable" : true,
+[2022-04-06 01:27:35,905] {spark_submit.py:488} INFO - "metadata" : { }
+[2022-04-06 01:27:35,905] {spark_submit.py:488} INFO - }, {
+[2022-04-06 01:27:35,905] {spark_submit.py:488} INFO - "name" : "score",
+[2022-04-06 01:27:35,905] {spark_submit.py:488} INFO - "type" : "integer",
+[2022-04-06 01:27:35,905] {spark_submit.py:488} INFO - "nullable" : true,
+[2022-04-06 01:27:35,905] {spark_submit.py:488} INFO - "metadata" : { }
+[2022-04-06 01:27:35,905] {spark_submit.py:488} INFO - }, {
+[2022-04-06 01:27:35,905] {spark_submit.py:488} INFO - "name" : "tags",
+[2022-04-06 01:27:35,905] {spark_submit.py:488} INFO - "type" : "string",
+[2022-04-06 01:27:35,905] {spark_submit.py:488} INFO - "nullable" : true,
+[2022-04-06 01:27:35,906] {spark_submit.py:488} INFO - "metadata" : { }
+[2022-04-06 01:27:35,906] {spark_submit.py:488} INFO - }, {
+[2022-04-06 01:27:35,906] {spark_submit.py:488} INFO - "name" : "view_count",
+[2022-04-06 01:27:35,906] {spark_submit.py:488} INFO - "type" : "integer",
+[2022-04-06 01:27:35,906] {spark_submit.py:488} INFO - "nullable" : true,
+[2022-04-06 01:27:35,906] {spark_submit.py:488} INFO - "metadata" : { }
+[2022-04-06 01:27:35,906] {spark_submit.py:488} INFO - }, {
+[2022-04-06 01:27:35,906] {spark_submit.py:488} INFO - "name" : "group_by_date",
+[2022-04-06 01:27:35,906] {spark_submit.py:488} INFO - "type" : "timestamp",
+[2022-04-06 01:27:35,906] {spark_submit.py:488} INFO - "nullable" : true,
+[2022-04-06 01:27:35,906] {spark_submit.py:488} INFO - "metadata" : { }
+[2022-04-06 01:27:35,906] {spark_submit.py:488} INFO - } ]
+[2022-04-06 01:27:35,906] {spark_submit.py:488} INFO - }
+[2022-04-06 01:27:35,906] {spark_submit.py:488} INFO - and corresponding Parquet message type:
+[2022-04-06 01:27:35,906] {spark_submit.py:488} INFO - message spark_schema {
+[2022-04-06 01:27:35,907] {spark_submit.py:488} INFO - optional int32 id;
+[2022-04-06 01:27:35,907] {spark_submit.py:488} INFO - optional binary title (STRING);
+[2022-04-06 01:27:35,907] {spark_submit.py:488} INFO - optional binary body (STRING);
+[2022-04-06 01:27:35,907] {spark_submit.py:488} INFO - optional int32 accepted_answer_id;
+[2022-04-06 01:27:35,907] {spark_submit.py:488} INFO - optional int32 answer_count;
+[2022-04-06 01:27:35,907] {spark_submit.py:488} INFO - optional int32 comment_count;
+[2022-04-06 01:27:35,907] {spark_submit.py:488} INFO - optional int96 community_owned_date;
+[2022-04-06 01:27:35,907] {spark_submit.py:488} INFO - optional int96 creation_date;
+[2022-04-06 01:27:35,907] {spark_submit.py:488} INFO - optional int32 favorite_count;
+[2022-04-06 01:27:35,907] {spark_submit.py:488} INFO - optional int96 last_activity_date;
+[2022-04-06 01:27:35,907] {spark_submit.py:488} INFO - optional int96 last_edit_date;
+[2022-04-06 01:27:35,907] {spark_submit.py:488} INFO - optional binary last_editor_display_name (STRING);
+[2022-04-06 01:27:35,907] {spark_submit.py:488} INFO - optional int32 last_editor_user_id;
+[2022-04-06 01:27:35,956] {spark_submit.py:488} INFO - optional binary owner_display_name (STRING);
+[2022-04-06 01:27:35,956] {spark_submit.py:488} INFO - optional int32 owner_user_id;
+[2022-04-06 01:27:35,956] {spark_submit.py:488} INFO - optional int32 parent_id;
+[2022-04-06 01:27:35,956] {spark_submit.py:488} INFO - optional int32 post_type_id;
+[2022-04-06 01:27:35,956] {spark_submit.py:488} INFO - optional int32 score;
+[2022-04-06 01:27:35,956] {spark_submit.py:488} INFO - optional binary tags (STRING);
+[2022-04-06 01:27:35,956] {spark_submit.py:488} INFO - optional int32 view_count;
+[2022-04-06 01:27:35,956] {spark_submit.py:488} INFO - optional int96 group_by_date;
+[2022-04-06 01:27:35,956] {spark_submit.py:488} INFO - }
+[2022-04-06 01:27:35,956] {spark_submit.py:488} INFO - 
+[2022-04-06 01:27:35,957] {spark_submit.py:488} INFO - 
+[2022-04-06 01:27:35,957] {spark_submit.py:488} INFO - 22/04/06 01:27:35 INFO ParquetWriteSupport: Initialized Parquet WriteSupport with Catalyst schema:
+[2022-04-06 01:27:35,957] {spark_submit.py:488} INFO - {
+[2022-04-06 01:27:35,957] {spark_submit.py:488} INFO - "type" : "struct",
+[2022-04-06 01:27:35,957] {spark_submit.py:488} INFO - "fields" : [ {
+[2022-04-06 01:27:35,957] {spark_submit.py:488} INFO - "name" : "id",
+[2022-04-06 01:27:35,957] {spark_submit.py:488} INFO - "type" : "integer",
+[2022-04-06 01:27:35,957] {spark_submit.py:488} INFO - "nullable" : true,
+[2022-04-06 01:27:35,957] {spark_submit.py:488} INFO - "metadata" : { }
+[2022-04-06 01:27:35,957] {spark_submit.py:488} INFO - }, {
+[2022-04-06 01:27:35,957] {spark_submit.py:488} INFO - "name" : "title",
+[2022-04-06 01:27:35,957] {spark_submit.py:488} INFO - "type" : "string",
+[2022-04-06 01:27:35,957] {spark_submit.py:488} INFO - "nullable" : true,
+[2022-04-06 01:27:35,957] {spark_submit.py:488} INFO - "metadata" : { }
+[2022-04-06 01:27:35,957] {spark_submit.py:488} INFO - }, {
+[2022-04-06 01:27:35,957] {spark_submit.py:488} INFO - "name" : "body",
+[2022-04-06 01:27:35,958] {spark_submit.py:488} INFO - "type" : "string",
+[2022-04-06 01:27:35,958] {spark_submit.py:488} INFO - "nullable" : true,
+[2022-04-06 01:27:35,958] {spark_submit.py:488} INFO - "metadata" : { }
+[2022-04-06 01:27:35,958] {spark_submit.py:488} INFO - }, {
+[2022-04-06 01:27:35,958] {spark_submit.py:488} INFO - "name" : "accepted_answer_id",
+[2022-04-06 01:27:35,958] {spark_submit.py:488} INFO - "type" : "integer",
+[2022-04-06 01:27:35,958] {spark_submit.py:488} INFO - "nullable" : true,
+[2022-04-06 01:27:35,958] {spark_submit.py:488} INFO - "metadata" : { }
+[2022-04-06 01:27:35,958] {spark_submit.py:488} INFO - }, {
+[2022-04-06 01:27:35,958] {spark_submit.py:488} INFO - "name" : "answer_count",
+[2022-04-06 01:27:35,958] {spark_submit.py:488} INFO - "type" : "integer",
+[2022-04-06 01:27:35,959] {spark_submit.py:488} INFO - "nullable" : true,
+[2022-04-06 01:27:35,959] {spark_submit.py:488} INFO - "metadata" : { }
+[2022-04-06 01:27:35,959] {spark_submit.py:488} INFO - }, {
+[2022-04-06 01:27:35,959] {spark_submit.py:488} INFO - "name" : "comment_count",
+[2022-04-06 01:27:35,959] {spark_submit.py:488} INFO - "type" : "integer",
+[2022-04-06 01:27:35,959] {spark_submit.py:488} INFO - "nullable" : true,
+[2022-04-06 01:27:35,959] {spark_submit.py:488} INFO - "metadata" : { }
+[2022-04-06 01:27:35,959] {spark_submit.py:488} INFO - }, {
+[2022-04-06 01:27:35,959] {spark_submit.py:488} INFO - "name" : "community_owned_date",
+[2022-04-06 01:27:35,959] {spark_submit.py:488} INFO - "type" : "timestamp",
+[2022-04-06 01:27:35,959] {spark_submit.py:488} INFO - "nullable" : true,
+[2022-04-06 01:27:35,959] {spark_submit.py:488} INFO - "metadata" : { }
+[2022-04-06 01:27:35,959] {spark_submit.py:488} INFO - }, {
+[2022-04-06 01:27:35,959] {spark_submit.py:488} INFO - "name" : "creation_date",
+[2022-04-06 01:27:35,960] {spark_submit.py:488} INFO - "type" : "timestamp",
+[2022-04-06 01:27:35,960] {spark_submit.py:488} INFO - "nullable" : true,
+[2022-04-06 01:27:35,960] {spark_submit.py:488} INFO - "metadata" : { }
+[2022-04-06 01:27:35,960] {spark_submit.py:488} INFO - }, {
+[2022-04-06 01:27:35,960] {spark_submit.py:488} INFO - "name" : "favorite_count",
+[2022-04-06 01:27:35,960] {spark_submit.py:488} INFO - "type" : "integer",
+[2022-04-06 01:27:35,960] {spark_submit.py:488} INFO - "nullable" : true,
+[2022-04-06 01:27:35,960] {spark_submit.py:488} INFO - "metadata" : { }
+[2022-04-06 01:27:35,960] {spark_submit.py:488} INFO - }, {
+[2022-04-06 01:27:35,960] {spark_submit.py:488} INFO - "name" : "last_activity_date",
+[2022-04-06 01:27:35,960] {spark_submit.py:488} INFO - "type" : "timestamp",
+[2022-04-06 01:27:35,960] {spark_submit.py:488} INFO - "nullable" : true,
+[2022-04-06 01:27:35,960] {spark_submit.py:488} INFO - "metadata" : { }
+[2022-04-06 01:27:35,960] {spark_submit.py:488} INFO - }, {
+[2022-04-06 01:27:36,048] {spark_submit.py:488} INFO - "name" : "last_edit_date",
+[2022-04-06 01:27:36,048] {spark_submit.py:488} INFO - "type" : "timestamp",
+[2022-04-06 01:27:36,048] {spark_submit.py:488} INFO - "nullable" : true,
+[2022-04-06 01:27:36,048] {spark_submit.py:488} INFO - "metadata" : { }
+[2022-04-06 01:27:36,048] {spark_submit.py:488} INFO - }, {
+[2022-04-06 01:27:36,048] {spark_submit.py:488} INFO - "name" : "last_editor_display_name",
+[2022-04-06 01:27:36,048] {spark_submit.py:488} INFO - "type" : "string",
+[2022-04-06 01:27:36,048] {spark_submit.py:488} INFO - "nullable" : true,
+[2022-04-06 01:27:36,048] {spark_submit.py:488} INFO - "metadata" : { }
+[2022-04-06 01:27:36,048] {spark_submit.py:488} INFO - }, {
+[2022-04-06 01:27:36,049] {spark_submit.py:488} INFO - "name" : "last_editor_user_id",
+[2022-04-06 01:27:36,049] {spark_submit.py:488} INFO - "type" : "integer",
+[2022-04-06 01:27:36,049] {spark_submit.py:488} INFO - "nullable" : true,
+[2022-04-06 01:27:36,049] {spark_submit.py:488} INFO - "metadata" : { }
+[2022-04-06 01:27:36,049] {spark_submit.py:488} INFO - }, {
+[2022-04-06 01:27:36,049] {spark_submit.py:488} INFO - "name" : "owner_display_name",
+[2022-04-06 01:27:36,049] {spark_submit.py:488} INFO - "type" : "string",
+[2022-04-06 01:27:36,049] {spark_submit.py:488} INFO - "nullable" : true,
+[2022-04-06 01:27:36,049] {spark_submit.py:488} INFO - "metadata" : { }
+[2022-04-06 01:27:36,049] {spark_submit.py:488} INFO - }, {
+[2022-04-06 01:27:36,049] {spark_submit.py:488} INFO - "name" : "owner_user_id",
+[2022-04-06 01:27:36,049] {spark_submit.py:488} INFO - "type" : "integer",
+[2022-04-06 01:27:36,049] {spark_submit.py:488} INFO - "nullable" : true,
+[2022-04-06 01:27:36,049] {spark_submit.py:488} INFO - "metadata" : { }
+[2022-04-06 01:27:36,050] {spark_submit.py:488} INFO - }, {
+[2022-04-06 01:27:36,050] {spark_submit.py:488} INFO - "name" : "parent_id",
+[2022-04-06 01:27:36,050] {spark_submit.py:488} INFO - "type" : "integer",
+[2022-04-06 01:27:36,050] {spark_submit.py:488} INFO - "nullable" : true,
+[2022-04-06 01:27:36,050] {spark_submit.py:488} INFO - "metadata" : { }
+[2022-04-06 01:27:36,050] {spark_submit.py:488} INFO - }, {
+[2022-04-06 01:27:36,050] {spark_submit.py:488} INFO - "name" : "post_type_id",
+[2022-04-06 01:27:36,050] {spark_submit.py:488} INFO - "type" : "integer",
+[2022-04-06 01:27:36,050] {spark_submit.py:488} INFO - "nullable" : true,
+[2022-04-06 01:27:36,050] {spark_submit.py:488} INFO - "metadata" : { }
+[2022-04-06 01:27:36,050] {spark_submit.py:488} INFO - }, {
+[2022-04-06 01:27:36,050] {spark_submit.py:488} INFO - "name" : "score",
+[2022-04-06 01:27:36,050] {spark_submit.py:488} INFO - "type" : "integer",
+[2022-04-06 01:27:36,050] {spark_submit.py:488} INFO - "nullable" : true,
+[2022-04-06 01:27:36,051] {spark_submit.py:488} INFO - "metadata" : { }
+[2022-04-06 01:27:36,051] {spark_submit.py:488} INFO - }, {
+[2022-04-06 01:27:36,051] {spark_submit.py:488} INFO - "name" : "tags",
+[2022-04-06 01:27:36,051] {spark_submit.py:488} INFO - "type" : "string",
+[2022-04-06 01:27:36,051] {spark_submit.py:488} INFO - "nullable" : true,
+[2022-04-06 01:27:36,051] {spark_submit.py:488} INFO - "metadata" : { }
+[2022-04-06 01:27:36,051] {spark_submit.py:488} INFO - }, {
+[2022-04-06 01:27:36,051] {spark_submit.py:488} INFO - "name" : "view_count",
+[2022-04-06 01:27:36,051] {spark_submit.py:488} INFO - "type" : "integer",
+[2022-04-06 01:27:36,051] {spark_submit.py:488} INFO - "nullable" : true,
+[2022-04-06 01:27:36,051] {spark_submit.py:488} INFO - "metadata" : { }
+[2022-04-06 01:27:36,051] {spark_submit.py:488} INFO - }, {
+[2022-04-06 01:27:36,051] {spark_submit.py:488} INFO - "name" : "group_by_date",
+[2022-04-06 01:27:36,051] {spark_submit.py:488} INFO - "type" : "timestamp",
+[2022-04-06 01:27:36,103] {spark_submit.py:488} INFO - "nullable" : true,
+[2022-04-06 01:27:36,103] {spark_submit.py:488} INFO - "metadata" : { }
+[2022-04-06 01:27:36,103] {spark_submit.py:488} INFO - } ]
+[2022-04-06 01:27:36,103] {spark_submit.py:488} INFO - }
+[2022-04-06 01:27:36,103] {spark_submit.py:488} INFO - and corresponding Parquet message type:
+[2022-04-06 01:27:36,103] {spark_submit.py:488} INFO - message spark_schema {
+[2022-04-06 01:27:36,103] {spark_submit.py:488} INFO - optional int32 id;
+[2022-04-06 01:27:36,103] {spark_submit.py:488} INFO - optional binary title (STRING);
+[2022-04-06 01:27:36,108] {spark_submit.py:488} INFO - optional binary body (STRING);
+[2022-04-06 01:27:36,108] {spark_submit.py:488} INFO - optional int32 accepted_answer_id;
+[2022-04-06 01:27:36,108] {spark_submit.py:488} INFO - optional int32 answer_count;
+[2022-04-06 01:27:36,108] {spark_submit.py:488} INFO - optional int32 comment_count;
+[2022-04-06 01:27:36,108] {spark_submit.py:488} INFO - optional int96 community_owned_date;
+[2022-04-06 01:27:36,108] {spark_submit.py:488} INFO - optional int96 creation_date;
+[2022-04-06 01:27:36,108] {spark_submit.py:488} INFO - optional int32 favorite_count;
+[2022-04-06 01:27:36,108] {spark_submit.py:488} INFO - optional int96 last_activity_date;
+[2022-04-06 01:27:36,108] {spark_submit.py:488} INFO - optional int96 last_edit_date;
+[2022-04-06 01:27:36,109] {spark_submit.py:488} INFO - optional binary last_editor_display_name (STRING);
+[2022-04-06 01:27:36,109] {spark_submit.py:488} INFO - optional int32 last_editor_user_id;
+[2022-04-06 01:27:36,109] {spark_submit.py:488} INFO - optional binary owner_display_name (STRING);
+[2022-04-06 01:27:36,109] {spark_submit.py:488} INFO - optional int32 owner_user_id;
+[2022-04-06 01:27:36,109] {spark_submit.py:488} INFO - optional int32 parent_id;
+[2022-04-06 01:27:36,109] {spark_submit.py:488} INFO - optional int32 post_type_id;
+[2022-04-06 01:27:36,109] {spark_submit.py:488} INFO - optional int32 score;
+[2022-04-06 01:27:36,109] {spark_submit.py:488} INFO - optional binary tags (STRING);
+[2022-04-06 01:27:36,109] {spark_submit.py:488} INFO - optional int32 view_count;
+[2022-04-06 01:27:36,109] {spark_submit.py:488} INFO - optional int96 group_by_date;
+[2022-04-06 01:27:36,109] {spark_submit.py:488} INFO - }
+[2022-04-06 01:27:36,109] {spark_submit.py:488} INFO - 
+[2022-04-06 01:27:36,110] {spark_submit.py:488} INFO - 
+[2022-04-06 01:27:36,110] {spark_submit.py:488} INFO - 22/04/06 01:27:35 INFO ParquetWriteSupport: Initialized Parquet WriteSupport with Catalyst schema:
+[2022-04-06 01:27:36,110] {spark_submit.py:488} INFO - {
+[2022-04-06 01:27:36,110] {spark_submit.py:488} INFO - "type" : "struct",
+[2022-04-06 01:27:36,110] {spark_submit.py:488} INFO - "fields" : [ {
+[2022-04-06 01:27:36,110] {spark_submit.py:488} INFO - "name" : "id",
+[2022-04-06 01:27:36,110] {spark_submit.py:488} INFO - "type" : "integer",
+[2022-04-06 01:27:36,110] {spark_submit.py:488} INFO - "nullable" : true,
+[2022-04-06 01:27:36,110] {spark_submit.py:488} INFO - "metadata" : { }
+[2022-04-06 01:27:36,110] {spark_submit.py:488} INFO - }, {
+[2022-04-06 01:27:36,110] {spark_submit.py:488} INFO - "name" : "title",
+[2022-04-06 01:27:36,110] {spark_submit.py:488} INFO - "type" : "string",
+[2022-04-06 01:27:36,110] {spark_submit.py:488} INFO - "nullable" : true,
+[2022-04-06 01:27:36,111] {spark_submit.py:488} INFO - "metadata" : { }
+[2022-04-06 01:27:36,111] {spark_submit.py:488} INFO - }, {
+[2022-04-06 01:27:36,111] {spark_submit.py:488} INFO - "name" : "body",
+[2022-04-06 01:27:36,111] {spark_submit.py:488} INFO - "type" : "string",
+[2022-04-06 01:27:36,111] {spark_submit.py:488} INFO - "nullable" : true,
+[2022-04-06 01:27:36,111] {spark_submit.py:488} INFO - "metadata" : { }
+[2022-04-06 01:27:36,111] {spark_submit.py:488} INFO - }, {
+[2022-04-06 01:27:36,111] {spark_submit.py:488} INFO - "name" : "accepted_answer_id",
+[2022-04-06 01:27:36,111] {spark_submit.py:488} INFO - "type" : "integer",
+[2022-04-06 01:27:36,111] {spark_submit.py:488} INFO - "nullable" : true,
+[2022-04-06 01:27:36,111] {spark_submit.py:488} INFO - "metadata" : { }
+[2022-04-06 01:27:36,111] {spark_submit.py:488} INFO - }, {
+[2022-04-06 01:27:36,111] {spark_submit.py:488} INFO - "name" : "answer_count",
+[2022-04-06 01:27:36,111] {spark_submit.py:488} INFO - "type" : "integer",
+[2022-04-06 01:27:36,172] {spark_submit.py:488} INFO - "nullable" : true,
+[2022-04-06 01:27:36,172] {spark_submit.py:488} INFO - "metadata" : { }
+[2022-04-06 01:27:36,172] {spark_submit.py:488} INFO - }, {
+[2022-04-06 01:27:36,172] {spark_submit.py:488} INFO - "name" : "comment_count",
+[2022-04-06 01:27:36,172] {spark_submit.py:488} INFO - "type" : "integer",
+[2022-04-06 01:27:36,172] {spark_submit.py:488} INFO - "nullable" : true,
+[2022-04-06 01:27:36,172] {spark_submit.py:488} INFO - "metadata" : { }
+[2022-04-06 01:27:36,172] {spark_submit.py:488} INFO - }, {
+[2022-04-06 01:27:36,173] {spark_submit.py:488} INFO - "name" : "community_owned_date",
+[2022-04-06 01:27:36,173] {spark_submit.py:488} INFO - "type" : "timestamp",
+[2022-04-06 01:27:36,185] {spark_submit.py:488} INFO - "nullable" : true,
+[2022-04-06 01:27:36,185] {spark_submit.py:488} INFO - "metadata" : { }
+[2022-04-06 01:27:36,185] {spark_submit.py:488} INFO - }, {
+[2022-04-06 01:27:36,185] {spark_submit.py:488} INFO - "name" : "creation_date",
+[2022-04-06 01:27:36,185] {spark_submit.py:488} INFO - "type" : "timestamp",
+[2022-04-06 01:27:36,185] {spark_submit.py:488} INFO - "nullable" : true,
+[2022-04-06 01:27:36,186] {spark_submit.py:488} INFO - "metadata" : { }
+[2022-04-06 01:27:36,186] {spark_submit.py:488} INFO - }, {
+[2022-04-06 01:27:36,186] {spark_submit.py:488} INFO - "name" : "favorite_count",
+[2022-04-06 01:27:36,186] {spark_submit.py:488} INFO - "type" : "integer",
+[2022-04-06 01:27:36,186] {spark_submit.py:488} INFO - "nullable" : true,
+[2022-04-06 01:27:36,186] {spark_submit.py:488} INFO - "metadata" : { }
+[2022-04-06 01:27:36,186] {spark_submit.py:488} INFO - }, {
+[2022-04-06 01:27:36,186] {spark_submit.py:488} INFO - "name" : "last_activity_date",
+[2022-04-06 01:27:36,186] {spark_submit.py:488} INFO - "type" : "timestamp",
+[2022-04-06 01:27:36,186] {spark_submit.py:488} INFO - "nullable" : true,
+[2022-04-06 01:27:36,186] {spark_submit.py:488} INFO - "metadata" : { }
+[2022-04-06 01:27:36,186] {spark_submit.py:488} INFO - }, {
+[2022-04-06 01:27:36,186] {spark_submit.py:488} INFO - "name" : "last_edit_date",
+[2022-04-06 01:27:36,186] {spark_submit.py:488} INFO - "type" : "timestamp",
+[2022-04-06 01:27:36,187] {spark_submit.py:488} INFO - "nullable" : true,
+[2022-04-06 01:27:36,187] {spark_submit.py:488} INFO - "metadata" : { }
+[2022-04-06 01:27:36,187] {spark_submit.py:488} INFO - }, {
+[2022-04-06 01:27:36,187] {spark_submit.py:488} INFO - "name" : "last_editor_display_name",
+[2022-04-06 01:27:36,187] {spark_submit.py:488} INFO - "type" : "string",
+[2022-04-06 01:27:36,187] {spark_submit.py:488} INFO - "nullable" : true,
+[2022-04-06 01:27:36,187] {spark_submit.py:488} INFO - "metadata" : { }
+[2022-04-06 01:27:36,187] {spark_submit.py:488} INFO - }, {
+[2022-04-06 01:27:36,187] {spark_submit.py:488} INFO - "name" : "last_editor_user_id",
+[2022-04-06 01:27:36,187] {spark_submit.py:488} INFO - "type" : "integer",
+[2022-04-06 01:27:36,187] {spark_submit.py:488} INFO - "nullable" : true,
+[2022-04-06 01:27:36,187] {spark_submit.py:488} INFO - "metadata" : { }
+[2022-04-06 01:27:36,187] {spark_submit.py:488} INFO - }, {
+[2022-04-06 01:27:36,187] {spark_submit.py:488} INFO - "name" : "owner_display_name",
+[2022-04-06 01:27:36,250] {spark_submit.py:488} INFO - "type" : "string",
+[2022-04-06 01:27:36,250] {spark_submit.py:488} INFO - "nullable" : true,
+[2022-04-06 01:27:36,250] {spark_submit.py:488} INFO - "metadata" : { }
+[2022-04-06 01:27:36,250] {spark_submit.py:488} INFO - }, {
+[2022-04-06 01:27:36,250] {spark_submit.py:488} INFO - "name" : "owner_user_id",
+[2022-04-06 01:27:36,250] {spark_submit.py:488} INFO - "type" : "integer",
+[2022-04-06 01:27:36,250] {spark_submit.py:488} INFO - "nullable" : true,
+[2022-04-06 01:27:36,250] {spark_submit.py:488} INFO - "metadata" : { }
+[2022-04-06 01:27:36,250] {spark_submit.py:488} INFO - }, {
+[2022-04-06 01:27:36,250] {spark_submit.py:488} INFO - "name" : "parent_id",
+[2022-04-06 01:27:36,250] {spark_submit.py:488} INFO - "type" : "integer",
+[2022-04-06 01:27:36,250] {spark_submit.py:488} INFO - "nullable" : true,
+[2022-04-06 01:27:36,251] {spark_submit.py:488} INFO - "metadata" : { }
+[2022-04-06 01:27:36,251] {spark_submit.py:488} INFO - }, {
+[2022-04-06 01:27:36,251] {spark_submit.py:488} INFO - "name" : "post_type_id",
+[2022-04-06 01:27:36,251] {spark_submit.py:488} INFO - "type" : "integer",
+[2022-04-06 01:27:36,251] {spark_submit.py:488} INFO - "nullable" : true,
+[2022-04-06 01:27:36,251] {spark_submit.py:488} INFO - "metadata" : { }
+[2022-04-06 01:27:36,251] {spark_submit.py:488} INFO - }, {
+[2022-04-06 01:27:36,251] {spark_submit.py:488} INFO - "name" : "score",
+[2022-04-06 01:27:36,251] {spark_submit.py:488} INFO - "type" : "integer",
+[2022-04-06 01:27:36,251] {spark_submit.py:488} INFO - "nullable" : true,
+[2022-04-06 01:27:36,251] {spark_submit.py:488} INFO - "metadata" : { }
+[2022-04-06 01:27:36,251] {spark_submit.py:488} INFO - }, {
+[2022-04-06 01:27:36,251] {spark_submit.py:488} INFO - "name" : "tags",
+[2022-04-06 01:27:36,252] {spark_submit.py:488} INFO - "type" : "string",
+[2022-04-06 01:27:36,252] {spark_submit.py:488} INFO - "nullable" : true,
+[2022-04-06 01:27:36,252] {spark_submit.py:488} INFO - "metadata" : { }
+[2022-04-06 01:27:36,252] {spark_submit.py:488} INFO - }, {
+[2022-04-06 01:27:36,252] {spark_submit.py:488} INFO - "name" : "view_count",
+[2022-04-06 01:27:36,252] {spark_submit.py:488} INFO - "type" : "integer",
+[2022-04-06 01:27:36,252] {spark_submit.py:488} INFO - "nullable" : true,
+[2022-04-06 01:27:36,252] {spark_submit.py:488} INFO - "metadata" : { }
+[2022-04-06 01:27:36,252] {spark_submit.py:488} INFO - }, {
+[2022-04-06 01:27:36,252] {spark_submit.py:488} INFO - "name" : "group_by_date",
+[2022-04-06 01:27:36,252] {spark_submit.py:488} INFO - "type" : "timestamp",
+[2022-04-06 01:27:36,252] {spark_submit.py:488} INFO - "nullable" : true,
+[2022-04-06 01:27:36,252] {spark_submit.py:488} INFO - "metadata" : { }
+[2022-04-06 01:27:36,252] {spark_submit.py:488} INFO - } ]
+[2022-04-06 01:27:36,253] {spark_submit.py:488} INFO - }
+[2022-04-06 01:27:36,253] {spark_submit.py:488} INFO - and corresponding Parquet message type:
+[2022-04-06 01:27:36,253] {spark_submit.py:488} INFO - message spark_schema {
+[2022-04-06 01:27:36,253] {spark_submit.py:488} INFO - optional int32 id;
+[2022-04-06 01:27:36,253] {spark_submit.py:488} INFO - optional binary title (STRING);
+[2022-04-06 01:27:36,253] {spark_submit.py:488} INFO - optional binary body (STRING);
+[2022-04-06 01:27:36,253] {spark_submit.py:488} INFO - optional int32 accepted_answer_id;
+[2022-04-06 01:27:36,253] {spark_submit.py:488} INFO - optional int32 answer_count;
+[2022-04-06 01:27:36,253] {spark_submit.py:488} INFO - optional int32 comment_count;
+[2022-04-06 01:27:36,253] {spark_submit.py:488} INFO - optional int96 community_owned_date;
+[2022-04-06 01:27:36,253] {spark_submit.py:488} INFO - optional int96 creation_date;
+[2022-04-06 01:27:36,253] {spark_submit.py:488} INFO - optional int32 favorite_count;
+[2022-04-06 01:27:36,253] {spark_submit.py:488} INFO - optional int96 last_activity_date;
+[2022-04-06 01:27:36,253] {spark_submit.py:488} INFO - optional int96 last_edit_date;
+[2022-04-06 01:27:36,254] {spark_submit.py:488} INFO - optional binary last_editor_display_name (STRING);
+[2022-04-06 01:27:36,254] {spark_submit.py:488} INFO - optional int32 last_editor_user_id;
+[2022-04-06 01:27:36,254] {spark_submit.py:488} INFO - optional binary owner_display_name (STRING);
+[2022-04-06 01:27:36,254] {spark_submit.py:488} INFO - optional int32 owner_user_id;
+[2022-04-06 01:27:36,254] {spark_submit.py:488} INFO - optional int32 parent_id;
+[2022-04-06 01:27:36,254] {spark_submit.py:488} INFO - optional int32 post_type_id;
+[2022-04-06 01:27:36,254] {spark_submit.py:488} INFO - optional int32 score;
+[2022-04-06 01:27:36,254] {spark_submit.py:488} INFO - optional binary tags (STRING);
+[2022-04-06 01:27:36,254] {spark_submit.py:488} INFO - optional int32 view_count;
+[2022-04-06 01:27:36,254] {spark_submit.py:488} INFO - optional int96 group_by_date;
+[2022-04-06 01:27:36,254] {spark_submit.py:488} INFO - }
+[2022-04-06 01:27:36,254] {spark_submit.py:488} INFO - 
+[2022-04-06 01:27:36,254] {spark_submit.py:488} INFO - 
+[2022-04-06 01:27:37,867] {spark_submit.py:488} INFO - 22/04/06 01:27:37 INFO CodecPool: Got brand-new compressor [.snappy]
+[2022-04-06 01:27:37,878] {spark_submit.py:488} INFO - 22/04/06 01:27:37 INFO CodecPool: Got brand-new compressor [.snappy]
+[2022-04-06 01:27:37,880] {spark_submit.py:488} INFO - 22/04/06 01:27:37 INFO CodecPool: Got brand-new compressor [.snappy]
+[2022-04-06 01:27:37,918] {spark_submit.py:488} INFO - 22/04/06 01:27:37 INFO CodecPool: Got brand-new compressor [.snappy]
+[2022-04-06 01:27:55,407] {spark_submit.py:488} INFO - 22/04/06 01:27:55 INFO GoogleCloudStorageImpl: Ignoring exception of type GoogleJsonResponseException; verified object already exists with desired state.
+[2022-04-06 01:27:55,408] {spark_submit.py:488} INFO - 22/04/06 01:27:55 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://dtc_data_lake_de-stack-overflow/BigQuery/posts_questions-2015-10/_temporary/0/_temporary/' directory.
+[2022-04-06 01:27:55,409] {spark_submit.py:488} INFO - 22/04/06 01:27:55 INFO FileOutputCommitter: Saved output of task 'attempt_20220406012733595045039216530424_0003_m_000002_7' to gs://dtc_data_lake_de-stack-overflow/BigQuery/posts_questions-2015-10/_temporary/0/task_20220406012733595045039216530424_0003_m_000002
+[2022-04-06 01:27:55,409] {spark_submit.py:488} INFO - 22/04/06 01:27:55 INFO SparkHadoopMapRedUtil: attempt_20220406012733595045039216530424_0003_m_000002_7: Committed
+[2022-04-06 01:27:55,457] {spark_submit.py:488} INFO - 22/04/06 01:27:55 INFO FileOutputCommitter: Saved output of task 'attempt_202204060127338979645485700953285_0003_m_000000_5' to gs://dtc_data_lake_de-stack-overflow/BigQuery/posts_questions-2015-10/_temporary/0/task_202204060127338979645485700953285_0003_m_000000
+[2022-04-06 01:27:55,457] {spark_submit.py:488} INFO - 22/04/06 01:27:55 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://dtc_data_lake_de-stack-overflow/BigQuery/posts_questions-2015-10/_temporary/0/_temporary/' directory.
+[2022-04-06 01:27:55,457] {spark_submit.py:488} INFO - 22/04/06 01:27:55 INFO FileOutputCommitter: Saved output of task 'attempt_202204060127338657973839477239583_0003_m_000003_8' to gs://dtc_data_lake_de-stack-overflow/BigQuery/posts_questions-2015-10/_temporary/0/task_202204060127338657973839477239583_0003_m_000003
+[2022-04-06 01:27:55,481] {spark_submit.py:488} INFO - 22/04/06 01:27:55 INFO SparkHadoopMapRedUtil: attempt_202204060127338657973839477239583_0003_m_000003_8: Committed
+[2022-04-06 01:27:55,482] {spark_submit.py:488} INFO - 22/04/06 01:27:55 INFO SparkHadoopMapRedUtil: attempt_202204060127338979645485700953285_0003_m_000000_5: Committed
+[2022-04-06 01:27:55,485] {spark_submit.py:488} INFO - 22/04/06 01:27:55 INFO GoogleCloudStorageImpl: Ignoring exception of type GoogleJsonResponseException; verified object already exists with desired state.
+[2022-04-06 01:27:55,485] {spark_submit.py:488} INFO - 22/04/06 01:27:55 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://dtc_data_lake_de-stack-overflow/BigQuery/posts_questions-2015-10/_temporary/0/_temporary/' directory.
+[2022-04-06 01:27:55,485] {spark_submit.py:488} INFO - 22/04/06 01:27:55 INFO FileOutputCommitter: Saved output of task 'attempt_202204060127337739287139983004801_0003_m_000001_6' to gs://dtc_data_lake_de-stack-overflow/BigQuery/posts_questions-2015-10/_temporary/0/task_202204060127337739287139983004801_0003_m_000001
+[2022-04-06 01:27:55,485] {spark_submit.py:488} INFO - 22/04/06 01:27:55 INFO SparkHadoopMapRedUtil: attempt_202204060127337739287139983004801_0003_m_000001_6: Committed
+[2022-04-06 01:27:55,510] {spark_submit.py:488} INFO - 22/04/06 01:27:55 INFO Executor: Finished task 3.0 in stage 3.0 (TID 8). 3526 bytes result sent to driver
+[2022-04-06 01:27:55,512] {spark_submit.py:488} INFO - 22/04/06 01:27:55 INFO Executor: Finished task 1.0 in stage 3.0 (TID 6). 3526 bytes result sent to driver
+[2022-04-06 01:27:55,512] {spark_submit.py:488} INFO - 22/04/06 01:27:55 INFO TaskSetManager: Finished task 3.0 in stage 3.0 (TID 8) in 21265 ms on 9fe4286b2855 (executor driver) (1/4)
+[2022-04-06 01:27:55,513] {spark_submit.py:488} INFO - 22/04/06 01:27:55 INFO Executor: Finished task 0.0 in stage 3.0 (TID 5). 3526 bytes result sent to driver
+[2022-04-06 01:27:55,514] {spark_submit.py:488} INFO - 22/04/06 01:27:55 INFO TaskSetManager: Finished task 1.0 in stage 3.0 (TID 6) in 21271 ms on 9fe4286b2855 (executor driver) (2/4)
+[2022-04-06 01:27:55,515] {spark_submit.py:488} INFO - 22/04/06 01:27:55 INFO TaskSetManager: Finished task 0.0 in stage 3.0 (TID 5) in 21277 ms on 9fe4286b2855 (executor driver) (3/4)
+[2022-04-06 01:27:55,525] {spark_submit.py:488} INFO - 22/04/06 01:27:55 INFO Executor: Finished task 2.0 in stage 3.0 (TID 7). 3526 bytes result sent to driver
+[2022-04-06 01:27:55,527] {spark_submit.py:488} INFO - 22/04/06 01:27:55 INFO TaskSetManager: Finished task 2.0 in stage 3.0 (TID 7) in 21281 ms on 9fe4286b2855 (executor driver) (4/4)
+[2022-04-06 01:27:55,527] {spark_submit.py:488} INFO - 22/04/06 01:27:55 INFO TaskSchedulerImpl: Removed TaskSet 3.0, whose tasks have all completed, from pool
+[2022-04-06 01:27:55,528] {spark_submit.py:488} INFO - 22/04/06 01:27:55 INFO DAGScheduler: ResultStage 3 (save at NativeMethodAccessorImpl.java:0) finished in 21.827 s
+[2022-04-06 01:27:55,530] {spark_submit.py:488} INFO - 22/04/06 01:27:55 INFO DAGScheduler: Job 2 is finished. Cancelling potential speculative or zombie tasks for this job
+[2022-04-06 01:27:55,530] {spark_submit.py:488} INFO - 22/04/06 01:27:55 INFO TaskSchedulerImpl: Killing all running tasks in stage 3: Stage finished
+[2022-04-06 01:27:55,531] {spark_submit.py:488} INFO - 22/04/06 01:27:55 INFO DAGScheduler: Job 2 finished: save at NativeMethodAccessorImpl.java:0, took 21.881379 s
+[2022-04-06 01:27:55,539] {spark_submit.py:488} INFO - 22/04/06 01:27:55 INFO FileFormatWriter: Start to commit write Job ac8d08ab-fd83-4891-bbab-7d8a0049ef3b.
+[2022-04-06 01:27:55,850] {spark_submit.py:488} INFO - 22/04/06 01:27:55 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://dtc_data_lake_de-stack-overflow/BigQuery/posts_questions-2015-10/_temporary/0/task_20220406012733595045039216530424_0003_m_000002/' directory.
+[2022-04-06 01:27:56,243] {spark_submit.py:488} INFO - 22/04/06 01:27:56 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://dtc_data_lake_de-stack-overflow/BigQuery/posts_questions-2015-10/_temporary/0/task_202204060127337739287139983004801_0003_m_000001/' directory.
+[2022-04-06 01:27:56,565] {spark_submit.py:488} INFO - 22/04/06 01:27:56 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://dtc_data_lake_de-stack-overflow/BigQuery/posts_questions-2015-10/_temporary/0/task_202204060127338657973839477239583_0003_m_000003/' directory.
+[2022-04-06 01:27:56,954] {spark_submit.py:488} INFO - 22/04/06 01:27:56 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://dtc_data_lake_de-stack-overflow/BigQuery/posts_questions-2015-10/_temporary/0/task_202204060127338979645485700953285_0003_m_000000/' directory.
+[2022-04-06 01:27:57,220] {spark_submit.py:488} INFO - 22/04/06 01:27:57 INFO GoogleCloudStorageFileSystem: Successfully repaired 'gs://dtc_data_lake_de-stack-overflow/BigQuery/posts_questions-2015-10/' directory.
+[2022-04-06 01:27:58,021] {spark_submit.py:488} INFO - 22/04/06 01:27:58 INFO FileFormatWriter: Write Job ac8d08ab-fd83-4891-bbab-7d8a0049ef3b committed. Elapsed time: 2480 ms.
+[2022-04-06 01:27:58,031] {spark_submit.py:488} INFO - 22/04/06 01:27:58 INFO FileFormatWriter: Finished processing stats for write job ac8d08ab-fd83-4891-bbab-7d8a0049ef3b.
+[2022-04-06 01:27:58,973] {spark_submit.py:488} INFO - 22/04/06 01:27:58 INFO SparkContext: Invoking stop() from shutdown hook
+[2022-04-06 01:27:59,101] {spark_submit.py:488} INFO - 22/04/06 01:27:59 INFO SparkUI: Stopped Spark web UI at http://9fe4286b2855:4050
+[2022-04-06 01:27:59,248] {spark_submit.py:488} INFO - 22/04/06 01:27:59 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+[2022-04-06 01:27:59,686] {spark_submit.py:488} INFO - 22/04/06 01:27:59 INFO MemoryStore: MemoryStore cleared
+[2022-04-06 01:27:59,687] {spark_submit.py:488} INFO - 22/04/06 01:27:59 INFO BlockManager: BlockManager stopped
+[2022-04-06 01:27:59,695] {spark_submit.py:488} INFO - 22/04/06 01:27:59 INFO BlockManagerMaster: BlockManagerMaster stopped
+[2022-04-06 01:27:59,698] {spark_submit.py:488} INFO - 22/04/06 01:27:59 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+[2022-04-06 01:27:59,894] {spark_submit.py:488} INFO - 22/04/06 01:27:59 INFO SparkContext: Successfully stopped SparkContext
+[2022-04-06 01:27:59,894] {spark_submit.py:488} INFO - 22/04/06 01:27:59 INFO ShutdownHookManager: Shutdown hook called
+[2022-04-06 01:27:59,895] {spark_submit.py:488} INFO - 22/04/06 01:27:59 INFO ShutdownHookManager: Deleting directory /tmp/spark-374a20a1-064f-436d-a110-c4c140cba443
+[2022-04-06 01:27:59,958] {spark_submit.py:488} INFO - 22/04/06 01:27:59 INFO ShutdownHookManager: Deleting directory /tmp/spark-b86f274c-e44f-44bc-b22e-ceb448972140
+[2022-04-06 01:27:59,994] {spark_submit.py:488} INFO - 22/04/06 01:27:59 INFO ShutdownHookManager: Deleting directory /tmp/spark-b86f274c-e44f-44bc-b22e-ceb448972140/pyspark-6f37af40-1b00-45f3-9cca-a73e8c272d13
+[2022-04-06 01:28:01,895] {taskinstance.py:1288} INFO - Marking task as SUCCESS. dag_id=IngestToGCP, task_id=processing_tasks_posts_questions.spark_job, execution_date=20151001T000000, start_date=20220406T012333, end_date=20220406T012801
+[2022-04-06 01:28:02,152] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-04-06 01:28:02,246] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check

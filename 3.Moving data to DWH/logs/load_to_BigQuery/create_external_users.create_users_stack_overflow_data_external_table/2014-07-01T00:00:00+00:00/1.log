@@ -1,0 +1,46 @@
+[2022-04-07 19:20:46,317] {taskinstance.py:1043} INFO - Dependencies all met for <TaskInstance: load_to_BigQuery.create_external_users.create_users_stack_overflow_data_external_table scheduled__2014-07-01T00:00:00+00:00 [queued]>
+[2022-04-07 19:20:46,416] {taskinstance.py:1043} INFO - Dependencies all met for <TaskInstance: load_to_BigQuery.create_external_users.create_users_stack_overflow_data_external_table scheduled__2014-07-01T00:00:00+00:00 [queued]>
+[2022-04-07 19:20:46,417] {taskinstance.py:1249} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-07 19:20:46,417] {taskinstance.py:1250} INFO - Starting attempt 1 of 1
+[2022-04-07 19:20:46,417] {taskinstance.py:1251} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-07 19:20:47,050] {taskinstance.py:1270} INFO - Executing <Task(BigQueryCreateExternalTableOperator): create_external_users.create_users_stack_overflow_data_external_table> on 2014-07-01 00:00:00+00:00
+[2022-04-07 19:20:47,078] {standard_task_runner.py:52} INFO - Started process 2088 to run task
+[2022-04-07 19:20:47,131] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'load_to_BigQuery', 'create_external_users.create_users_stack_overflow_data_external_table', 'scheduled__2014-07-01T00:00:00+00:00', '--job-id', '12623', '--raw', '--subdir', 'DAGS_FOLDER/load_to_BigQuery_dag.py', '--cfg-path', '/tmp/tmpj4a82ulx', '--error-file', '/tmp/tmpovk19zss']
+[2022-04-07 19:20:47,143] {standard_task_runner.py:80} INFO - Job 12623: Subtask create_external_users.create_users_stack_overflow_data_external_table
+[2022-04-07 19:20:47,472] {logging_mixin.py:109} INFO - Running <TaskInstance: load_to_BigQuery.create_external_users.create_users_stack_overflow_data_external_table scheduled__2014-07-01T00:00:00+00:00 [running]> on host 2c54f2187010
+[2022-04-07 19:20:47,872] {logging_mixin.py:109} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:156 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2022-04-07 19:20:48,026] {taskinstance.py:1448} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=load_to_BigQuery
+AIRFLOW_CTX_TASK_ID=create_external_users.create_users_stack_overflow_data_external_table
+AIRFLOW_CTX_EXECUTION_DATE=2014-07-01T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2014-07-01T00:00:00+00:00
+[2022-04-07 19:20:48,032] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2022-04-07 19:20:49,307] {taskinstance.py:1288} INFO - Marking task as SUCCESS. dag_id=load_to_BigQuery, task_id=create_external_users.create_users_stack_overflow_data_external_table, execution_date=20140701T000000, start_date=20220407T192046, end_date=20220407T192049
+[2022-04-07 19:20:49,509] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-04-07 19:20:49,712] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-04-07 22:14:26,969] {taskinstance.py:1043} INFO - Dependencies all met for <TaskInstance: load_to_BigQuery.create_external_users.create_users_stack_overflow_data_external_table scheduled__2014-07-01T00:00:00+00:00 [queued]>
+[2022-04-07 22:14:27,020] {taskinstance.py:1043} INFO - Dependencies all met for <TaskInstance: load_to_BigQuery.create_external_users.create_users_stack_overflow_data_external_table scheduled__2014-07-01T00:00:00+00:00 [queued]>
+[2022-04-07 22:14:27,021] {taskinstance.py:1249} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-07 22:14:27,021] {taskinstance.py:1250} INFO - Starting attempt 1 of 1
+[2022-04-07 22:14:27,021] {taskinstance.py:1251} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-07 22:14:27,349] {taskinstance.py:1270} INFO - Executing <Task(BigQueryCreateExternalTableOperator): create_external_users.create_users_stack_overflow_data_external_table> on 2014-07-01 00:00:00+00:00
+[2022-04-07 22:14:27,375] {standard_task_runner.py:52} INFO - Started process 4405 to run task
+[2022-04-07 22:14:27,391] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'load_to_BigQuery', 'create_external_users.create_users_stack_overflow_data_external_table', 'scheduled__2014-07-01T00:00:00+00:00', '--job-id', '13882', '--raw', '--subdir', 'DAGS_FOLDER/load_to_BigQuery_dag.py', '--cfg-path', '/tmp/tmps869c164', '--error-file', '/tmp/tmpupzefrxq']
+[2022-04-07 22:14:27,393] {standard_task_runner.py:80} INFO - Job 13882: Subtask create_external_users.create_users_stack_overflow_data_external_table
+[2022-04-07 22:14:27,666] {logging_mixin.py:109} INFO - Running <TaskInstance: load_to_BigQuery.create_external_users.create_users_stack_overflow_data_external_table scheduled__2014-07-01T00:00:00+00:00 [running]> on host 36107d30f64e
+[2022-04-07 22:14:27,941] {logging_mixin.py:109} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:156 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2022-04-07 22:14:28,044] {taskinstance.py:1448} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=load_to_BigQuery
+AIRFLOW_CTX_TASK_ID=create_external_users.create_users_stack_overflow_data_external_table
+AIRFLOW_CTX_EXECUTION_DATE=2014-07-01T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2014-07-01T00:00:00+00:00
+[2022-04-07 22:14:28,047] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2022-04-07 22:14:28,565] {taskinstance.py:1288} INFO - Marking task as SUCCESS. dag_id=load_to_BigQuery, task_id=create_external_users.create_users_stack_overflow_data_external_table, execution_date=20140701T000000, start_date=20220407T221426, end_date=20220407T221428
+[2022-04-07 22:14:28,667] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-04-07 22:14:28,811] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -49,7 +49,6 @@ x-airflow-common:
     dockerfile: ./Dockerfile
     network: host
 
-
   environment:
     &airflow-common-env
     AIRFLOW__CORE__EXECUTOR: LocalExecutor
@@ -62,8 +61,8 @@ x-airflow-common:
     AIRFLOW__API__AUTH_BACKEND: 'airflow.api.auth.backend.basic_auth'
     _PIP_ADDITIONAL_REQUIREMENTS: ${_PIP_ADDITIONAL_REQUIREMENTS:- apache-airflow-providers-apache-spark pyarrow notebook}
     GOOGLE_APPLICATION_CREDENTIALS: /.google/credentials/google_credentials_project.json
-    AIRFLOW_CONN_GOOGLE_CLOUD_DEFAULT: 'google-cloud-platform://?extra__google_cloud_platform__key_path=/.google/credentials/google_credentials.json'
-    GCP_PROJECT_ID: 'DE-stack-overflow'
+    AIRFLOW_CONN_GOOGLE_CLOUD_DEFAULT: 'google-cloud-platform://?extra__google_cloud_platform__key_path=/.google/credentials/google_credentials_project.json'
+    GCP_PROJECT_ID: 'de-stack-overflow'
     GCP_GCS_BUCKET: 'dtc_data_lake_de-stack-overflow'
   
 
@@ -72,8 +71,9 @@ x-airflow-common:
     - ./dags:/opt/airflow/dags
     - ./logs:/opt/airflow/logs
     - ./plugins:/opt/airflow/plugins
-    - /home/sebastian2296/.google/credentials/:/.google/credentials:ro
-    
+    - /home/sebastian/.google/credentials/:/.google/credentials:ro
+    - ./notebooks:/opt/airflow/notebooks  
+      
   user: "${AIRFLOW_UID:-50000}:0"
   depends_on:
     &airflow-common-depends-on
@@ -290,7 +290,6 @@ services:
       context: .
       dockerfile: ./Dockerfile
       network: host
-    user: root
     command: bash -c "jupyter notebook --ip 0.0.0.0 --no-browser --allow-root"
     ports:
       - "127.0.0.1:8888:8888/tcp"
@@ -300,7 +299,7 @@ services:
     volumes:
       - ./notebooks:/opt/airflow/notebooks
       - ./dags:/opt/airflow/dags
-      - /home/sebastian2296/.google/credentials/:/.google/credentials:ro
+      - /home/sebastian/.google/credentials/:/.google/credentials:ro
       
 volumes:
   postgres-db-volume:

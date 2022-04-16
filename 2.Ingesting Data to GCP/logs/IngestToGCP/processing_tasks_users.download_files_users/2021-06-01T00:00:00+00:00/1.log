@@ -1,0 +1,29 @@
+[2022-04-06 03:52:58,526] {taskinstance.py:1043} INFO - Dependencies all met for <TaskInstance: IngestToGCP.processing_tasks_users.download_files_users scheduled__2021-06-01T00:00:00+00:00 [queued]>
+[2022-04-06 03:52:58,688] {taskinstance.py:1043} INFO - Dependencies all met for <TaskInstance: IngestToGCP.processing_tasks_users.download_files_users scheduled__2021-06-01T00:00:00+00:00 [queued]>
+[2022-04-06 03:52:58,688] {taskinstance.py:1249} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-06 03:52:58,688] {taskinstance.py:1250} INFO - Starting attempt 1 of 1
+[2022-04-06 03:52:58,689] {taskinstance.py:1251} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-06 03:52:58,780] {taskinstance.py:1270} INFO - Executing <Task(BashOperator): processing_tasks_users.download_files_users> on 2021-06-01 00:00:00+00:00
+[2022-04-06 03:52:58,833] {standard_task_runner.py:52} INFO - Started process 233006 to run task
+[2022-04-06 03:52:58,873] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'IngestToGCP', 'processing_tasks_users.download_files_users', 'scheduled__2021-06-01T00:00:00+00:00', '--job-id', '12041', '--raw', '--subdir', 'DAGS_FOLDER/ingest_dag.py', '--cfg-path', '/tmp/tmpy_klrpe4', '--error-file', '/tmp/tmpajgxqxlv']
+[2022-04-06 03:52:58,875] {standard_task_runner.py:80} INFO - Job 12041: Subtask processing_tasks_users.download_files_users
+[2022-04-06 03:52:59,540] {logging_mixin.py:109} INFO - Running <TaskInstance: IngestToGCP.processing_tasks_users.download_files_users scheduled__2021-06-01T00:00:00+00:00 [running]> on host 9fe4286b2855
+[2022-04-06 03:53:00,404] {logging_mixin.py:109} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:156 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2022-04-06 03:53:00,589] {taskinstance.py:1448} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=IngestToGCP
+AIRFLOW_CTX_TASK_ID=processing_tasks_users.download_files_users
+AIRFLOW_CTX_EXECUTION_DATE=2021-06-01T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-06-01T00:00:00+00:00
+[2022-04-06 03:53:00,591] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-04-06 03:53:00,616] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'curl -A "Mozilla Chrome Safari" -sSfl --connect-timeout 5                     --retry 5                     https://storage.googleapis.com/dtc_data_lake_de-stack-overflow/processed/users-2021-06.csv > /opt/***/users-2021-06.csv']
+[2022-04-06 03:53:00,825] {subprocess.py:85} INFO - Output:
+[2022-04-06 03:53:03,783] {subprocess.py:93} INFO - Command exited with return code 0
+[2022-04-06 03:53:03,904] {taskinstance.py:1288} INFO - Marking task as SUCCESS. dag_id=IngestToGCP, task_id=processing_tasks_users.download_files_users, execution_date=20210601T000000, start_date=20220406T035258, end_date=20220406T035303
+[2022-04-06 03:53:04,103] {local_task_job.py:212} WARNING - State of this instance has been externally set to success. Terminating instance.
+[2022-04-06 03:53:04,109] {process_utils.py:124} INFO - Sending Signals.SIGTERM to group 233006. PIDs of all processes in the group: [233006]
+[2022-04-06 03:53:04,109] {process_utils.py:75} INFO - Sending the signal Signals.SIGTERM to group 233006
+[2022-04-06 03:53:04,221] {process_utils.py:70} INFO - Process psutil.Process(pid=233006, status='terminated', exitcode=0, started='03:52:58') (233006) terminated with exit code 0

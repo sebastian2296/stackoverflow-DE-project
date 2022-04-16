@@ -1,23 +1,23 @@
-[2022-03-30 19:58:50,883] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: IngestToGCP.processing_tasks_users.format_to_parquet_users scheduled__2009-02-01T00:00:00+00:00 [queued]>
-[2022-03-30 19:58:50,991] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: IngestToGCP.processing_tasks_users.format_to_parquet_users scheduled__2009-02-01T00:00:00+00:00 [queued]>
-[2022-03-30 19:58:50,992] {taskinstance.py:1243} INFO - 
+[2022-04-05 22:03:41,462] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: IngestToGCP.processing_tasks_users.format_to_parquet_users scheduled__2009-02-01T00:00:00+00:00 [queued]>
+[2022-04-05 22:03:41,540] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: IngestToGCP.processing_tasks_users.format_to_parquet_users scheduled__2009-02-01T00:00:00+00:00 [queued]>
+[2022-04-05 22:03:41,540] {taskinstance.py:1243} INFO - 
 --------------------------------------------------------------------------------
-[2022-03-30 19:58:50,992] {taskinstance.py:1244} INFO - Starting attempt 1 of 1
-[2022-03-30 19:58:50,992] {taskinstance.py:1245} INFO - 
+[2022-04-05 22:03:41,540] {taskinstance.py:1244} INFO - Starting attempt 1 of 1
+[2022-04-05 22:03:41,540] {taskinstance.py:1245} INFO - 
 --------------------------------------------------------------------------------
-[2022-03-30 19:58:51,041] {taskinstance.py:1264} INFO - Executing <Task(PythonOperator): processing_tasks_users.format_to_parquet_users> on 2009-02-01 00:00:00+00:00
-[2022-03-30 19:58:51,063] {standard_task_runner.py:52} INFO - Started process 1946 to run task
-[2022-03-30 19:58:51,082] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'IngestToGCP', 'processing_tasks_users.format_to_parquet_users', 'scheduled__2009-02-01T00:00:00+00:00', '--job-id', '86', '--raw', '--subdir', 'DAGS_FOLDER/ingest_dag.py', '--cfg-path', '/tmp/tmpnyrjd1ws', '--error-file', '/tmp/tmplr6qmc5e']
-[2022-03-30 19:58:51,093] {standard_task_runner.py:77} INFO - Job 86: Subtask processing_tasks_users.format_to_parquet_users
-[2022-03-30 19:58:51,628] {logging_mixin.py:109} INFO - Running <TaskInstance: IngestToGCP.processing_tasks_users.format_to_parquet_users scheduled__2009-02-01T00:00:00+00:00 [running]> on host d9825fd5ae59
-[2022-03-30 19:58:52,075] {logging_mixin.py:109} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:156 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
-[2022-03-30 19:58:52,330] {taskinstance.py:1431} INFO - Exporting the following env vars:
+[2022-04-05 22:03:41,636] {taskinstance.py:1264} INFO - Executing <Task(PythonOperator): processing_tasks_users.format_to_parquet_users> on 2009-02-01 00:00:00+00:00
+[2022-04-05 22:03:41,704] {standard_task_runner.py:52} INFO - Started process 338 to run task
+[2022-04-05 22:03:41,712] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'IngestToGCP', 'processing_tasks_users.format_to_parquet_users', 'scheduled__2009-02-01T00:00:00+00:00', '--job-id', '8148', '--raw', '--subdir', 'DAGS_FOLDER/ingest_dag.py', '--cfg-path', '/tmp/tmpr9vm7a9i', '--error-file', '/tmp/tmp0jrrq7rp']
+[2022-04-05 22:03:41,714] {standard_task_runner.py:77} INFO - Job 8148: Subtask processing_tasks_users.format_to_parquet_users
+[2022-04-05 22:03:42,108] {logging_mixin.py:109} INFO - Running <TaskInstance: IngestToGCP.processing_tasks_users.format_to_parquet_users scheduled__2009-02-01T00:00:00+00:00 [running]> on host c460da24ecb6
+[2022-04-05 22:03:42,545] {logging_mixin.py:109} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:156 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2022-04-05 22:03:42,712] {taskinstance.py:1431} INFO - Exporting the following env vars:
 AIRFLOW_CTX_DAG_OWNER=***
 AIRFLOW_CTX_DAG_ID=IngestToGCP
 AIRFLOW_CTX_TASK_ID=processing_tasks_users.format_to_parquet_users
 AIRFLOW_CTX_EXECUTION_DATE=2009-02-01T00:00:00+00:00
 AIRFLOW_CTX_DAG_RUN_ID=scheduled__2009-02-01T00:00:00+00:00
-[2022-03-30 19:58:52,720] {python.py:175} INFO - Done. Returned value was: None
-[2022-03-30 19:58:52,766] {taskinstance.py:1282} INFO - Marking task as SUCCESS. dag_id=IngestToGCP, task_id=processing_tasks_users.format_to_parquet_users, execution_date=20090201T000000, start_date=20220330T195850, end_date=20220330T195852
-[2022-03-30 19:58:52,897] {local_task_job.py:154} INFO - Task exited with return code 0
-[2022-03-30 19:58:53,069] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-04-05 22:03:43,263] {python.py:175} INFO - Done. Returned value was: None
+[2022-04-05 22:03:43,358] {taskinstance.py:1282} INFO - Marking task as SUCCESS. dag_id=IngestToGCP, task_id=processing_tasks_users.format_to_parquet_users, execution_date=20090201T000000, start_date=20220405T220341, end_date=20220405T220343
+[2022-04-05 22:03:43,564] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-04-05 22:03:43,706] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check

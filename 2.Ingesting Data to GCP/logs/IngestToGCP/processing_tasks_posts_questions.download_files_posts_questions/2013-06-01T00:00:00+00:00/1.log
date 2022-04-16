@@ -1,0 +1,27 @@
+[2022-04-06 00:19:39,780] {taskinstance.py:1043} INFO - Dependencies all met for <TaskInstance: IngestToGCP.processing_tasks_posts_questions.download_files_posts_questions scheduled__2013-06-01T00:00:00+00:00 [queued]>
+[2022-04-06 00:19:40,012] {taskinstance.py:1043} INFO - Dependencies all met for <TaskInstance: IngestToGCP.processing_tasks_posts_questions.download_files_posts_questions scheduled__2013-06-01T00:00:00+00:00 [queued]>
+[2022-04-06 00:19:40,012] {taskinstance.py:1249} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-06 00:19:40,013] {taskinstance.py:1250} INFO - Starting attempt 1 of 1
+[2022-04-06 00:19:40,013] {taskinstance.py:1251} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-06 00:19:40,164] {taskinstance.py:1270} INFO - Executing <Task(BashOperator): processing_tasks_posts_questions.download_files_posts_questions> on 2013-06-01 00:00:00+00:00
+[2022-04-06 00:19:40,251] {standard_task_runner.py:52} INFO - Started process 86048 to run task
+[2022-04-06 00:19:40,279] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'IngestToGCP', 'processing_tasks_posts_questions.download_files_posts_questions', 'scheduled__2013-06-01T00:00:00+00:00', '--job-id', '9734', '--raw', '--subdir', 'DAGS_FOLDER/ingest_dag.py', '--cfg-path', '/tmp/tmp4ww_zrhi', '--error-file', '/tmp/tmp7f0pga_4']
+[2022-04-06 00:19:40,315] {standard_task_runner.py:80} INFO - Job 9734: Subtask processing_tasks_posts_questions.download_files_posts_questions
+[2022-04-06 00:19:41,064] {logging_mixin.py:109} INFO - Running <TaskInstance: IngestToGCP.processing_tasks_posts_questions.download_files_posts_questions scheduled__2013-06-01T00:00:00+00:00 [running]> on host 9fe4286b2855
+[2022-04-06 00:19:41,404] {logging_mixin.py:109} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:156 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2022-04-06 00:19:41,469] {taskinstance.py:1448} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=IngestToGCP
+AIRFLOW_CTX_TASK_ID=processing_tasks_posts_questions.download_files_posts_questions
+AIRFLOW_CTX_EXECUTION_DATE=2013-06-01T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2013-06-01T00:00:00+00:00
+[2022-04-06 00:19:41,471] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-04-06 00:19:41,472] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'curl -A "Mozilla Chrome Safari" -sSfl --connect-timeout 5                     --retry 5                     https://storage.googleapis.com/dtc_data_lake_de-stack-overflow/processed/posts_questions-2013-06.csv > /opt/***/posts_questions-2013-06.csv']
+[2022-04-06 00:19:41,597] {subprocess.py:85} INFO - Output:
+[2022-04-06 00:19:51,896] {subprocess.py:93} INFO - Command exited with return code 0
+[2022-04-06 00:19:53,417] {taskinstance.py:1288} INFO - Marking task as SUCCESS. dag_id=IngestToGCP, task_id=processing_tasks_posts_questions.download_files_posts_questions, execution_date=20130601T000000, start_date=20220406T001939, end_date=20220406T001953
+[2022-04-06 00:19:53,610] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-04-06 00:19:53,831] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check

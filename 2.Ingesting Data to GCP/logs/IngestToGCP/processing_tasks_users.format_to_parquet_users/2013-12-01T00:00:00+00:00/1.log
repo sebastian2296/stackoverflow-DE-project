@@ -1,0 +1,25 @@
+[2022-04-06 00:33:36,457] {taskinstance.py:1043} INFO - Dependencies all met for <TaskInstance: IngestToGCP.processing_tasks_users.format_to_parquet_users scheduled__2013-12-01T00:00:00+00:00 [queued]>
+[2022-04-06 00:33:36,612] {taskinstance.py:1043} INFO - Dependencies all met for <TaskInstance: IngestToGCP.processing_tasks_users.format_to_parquet_users scheduled__2013-12-01T00:00:00+00:00 [queued]>
+[2022-04-06 00:33:36,613] {taskinstance.py:1249} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-06 00:33:36,613] {taskinstance.py:1250} INFO - Starting attempt 1 of 1
+[2022-04-06 00:33:36,613] {taskinstance.py:1251} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-06 00:33:36,725] {taskinstance.py:1270} INFO - Executing <Task(PythonOperator): processing_tasks_users.format_to_parquet_users> on 2013-12-01 00:00:00+00:00
+[2022-04-06 00:33:36,815] {standard_task_runner.py:52} INFO - Started process 95756 to run task
+[2022-04-06 00:33:36,879] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'IngestToGCP', 'processing_tasks_users.format_to_parquet_users', 'scheduled__2013-12-01T00:00:00+00:00', '--job-id', '9884', '--raw', '--subdir', 'DAGS_FOLDER/ingest_dag.py', '--cfg-path', '/tmp/tmpwo9lpi_d', '--error-file', '/tmp/tmp5zrnw9oj']
+[2022-04-06 00:33:36,922] {standard_task_runner.py:80} INFO - Job 9884: Subtask processing_tasks_users.format_to_parquet_users
+[2022-04-06 00:33:37,384] {logging_mixin.py:109} INFO - Running <TaskInstance: IngestToGCP.processing_tasks_users.format_to_parquet_users scheduled__2013-12-01T00:00:00+00:00 [running]> on host 9fe4286b2855
+[2022-04-06 00:33:38,198] {logging_mixin.py:109} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:156 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2022-04-06 00:33:38,424] {taskinstance.py:1448} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=IngestToGCP
+AIRFLOW_CTX_TASK_ID=processing_tasks_users.format_to_parquet_users
+AIRFLOW_CTX_EXECUTION_DATE=2013-12-01T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2013-12-01T00:00:00+00:00
+[2022-04-06 00:33:46,894] {python.py:175} INFO - Done. Returned value was: None
+[2022-04-06 00:33:47,081] {taskinstance.py:1288} INFO - Marking task as SUCCESS. dag_id=IngestToGCP, task_id=processing_tasks_users.format_to_parquet_users, execution_date=20131201T000000, start_date=20220406T003336, end_date=20220406T003347
+[2022-04-06 00:33:47,328] {local_task_job.py:212} WARNING - State of this instance has been externally set to success. Terminating instance.
+[2022-04-06 00:33:47,390] {process_utils.py:124} INFO - Sending Signals.SIGTERM to group 95756. PIDs of all processes in the group: [95756]
+[2022-04-06 00:33:47,391] {process_utils.py:75} INFO - Sending the signal Signals.SIGTERM to group 95756
+[2022-04-06 00:33:47,391] {process_utils.py:70} INFO - Process psutil.Process(pid=95756, status='terminated', exitcode=0, started='00:33:36') (95756) terminated with exit code 0

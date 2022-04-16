@@ -1,0 +1,69 @@
+[2022-04-07 18:55:20,014] {taskinstance.py:1043} INFO - Dependencies all met for <TaskInstance: load_to_BigQuery.create_external_users.create_users_stack_overflow_data_external_table scheduled__2008-07-01T00:00:00+00:00 [queued]>
+[2022-04-07 18:55:20,969] {taskinstance.py:1043} INFO - Dependencies all met for <TaskInstance: load_to_BigQuery.create_external_users.create_users_stack_overflow_data_external_table scheduled__2008-07-01T00:00:00+00:00 [queued]>
+[2022-04-07 18:55:20,969] {taskinstance.py:1249} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-07 18:55:20,969] {taskinstance.py:1250} INFO - Starting attempt 1 of 1
+[2022-04-07 18:55:20,969] {taskinstance.py:1251} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-07 18:55:21,066] {taskinstance.py:1270} INFO - Executing <Task(BigQueryCreateExternalTableOperator): create_external_users.create_users_stack_overflow_data_external_table> on 2008-07-01 00:00:00+00:00
+[2022-04-07 18:55:21,121] {standard_task_runner.py:52} INFO - Started process 5544 to run task
+[2022-04-07 18:55:21,188] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'load_to_BigQuery', 'create_external_users.create_users_stack_overflow_data_external_table', 'scheduled__2008-07-01T00:00:00+00:00', '--job-id', '12310', '--raw', '--subdir', 'DAGS_FOLDER/load_to_BigQuery_dag.py', '--cfg-path', '/tmp/tmpezuovv38', '--error-file', '/tmp/tmp4h92qy32']
+[2022-04-07 18:55:21,191] {standard_task_runner.py:80} INFO - Job 12310: Subtask create_external_users.create_users_stack_overflow_data_external_table
+[2022-04-07 18:55:21,408] {logging_mixin.py:109} INFO - Running <TaskInstance: load_to_BigQuery.create_external_users.create_users_stack_overflow_data_external_table scheduled__2008-07-01T00:00:00+00:00 [running]> on host a214a02826ce
+[2022-04-07 18:55:21,835] {taskinstance.py:1448} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=load_to_BigQuery
+AIRFLOW_CTX_TASK_ID=create_external_users.create_users_stack_overflow_data_external_table
+AIRFLOW_CTX_EXECUTION_DATE=2008-07-01T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2008-07-01T00:00:00+00:00
+[2022-04-07 18:55:21,838] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2022-04-07 18:55:21,839] {taskinstance.py:1774} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/google/cloud/operators/bigquery.py", line 1135, in execute
+    table_resource=self.table_resource,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/google/common/hooks/base_google.py", line 432, in inner_wrapper
+    kwargs['project_id'] = self.project_id
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/google/common/hooks/base_google.py", line 317, in project_id
+    _, project_id = self._get_credentials_and_project_id()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/google/common/hooks/base_google.py", line 247, in _get_credentials_and_project_id
+    delegates=delegates,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/google/cloud/utils/credentials_provider.py", line 321, in get_credentials_and_project_id
+    return _CredentialProvider(*args, **kwargs).get_credentials_and_project()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/google/cloud/utils/credentials_provider.py", line 223, in get_credentials_and_project
+    credentials, project_id = self._get_credentials_using_key_path()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/google/cloud/utils/credentials_provider.py", line 273, in _get_credentials_using_key_path
+    self.key_path, scopes=self.scopes
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/oauth2/service_account.py", line 239, in from_service_account_file
+    filename, require=["client_email", "token_uri"]
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_service_account_info.py", line 72, in from_filename
+    with io.open(filename, "r", encoding="utf-8") as json_file:
+FileNotFoundError: [Errno 2] No such file or directory: '/.google/credentials/google_credentials.json'
+[2022-04-07 18:55:21,974] {taskinstance.py:1288} INFO - Marking task as FAILED. dag_id=load_to_BigQuery, task_id=create_external_users.create_users_stack_overflow_data_external_table, execution_date=20080701T000000, start_date=20220407T185520, end_date=20220407T185521
+[2022-04-07 18:55:22,131] {standard_task_runner.py:98} ERROR - Failed to execute job 12310 for task create_external_users.create_users_stack_overflow_data_external_table ([Errno 2] No such file or directory: '/.google/credentials/google_credentials.json'; 5544)
+[2022-04-07 18:55:22,203] {local_task_job.py:154} INFO - Task exited with return code 1
+[2022-04-07 18:55:22,395] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-04-07 18:55:22,483] {dagrun.py:530} ERROR - Marking run <DagRun load_to_BigQuery @ 2008-07-01 00:00:00+00:00: scheduled__2008-07-01T00:00:00+00:00, externally triggered: False> failed
+[2022-04-07 18:55:22,486] {dagrun.py:605} INFO - DagRun Finished: dag_id=load_to_BigQuery, execution_date=2008-07-01 00:00:00+00:00, run_id=scheduled__2008-07-01T00:00:00+00:00, run_start_date=2022-04-07 18:55:09.537404+00:00, run_end_date=2022-04-07 18:55:22.486352+00:00, run_duration=12.948948, state=failed, external_trigger=False, run_type=scheduled, data_interval_start=2008-07-01 00:00:00+00:00, data_interval_end=2008-08-01 00:00:00+00:00, dag_hash=c265aa7342cff04902d3e335ae8d8865
+[2022-04-07 22:06:26,365] {taskinstance.py:1043} INFO - Dependencies all met for <TaskInstance: load_to_BigQuery.create_external_users.create_users_stack_overflow_data_external_table scheduled__2008-07-01T00:00:00+00:00 [queued]>
+[2022-04-07 22:06:26,492] {taskinstance.py:1043} INFO - Dependencies all met for <TaskInstance: load_to_BigQuery.create_external_users.create_users_stack_overflow_data_external_table scheduled__2008-07-01T00:00:00+00:00 [queued]>
+[2022-04-07 22:06:26,492] {taskinstance.py:1249} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-07 22:06:26,493] {taskinstance.py:1250} INFO - Starting attempt 1 of 1
+[2022-04-07 22:06:26,493] {taskinstance.py:1251} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-07 22:06:27,249] {taskinstance.py:1270} INFO - Executing <Task(BigQueryCreateExternalTableOperator): create_external_users.create_users_stack_overflow_data_external_table> on 2008-07-01 00:00:00+00:00
+[2022-04-07 22:06:27,306] {standard_task_runner.py:52} INFO - Started process 597 to run task
+[2022-04-07 22:06:27,376] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'load_to_BigQuery', 'create_external_users.create_users_stack_overflow_data_external_table', 'scheduled__2008-07-01T00:00:00+00:00', '--job-id', '13307', '--raw', '--subdir', 'DAGS_FOLDER/load_to_BigQuery_dag.py', '--cfg-path', '/tmp/tmpytm0fnv9', '--error-file', '/tmp/tmptd_2uy0v']
+[2022-04-07 22:06:27,380] {standard_task_runner.py:80} INFO - Job 13307: Subtask create_external_users.create_users_stack_overflow_data_external_table
+[2022-04-07 22:06:27,809] {logging_mixin.py:109} INFO - Running <TaskInstance: load_to_BigQuery.create_external_users.create_users_stack_overflow_data_external_table scheduled__2008-07-01T00:00:00+00:00 [running]> on host 36107d30f64e
+[2022-04-07 22:06:28,043] {logging_mixin.py:109} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:156 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2022-04-07 22:06:28,184] {taskinstance.py:1448} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=load_to_BigQuery
+AIRFLOW_CTX_TASK_ID=create_external_users.create_users_stack_overflow_data_external_table
+AIRFLOW_CTX_EXECUTION_DATE=2008-07-01T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2008-07-01T00:00:00+00:00
+[2022-04-07 22:06:28,187] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2022-04-07 22:06:28,935] {taskinstance.py:1288} INFO - Marking task as SUCCESS. dag_id=load_to_BigQuery, task_id=create_external_users.create_users_stack_overflow_data_external_table, execution_date=20080701T000000, start_date=20220407T220626, end_date=20220407T220628
+[2022-04-07 22:06:29,068] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-04-07 22:06:29,318] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

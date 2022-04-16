@@ -25,3 +25,30 @@ AIRFLOW_CTX_DAG_RUN_ID=scheduled__2009-09-01T00:00:00+00:00
 [2022-03-30 19:59:29,245] {taskinstance.py:1282} INFO - Marking task as SUCCESS. dag_id=IngestToGCP, task_id=processing_tasks_badges.remove_badges_csv, execution_date=20090901T000000, start_date=20220330T195927, end_date=20220330T195929
 [2022-03-30 19:59:29,395] {local_task_job.py:154} INFO - Task exited with return code 0
 [2022-03-30 19:59:29,581] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-04-05 22:52:13,411] {taskinstance.py:1043} INFO - Dependencies all met for <TaskInstance: IngestToGCP.processing_tasks_badges.remove_badges_csv scheduled__2009-09-01T00:00:00+00:00 [queued]>
+[2022-04-05 22:52:13,617] {taskinstance.py:1043} INFO - Dependencies all met for <TaskInstance: IngestToGCP.processing_tasks_badges.remove_badges_csv scheduled__2009-09-01T00:00:00+00:00 [queued]>
+[2022-04-05 22:52:13,617] {taskinstance.py:1249} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-05 22:52:13,617] {taskinstance.py:1250} INFO - Starting attempt 1 of 1
+[2022-04-05 22:52:13,617] {taskinstance.py:1251} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-05 22:52:13,798] {taskinstance.py:1270} INFO - Executing <Task(BashOperator): processing_tasks_badges.remove_badges_csv> on 2009-09-01 00:00:00+00:00
+[2022-04-05 22:52:13,896] {standard_task_runner.py:52} INFO - Started process 19999 to run task
+[2022-04-05 22:52:13,961] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'IngestToGCP', 'processing_tasks_badges.remove_badges_csv', 'scheduled__2009-09-01T00:00:00+00:00', '--job-id', '8679', '--raw', '--subdir', 'DAGS_FOLDER/ingest_dag.py', '--cfg-path', '/tmp/tmp0qqy02yy', '--error-file', '/tmp/tmp2t77agly']
+[2022-04-05 22:52:13,963] {standard_task_runner.py:80} INFO - Job 8679: Subtask processing_tasks_badges.remove_badges_csv
+[2022-04-05 22:52:14,538] {logging_mixin.py:109} INFO - Running <TaskInstance: IngestToGCP.processing_tasks_badges.remove_badges_csv scheduled__2009-09-01T00:00:00+00:00 [running]> on host 9fe4286b2855
+[2022-04-05 22:52:14,869] {logging_mixin.py:109} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:156 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2022-04-05 22:52:15,076] {taskinstance.py:1448} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=IngestToGCP
+AIRFLOW_CTX_TASK_ID=processing_tasks_badges.remove_badges_csv
+AIRFLOW_CTX_EXECUTION_DATE=2009-09-01T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2009-09-01T00:00:00+00:00
+[2022-04-05 22:52:15,078] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-04-05 22:52:15,079] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'rm /opt/***/badges-2009-09.csv']
+[2022-04-05 22:52:15,269] {subprocess.py:85} INFO - Output:
+[2022-04-05 22:52:15,319] {subprocess.py:93} INFO - Command exited with return code 0
+[2022-04-05 22:52:15,556] {taskinstance.py:1288} INFO - Marking task as SUCCESS. dag_id=IngestToGCP, task_id=processing_tasks_badges.remove_badges_csv, execution_date=20090901T000000, start_date=20220405T225213, end_date=20220405T225215
+[2022-04-05 22:52:15,788] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-04-05 22:52:16,321] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check

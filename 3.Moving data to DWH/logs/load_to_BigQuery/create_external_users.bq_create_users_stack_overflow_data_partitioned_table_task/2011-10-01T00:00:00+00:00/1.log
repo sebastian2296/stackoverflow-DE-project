@@ -1,0 +1,48 @@
+[2022-04-07 19:47:26,636] {taskinstance.py:1043} INFO - Dependencies all met for <TaskInstance: load_to_BigQuery.create_external_users.bq_create_users_stack_overflow_data_partitioned_table_task scheduled__2011-10-01T00:00:00+00:00 [queued]>
+[2022-04-07 19:47:26,849] {taskinstance.py:1043} INFO - Dependencies all met for <TaskInstance: load_to_BigQuery.create_external_users.bq_create_users_stack_overflow_data_partitioned_table_task scheduled__2011-10-01T00:00:00+00:00 [queued]>
+[2022-04-07 19:47:26,861] {taskinstance.py:1249} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-07 19:47:26,862] {taskinstance.py:1250} INFO - Starting attempt 1 of 1
+[2022-04-07 19:47:26,862] {taskinstance.py:1251} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-07 19:47:27,992] {taskinstance.py:1270} INFO - Executing <Task(BigQueryInsertJobOperator): create_external_users.bq_create_users_stack_overflow_data_partitioned_table_task> on 2011-10-01 00:00:00+00:00
+[2022-04-07 19:47:28,031] {standard_task_runner.py:52} INFO - Started process 6923 to run task
+[2022-04-07 19:47:28,056] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'load_to_BigQuery', 'create_external_users.bq_create_users_stack_overflow_data_partitioned_table_task', 'scheduled__2011-10-01T00:00:00+00:00', '--job-id', '13167', '--raw', '--subdir', 'DAGS_FOLDER/load_to_BigQuery_dag.py', '--cfg-path', '/tmp/tmp3twys68x', '--error-file', '/tmp/tmp8_m06rqa']
+[2022-04-07 19:47:28,058] {standard_task_runner.py:80} INFO - Job 13167: Subtask create_external_users.bq_create_users_stack_overflow_data_partitioned_table_task
+[2022-04-07 19:47:28,865] {logging_mixin.py:109} INFO - Running <TaskInstance: load_to_BigQuery.create_external_users.bq_create_users_stack_overflow_data_partitioned_table_task scheduled__2011-10-01T00:00:00+00:00 [running]> on host 2c54f2187010
+[2022-04-07 19:47:29,332] {taskinstance.py:1448} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=load_to_BigQuery
+AIRFLOW_CTX_TASK_ID=create_external_users.bq_create_users_stack_overflow_data_partitioned_table_task
+AIRFLOW_CTX_EXECUTION_DATE=2011-10-01T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2011-10-01T00:00:00+00:00
+[2022-04-07 19:47:29,346] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2022-04-07 19:47:29,430] {logging_mixin.py:109} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:156 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2022-04-07 19:47:29,581] {bigquery.py:1554} INFO - Inserting job ***_load_to_BigQuery_create_external_users_bq_create_users_stack_overflow_data_partitioned_table_task_2011_10_01T00_00_00_00_00_a529ccdbb6328f398205c76acba9bfcc
+[2022-04-07 19:47:32,446] {taskinstance.py:1288} INFO - Marking task as SUCCESS. dag_id=load_to_BigQuery, task_id=create_external_users.bq_create_users_stack_overflow_data_partitioned_table_task, execution_date=20111001T000000, start_date=20220407T194726, end_date=20220407T194732
+[2022-04-07 19:47:32,511] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-04-07 19:47:32,599] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-04-07 22:11:03,301] {taskinstance.py:1043} INFO - Dependencies all met for <TaskInstance: load_to_BigQuery.create_external_users.bq_create_users_stack_overflow_data_partitioned_table_task scheduled__2011-10-01T00:00:00+00:00 [queued]>
+[2022-04-07 22:11:03,392] {taskinstance.py:1043} INFO - Dependencies all met for <TaskInstance: load_to_BigQuery.create_external_users.bq_create_users_stack_overflow_data_partitioned_table_task scheduled__2011-10-01T00:00:00+00:00 [queued]>
+[2022-04-07 22:11:03,392] {taskinstance.py:1249} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-07 22:11:03,392] {taskinstance.py:1250} INFO - Starting attempt 1 of 1
+[2022-04-07 22:11:03,392] {taskinstance.py:1251} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-07 22:11:03,943] {taskinstance.py:1270} INFO - Executing <Task(BigQueryInsertJobOperator): create_external_users.bq_create_users_stack_overflow_data_partitioned_table_task> on 2011-10-01 00:00:00+00:00
+[2022-04-07 22:11:04,024] {standard_task_runner.py:52} INFO - Started process 2709 to run task
+[2022-04-07 22:11:04,036] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'load_to_BigQuery', 'create_external_users.bq_create_users_stack_overflow_data_partitioned_table_task', 'scheduled__2011-10-01T00:00:00+00:00', '--job-id', '13624', '--raw', '--subdir', 'DAGS_FOLDER/load_to_BigQuery_dag.py', '--cfg-path', '/tmp/tmpze_p9gzg', '--error-file', '/tmp/tmpmi1l8rjz']
+[2022-04-07 22:11:04,038] {standard_task_runner.py:80} INFO - Job 13624: Subtask create_external_users.bq_create_users_stack_overflow_data_partitioned_table_task
+[2022-04-07 22:11:04,422] {logging_mixin.py:109} INFO - Running <TaskInstance: load_to_BigQuery.create_external_users.bq_create_users_stack_overflow_data_partitioned_table_task scheduled__2011-10-01T00:00:00+00:00 [running]> on host 36107d30f64e
+[2022-04-07 22:11:04,747] {taskinstance.py:1448} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=load_to_BigQuery
+AIRFLOW_CTX_TASK_ID=create_external_users.bq_create_users_stack_overflow_data_partitioned_table_task
+AIRFLOW_CTX_EXECUTION_DATE=2011-10-01T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2011-10-01T00:00:00+00:00
+[2022-04-07 22:11:04,749] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2022-04-07 22:11:04,786] {logging_mixin.py:109} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:156 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2022-04-07 22:11:04,823] {bigquery.py:1554} INFO - Inserting job ***_load_to_BigQuery_create_external_users_bq_create_users_stack_overflow_data_partitioned_table_task_2011_10_01T00_00_00_00_00_784dd07ce3d49f48277e52d4b258f54f
+[2022-04-07 22:11:07,175] {taskinstance.py:1288} INFO - Marking task as SUCCESS. dag_id=load_to_BigQuery, task_id=create_external_users.bq_create_users_stack_overflow_data_partitioned_table_task, execution_date=20111001T000000, start_date=20220407T221103, end_date=20220407T221107
+[2022-04-07 22:11:07,260] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-04-07 22:11:07,332] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

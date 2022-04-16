@@ -1,0 +1,22 @@
+[2022-04-10 20:00:19,965] {taskinstance.py:1043} INFO - Dependencies all met for <TaskInstance: load_to_BigQuery.create_external_posts_answers.create_posts_answers_stack_overflow_data_external_table manual__2022-04-10T20:00:12.931879+00:00 [queued]>
+[2022-04-10 20:00:20,072] {taskinstance.py:1043} INFO - Dependencies all met for <TaskInstance: load_to_BigQuery.create_external_posts_answers.create_posts_answers_stack_overflow_data_external_table manual__2022-04-10T20:00:12.931879+00:00 [queued]>
+[2022-04-10 20:00:20,072] {taskinstance.py:1249} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-10 20:00:20,073] {taskinstance.py:1250} INFO - Starting attempt 1 of 1
+[2022-04-10 20:00:20,073] {taskinstance.py:1251} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-10 20:00:20,194] {taskinstance.py:1270} INFO - Executing <Task(BigQueryCreateExternalTableOperator): create_external_posts_answers.create_posts_answers_stack_overflow_data_external_table> on 2022-04-10 20:00:12.931879+00:00
+[2022-04-10 20:00:20,272] {standard_task_runner.py:52} INFO - Started process 279722 to run task
+[2022-04-10 20:00:20,316] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'load_to_BigQuery', 'create_external_posts_answers.create_posts_answers_stack_overflow_data_external_table', 'manual__2022-04-10T20:00:12.931879+00:00', '--job-id', '14686', '--raw', '--subdir', 'DAGS_FOLDER/load_to_BigQuery_dag.py', '--cfg-path', '/tmp/tmpohb5m4m_', '--error-file', '/tmp/tmpii0hiaoq']
+[2022-04-10 20:00:20,317] {standard_task_runner.py:80} INFO - Job 14686: Subtask create_external_posts_answers.create_posts_answers_stack_overflow_data_external_table
+[2022-04-10 20:00:21,080] {logging_mixin.py:109} INFO - Running <TaskInstance: load_to_BigQuery.create_external_posts_answers.create_posts_answers_stack_overflow_data_external_table manual__2022-04-10T20:00:12.931879+00:00 [running]> on host 36107d30f64e
+[2022-04-10 20:00:24,595] {taskinstance.py:1448} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=load_to_BigQuery
+AIRFLOW_CTX_TASK_ID=create_external_posts_answers.create_posts_answers_stack_overflow_data_external_table
+AIRFLOW_CTX_EXECUTION_DATE=2022-04-10T20:00:12.931879+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-04-10T20:00:12.931879+00:00
+[2022-04-10 20:00:24,597] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2022-04-10 20:00:35,330] {taskinstance.py:1288} INFO - Marking task as SUCCESS. dag_id=load_to_BigQuery, task_id=create_external_posts_answers.create_posts_answers_stack_overflow_data_external_table, execution_date=20220410T200012, start_date=20220410T200019, end_date=20220410T200035
+[2022-04-10 20:00:35,444] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-04-10 20:00:35,602] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

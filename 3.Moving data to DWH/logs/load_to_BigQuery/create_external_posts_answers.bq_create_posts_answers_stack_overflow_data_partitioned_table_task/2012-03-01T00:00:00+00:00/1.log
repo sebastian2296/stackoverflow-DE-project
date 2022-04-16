@@ -1,0 +1,50 @@
+[2022-04-07 19:47:53,786] {taskinstance.py:1043} INFO - Dependencies all met for <TaskInstance: load_to_BigQuery.create_external_posts_answers.bq_create_posts_answers_stack_overflow_data_partitioned_table_task scheduled__2012-03-01T00:00:00+00:00 [queued]>
+[2022-04-07 19:47:53,943] {taskinstance.py:1043} INFO - Dependencies all met for <TaskInstance: load_to_BigQuery.create_external_posts_answers.bq_create_posts_answers_stack_overflow_data_partitioned_table_task scheduled__2012-03-01T00:00:00+00:00 [queued]>
+[2022-04-07 19:47:53,943] {taskinstance.py:1249} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-07 19:47:53,943] {taskinstance.py:1250} INFO - Starting attempt 1 of 1
+[2022-04-07 19:47:53,943] {taskinstance.py:1251} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-07 19:47:54,773] {taskinstance.py:1270} INFO - Executing <Task(BigQueryInsertJobOperator): create_external_posts_answers.bq_create_posts_answers_stack_overflow_data_partitioned_table_task> on 2012-03-01 00:00:00+00:00
+[2022-04-07 19:47:54,826] {standard_task_runner.py:52} INFO - Started process 7141 to run task
+[2022-04-07 19:47:54,839] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'load_to_BigQuery', 'create_external_posts_answers.bq_create_posts_answers_stack_overflow_data_partitioned_table_task', 'scheduled__2012-03-01T00:00:00+00:00', '--job-id', '13200', '--raw', '--subdir', 'DAGS_FOLDER/load_to_BigQuery_dag.py', '--cfg-path', '/tmp/tmpe8abz095', '--error-file', '/tmp/tmpa92pc1pm']
+[2022-04-07 19:47:54,857] {standard_task_runner.py:80} INFO - Job 13200: Subtask create_external_posts_answers.bq_create_posts_answers_stack_overflow_data_partitioned_table_task
+[2022-04-07 19:47:55,322] {logging_mixin.py:109} INFO - Running <TaskInstance: load_to_BigQuery.create_external_posts_answers.bq_create_posts_answers_stack_overflow_data_partitioned_table_task scheduled__2012-03-01T00:00:00+00:00 [running]> on host 2c54f2187010
+[2022-04-07 19:47:55,909] {taskinstance.py:1448} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=load_to_BigQuery
+AIRFLOW_CTX_TASK_ID=create_external_posts_answers.bq_create_posts_answers_stack_overflow_data_partitioned_table_task
+AIRFLOW_CTX_EXECUTION_DATE=2012-03-01T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2012-03-01T00:00:00+00:00
+[2022-04-07 19:47:55,911] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2022-04-07 19:47:56,000] {logging_mixin.py:109} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:156 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2022-04-07 19:47:56,062] {bigquery.py:1554} INFO - Inserting job ***_load_to_BigQuery_create_external_posts_answers_bq_create_posts_answers_stack_overflow_data_partitioned_table_task_2012_03_01T00_00_00_00_00_8d5ef16b5865e90c42bcddef01518aeb
+[2022-04-07 19:47:59,840] {taskinstance.py:1288} INFO - Marking task as SUCCESS. dag_id=load_to_BigQuery, task_id=create_external_posts_answers.bq_create_posts_answers_stack_overflow_data_partitioned_table_task, execution_date=20120301T000000, start_date=20220407T194753, end_date=20220407T194759
+[2022-04-07 19:47:59,954] {local_task_job.py:212} WARNING - State of this instance has been externally set to success. Terminating instance.
+[2022-04-07 19:47:59,958] {process_utils.py:124} INFO - Sending Signals.SIGTERM to group 7141. PIDs of all processes in the group: [7141]
+[2022-04-07 19:47:59,959] {process_utils.py:75} INFO - Sending the signal Signals.SIGTERM to group 7141
+[2022-04-07 19:47:59,971] {process_utils.py:70} INFO - Process psutil.Process(pid=7141, status='terminated', exitcode=0, started='19:47:54') (7141) terminated with exit code 0
+[2022-04-07 22:11:29,400] {taskinstance.py:1043} INFO - Dependencies all met for <TaskInstance: load_to_BigQuery.create_external_posts_answers.bq_create_posts_answers_stack_overflow_data_partitioned_table_task scheduled__2012-03-01T00:00:00+00:00 [queued]>
+[2022-04-07 22:11:29,471] {taskinstance.py:1043} INFO - Dependencies all met for <TaskInstance: load_to_BigQuery.create_external_posts_answers.bq_create_posts_answers_stack_overflow_data_partitioned_table_task scheduled__2012-03-01T00:00:00+00:00 [queued]>
+[2022-04-07 22:11:29,471] {taskinstance.py:1249} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-07 22:11:29,471] {taskinstance.py:1250} INFO - Starting attempt 1 of 1
+[2022-04-07 22:11:29,472] {taskinstance.py:1251} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-07 22:11:30,072] {taskinstance.py:1270} INFO - Executing <Task(BigQueryInsertJobOperator): create_external_posts_answers.bq_create_posts_answers_stack_overflow_data_partitioned_table_task> on 2012-03-01 00:00:00+00:00
+[2022-04-07 22:11:30,100] {standard_task_runner.py:52} INFO - Started process 2923 to run task
+[2022-04-07 22:11:30,141] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'load_to_BigQuery', 'create_external_posts_answers.bq_create_posts_answers_stack_overflow_data_partitioned_table_task', 'scheduled__2012-03-01T00:00:00+00:00', '--job-id', '13661', '--raw', '--subdir', 'DAGS_FOLDER/load_to_BigQuery_dag.py', '--cfg-path', '/tmp/tmph89rntw1', '--error-file', '/tmp/tmpcu7ow_wx']
+[2022-04-07 22:11:30,143] {standard_task_runner.py:80} INFO - Job 13661: Subtask create_external_posts_answers.bq_create_posts_answers_stack_overflow_data_partitioned_table_task
+[2022-04-07 22:11:30,289] {logging_mixin.py:109} INFO - Running <TaskInstance: load_to_BigQuery.create_external_posts_answers.bq_create_posts_answers_stack_overflow_data_partitioned_table_task scheduled__2012-03-01T00:00:00+00:00 [running]> on host 36107d30f64e
+[2022-04-07 22:11:30,435] {taskinstance.py:1448} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=load_to_BigQuery
+AIRFLOW_CTX_TASK_ID=create_external_posts_answers.bq_create_posts_answers_stack_overflow_data_partitioned_table_task
+AIRFLOW_CTX_EXECUTION_DATE=2012-03-01T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2012-03-01T00:00:00+00:00
+[2022-04-07 22:11:30,438] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2022-04-07 22:11:30,456] {logging_mixin.py:109} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:156 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2022-04-07 22:11:30,469] {bigquery.py:1554} INFO - Inserting job ***_load_to_BigQuery_create_external_posts_answers_bq_create_posts_answers_stack_overflow_data_partitioned_table_task_2012_03_01T00_00_00_00_00_1bee106fe37f3e915daa5acfeeabd522
+[2022-04-07 22:11:33,588] {taskinstance.py:1288} INFO - Marking task as SUCCESS. dag_id=load_to_BigQuery, task_id=create_external_posts_answers.bq_create_posts_answers_stack_overflow_data_partitioned_table_task, execution_date=20120301T000000, start_date=20220407T221129, end_date=20220407T221133
+[2022-04-07 22:11:33,657] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-04-07 22:11:33,728] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,23 +1,23 @@
-[2022-03-30 19:59:52,999] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: IngestToGCP.processing_tasks_badges.ingest_badges_to_bucket scheduled__2009-04-01T00:00:00+00:00 [queued]>
-[2022-03-30 19:59:53,052] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: IngestToGCP.processing_tasks_badges.ingest_badges_to_bucket scheduled__2009-04-01T00:00:00+00:00 [queued]>
-[2022-03-30 19:59:53,053] {taskinstance.py:1243} INFO - 
+[2022-04-05 22:05:31,090] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: IngestToGCP.processing_tasks_badges.ingest_badges_to_bucket scheduled__2009-04-01T00:00:00+00:00 [queued]>
+[2022-04-05 22:05:31,141] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: IngestToGCP.processing_tasks_badges.ingest_badges_to_bucket scheduled__2009-04-01T00:00:00+00:00 [queued]>
+[2022-04-05 22:05:31,142] {taskinstance.py:1243} INFO - 
 --------------------------------------------------------------------------------
-[2022-03-30 19:59:53,053] {taskinstance.py:1244} INFO - Starting attempt 1 of 1
-[2022-03-30 19:59:53,053] {taskinstance.py:1245} INFO - 
+[2022-04-05 22:05:31,142] {taskinstance.py:1244} INFO - Starting attempt 1 of 1
+[2022-04-05 22:05:31,142] {taskinstance.py:1245} INFO - 
 --------------------------------------------------------------------------------
-[2022-03-30 19:59:53,105] {taskinstance.py:1264} INFO - Executing <Task(PythonOperator): processing_tasks_badges.ingest_badges_to_bucket> on 2009-04-01 00:00:00+00:00
-[2022-03-30 19:59:53,124] {standard_task_runner.py:52} INFO - Started process 3293 to run task
-[2022-03-30 19:59:53,132] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'IngestToGCP', 'processing_tasks_badges.ingest_badges_to_bucket', 'scheduled__2009-04-01T00:00:00+00:00', '--job-id', '190', '--raw', '--subdir', 'DAGS_FOLDER/ingest_dag.py', '--cfg-path', '/tmp/tmpf_gsn0tu', '--error-file', '/tmp/tmpxjdyxik3']
-[2022-03-30 19:59:53,134] {standard_task_runner.py:77} INFO - Job 190: Subtask processing_tasks_badges.ingest_badges_to_bucket
-[2022-03-30 19:59:53,434] {logging_mixin.py:109} INFO - Running <TaskInstance: IngestToGCP.processing_tasks_badges.ingest_badges_to_bucket scheduled__2009-04-01T00:00:00+00:00 [running]> on host d9825fd5ae59
-[2022-03-30 19:59:53,637] {logging_mixin.py:109} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:156 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
-[2022-03-30 19:59:53,698] {taskinstance.py:1431} INFO - Exporting the following env vars:
+[2022-04-05 22:05:31,216] {taskinstance.py:1264} INFO - Executing <Task(PythonOperator): processing_tasks_badges.ingest_badges_to_bucket> on 2009-04-01 00:00:00+00:00
+[2022-04-05 22:05:31,256] {standard_task_runner.py:52} INFO - Started process 1886 to run task
+[2022-04-05 22:05:31,278] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'IngestToGCP', 'processing_tasks_badges.ingest_badges_to_bucket', 'scheduled__2009-04-01T00:00:00+00:00', '--job-id', '8204', '--raw', '--subdir', 'DAGS_FOLDER/ingest_dag.py', '--cfg-path', '/tmp/tmpqq8067l4', '--error-file', '/tmp/tmpwbz3x_dn']
+[2022-04-05 22:05:31,280] {standard_task_runner.py:77} INFO - Job 8204: Subtask processing_tasks_badges.ingest_badges_to_bucket
+[2022-04-05 22:05:31,483] {logging_mixin.py:109} INFO - Running <TaskInstance: IngestToGCP.processing_tasks_badges.ingest_badges_to_bucket scheduled__2009-04-01T00:00:00+00:00 [running]> on host c460da24ecb6
+[2022-04-05 22:05:31,669] {logging_mixin.py:109} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:156 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2022-04-05 22:05:31,776] {taskinstance.py:1431} INFO - Exporting the following env vars:
 AIRFLOW_CTX_DAG_OWNER=***
 AIRFLOW_CTX_DAG_ID=IngestToGCP
 AIRFLOW_CTX_TASK_ID=processing_tasks_badges.ingest_badges_to_bucket
 AIRFLOW_CTX_EXECUTION_DATE=2009-04-01T00:00:00+00:00
 AIRFLOW_CTX_DAG_RUN_ID=scheduled__2009-04-01T00:00:00+00:00
-[2022-03-30 19:59:56,722] {python.py:175} INFO - Done. Returned value was: None
-[2022-03-30 19:59:56,755] {taskinstance.py:1282} INFO - Marking task as SUCCESS. dag_id=IngestToGCP, task_id=processing_tasks_badges.ingest_badges_to_bucket, execution_date=20090401T000000, start_date=20220330T195953, end_date=20220330T195956
-[2022-03-30 19:59:56,826] {local_task_job.py:154} INFO - Task exited with return code 0
-[2022-03-30 19:59:56,893] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-04-05 22:05:32,050] {python.py:175} INFO - Done. Returned value was: None
+[2022-04-05 22:05:32,085] {taskinstance.py:1282} INFO - Marking task as SUCCESS. dag_id=IngestToGCP, task_id=processing_tasks_badges.ingest_badges_to_bucket, execution_date=20090401T000000, start_date=20220405T220531, end_date=20220405T220532
+[2022-04-05 22:05:32,149] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-04-05 22:05:32,265] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check
