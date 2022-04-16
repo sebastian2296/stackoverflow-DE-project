@@ -1,0 +1,25 @@
+[2022-04-06 02:43:11,107] {taskinstance.py:1043} INFO - Dependencies all met for <TaskInstance: IngestToGCP.processing_tasks_posts_questions.format_to_parquet_posts_questions scheduled__2018-10-01T00:00:00+00:00 [queued]>
+[2022-04-06 02:43:11,306] {taskinstance.py:1043} INFO - Dependencies all met for <TaskInstance: IngestToGCP.processing_tasks_posts_questions.format_to_parquet_posts_questions scheduled__2018-10-01T00:00:00+00:00 [queued]>
+[2022-04-06 02:43:11,306] {taskinstance.py:1249} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-06 02:43:11,306] {taskinstance.py:1250} INFO - Starting attempt 1 of 1
+[2022-04-06 02:43:11,306] {taskinstance.py:1251} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-06 02:43:11,525] {taskinstance.py:1270} INFO - Executing <Task(PythonOperator): processing_tasks_posts_questions.format_to_parquet_posts_questions> on 2018-10-01 00:00:00+00:00
+[2022-04-06 02:43:11,645] {standard_task_runner.py:52} INFO - Started process 184961 to run task
+[2022-04-06 02:43:11,686] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'IngestToGCP', 'processing_tasks_posts_questions.format_to_parquet_posts_questions', 'scheduled__2018-10-01T00:00:00+00:00', '--job-id', '11284', '--raw', '--subdir', 'DAGS_FOLDER/ingest_dag.py', '--cfg-path', '/tmp/tmpnaxi1kcz', '--error-file', '/tmp/tmpsqpzdjow']
+[2022-04-06 02:43:11,740] {standard_task_runner.py:80} INFO - Job 11284: Subtask processing_tasks_posts_questions.format_to_parquet_posts_questions
+[2022-04-06 02:43:12,733] {logging_mixin.py:109} INFO - Running <TaskInstance: IngestToGCP.processing_tasks_posts_questions.format_to_parquet_posts_questions scheduled__2018-10-01T00:00:00+00:00 [running]> on host 9fe4286b2855
+[2022-04-06 02:43:13,454] {logging_mixin.py:109} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:156 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2022-04-06 02:43:13,646] {taskinstance.py:1448} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=IngestToGCP
+AIRFLOW_CTX_TASK_ID=processing_tasks_posts_questions.format_to_parquet_posts_questions
+AIRFLOW_CTX_EXECUTION_DATE=2018-10-01T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2018-10-01T00:00:00+00:00
+[2022-04-06 02:44:56,363] {python.py:175} INFO - Done. Returned value was: None
+[2022-04-06 02:44:57,189] {taskinstance.py:1288} INFO - Marking task as SUCCESS. dag_id=IngestToGCP, task_id=processing_tasks_posts_questions.format_to_parquet_posts_questions, execution_date=20181001T000000, start_date=20220406T024311, end_date=20220406T024457
+[2022-04-06 02:44:57,396] {local_task_job.py:212} WARNING - State of this instance has been externally set to success. Terminating instance.
+[2022-04-06 02:44:57,426] {process_utils.py:124} INFO - Sending Signals.SIGTERM to group 184961. PIDs of all processes in the group: [184961]
+[2022-04-06 02:44:57,426] {process_utils.py:75} INFO - Sending the signal Signals.SIGTERM to group 184961
+[2022-04-06 02:44:58,344] {process_utils.py:70} INFO - Process psutil.Process(pid=184961, status='terminated', exitcode=0, started='02:43:11') (184961) terminated with exit code 0

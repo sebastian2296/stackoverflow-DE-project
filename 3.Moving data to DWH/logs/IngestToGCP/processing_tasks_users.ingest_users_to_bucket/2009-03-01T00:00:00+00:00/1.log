@@ -1,23 +1,23 @@
-[2022-03-30 19:59:46,214] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: IngestToGCP.processing_tasks_users.ingest_users_to_bucket scheduled__2009-03-01T00:00:00+00:00 [queued]>
-[2022-03-30 19:59:46,318] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: IngestToGCP.processing_tasks_users.ingest_users_to_bucket scheduled__2009-03-01T00:00:00+00:00 [queued]>
-[2022-03-30 19:59:46,318] {taskinstance.py:1243} INFO - 
+[2022-04-05 22:04:06,075] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: IngestToGCP.processing_tasks_users.ingest_users_to_bucket scheduled__2009-03-01T00:00:00+00:00 [queued]>
+[2022-04-05 22:04:06,176] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: IngestToGCP.processing_tasks_users.ingest_users_to_bucket scheduled__2009-03-01T00:00:00+00:00 [queued]>
+[2022-04-05 22:04:06,176] {taskinstance.py:1243} INFO - 
 --------------------------------------------------------------------------------
-[2022-03-30 19:59:46,318] {taskinstance.py:1244} INFO - Starting attempt 1 of 1
-[2022-03-30 19:59:46,318] {taskinstance.py:1245} INFO - 
+[2022-04-05 22:04:06,176] {taskinstance.py:1244} INFO - Starting attempt 1 of 1
+[2022-04-05 22:04:06,177] {taskinstance.py:1245} INFO - 
 --------------------------------------------------------------------------------
-[2022-03-30 19:59:46,408] {taskinstance.py:1264} INFO - Executing <Task(PythonOperator): processing_tasks_users.ingest_users_to_bucket> on 2009-03-01 00:00:00+00:00
-[2022-03-30 19:59:46,454] {standard_task_runner.py:52} INFO - Started process 3207 to run task
-[2022-03-30 19:59:46,502] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'IngestToGCP', 'processing_tasks_users.ingest_users_to_bucket', 'scheduled__2009-03-01T00:00:00+00:00', '--job-id', '185', '--raw', '--subdir', 'DAGS_FOLDER/ingest_dag.py', '--cfg-path', '/tmp/tmpfiru9l3d', '--error-file', '/tmp/tmphor3i7k8']
-[2022-03-30 19:59:46,509] {standard_task_runner.py:77} INFO - Job 185: Subtask processing_tasks_users.ingest_users_to_bucket
-[2022-03-30 19:59:46,925] {logging_mixin.py:109} INFO - Running <TaskInstance: IngestToGCP.processing_tasks_users.ingest_users_to_bucket scheduled__2009-03-01T00:00:00+00:00 [running]> on host d9825fd5ae59
-[2022-03-30 19:59:47,269] {logging_mixin.py:109} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:156 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
-[2022-03-30 19:59:47,387] {taskinstance.py:1431} INFO - Exporting the following env vars:
+[2022-04-05 22:04:06,278] {taskinstance.py:1264} INFO - Executing <Task(PythonOperator): processing_tasks_users.ingest_users_to_bucket> on 2009-03-01 00:00:00+00:00
+[2022-04-05 22:04:06,324] {standard_task_runner.py:52} INFO - Started process 508 to run task
+[2022-04-05 22:04:06,342] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'IngestToGCP', 'processing_tasks_users.ingest_users_to_bucket', 'scheduled__2009-03-01T00:00:00+00:00', '--job-id', '8168', '--raw', '--subdir', 'DAGS_FOLDER/ingest_dag.py', '--cfg-path', '/tmp/tmpay4x0q8b', '--error-file', '/tmp/tmp6q3gowoq']
+[2022-04-05 22:04:06,344] {standard_task_runner.py:77} INFO - Job 8168: Subtask processing_tasks_users.ingest_users_to_bucket
+[2022-04-05 22:04:06,569] {logging_mixin.py:109} INFO - Running <TaskInstance: IngestToGCP.processing_tasks_users.ingest_users_to_bucket scheduled__2009-03-01T00:00:00+00:00 [running]> on host c460da24ecb6
+[2022-04-05 22:04:06,830] {logging_mixin.py:109} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:156 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2022-04-05 22:04:06,948] {taskinstance.py:1431} INFO - Exporting the following env vars:
 AIRFLOW_CTX_DAG_OWNER=***
 AIRFLOW_CTX_DAG_ID=IngestToGCP
 AIRFLOW_CTX_TASK_ID=processing_tasks_users.ingest_users_to_bucket
 AIRFLOW_CTX_EXECUTION_DATE=2009-03-01T00:00:00+00:00
 AIRFLOW_CTX_DAG_RUN_ID=scheduled__2009-03-01T00:00:00+00:00
-[2022-03-30 19:59:49,404] {python.py:175} INFO - Done. Returned value was: None
-[2022-03-30 19:59:49,453] {taskinstance.py:1282} INFO - Marking task as SUCCESS. dag_id=IngestToGCP, task_id=processing_tasks_users.ingest_users_to_bucket, execution_date=20090301T000000, start_date=20220330T195946, end_date=20220330T195949
-[2022-03-30 19:59:49,639] {local_task_job.py:154} INFO - Task exited with return code 0
-[2022-03-30 19:59:49,814] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-04-05 22:04:07,322] {python.py:175} INFO - Done. Returned value was: None
+[2022-04-05 22:04:07,386] {taskinstance.py:1282} INFO - Marking task as SUCCESS. dag_id=IngestToGCP, task_id=processing_tasks_users.ingest_users_to_bucket, execution_date=20090301T000000, start_date=20220405T220406, end_date=20220405T220407
+[2022-04-05 22:04:07,573] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-04-05 22:04:07,789] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check

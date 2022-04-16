@@ -1,0 +1,23 @@
+[2022-04-06 03:48:34,959] {taskinstance.py:1043} INFO - Dependencies all met for <TaskInstance: IngestToGCP.processing_tasks_badges.format_to_parquet_badges scheduled__2021-03-01T00:00:00+00:00 [queued]>
+[2022-04-06 03:48:35,307] {taskinstance.py:1043} INFO - Dependencies all met for <TaskInstance: IngestToGCP.processing_tasks_badges.format_to_parquet_badges scheduled__2021-03-01T00:00:00+00:00 [queued]>
+[2022-04-06 03:48:35,308] {taskinstance.py:1249} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-06 03:48:35,308] {taskinstance.py:1250} INFO - Starting attempt 1 of 1
+[2022-04-06 03:48:35,308] {taskinstance.py:1251} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-06 03:48:35,356] {taskinstance.py:1270} INFO - Executing <Task(PythonOperator): processing_tasks_badges.format_to_parquet_badges> on 2021-03-01 00:00:00+00:00
+[2022-04-06 03:48:35,530] {standard_task_runner.py:52} INFO - Started process 229887 to run task
+[2022-04-06 03:48:35,597] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'IngestToGCP', 'processing_tasks_badges.format_to_parquet_badges', 'scheduled__2021-03-01T00:00:00+00:00', '--job-id', '11986', '--raw', '--subdir', 'DAGS_FOLDER/ingest_dag.py', '--cfg-path', '/tmp/tmp_ii2qmn3', '--error-file', '/tmp/tmp280ym5z_']
+[2022-04-06 03:48:35,601] {standard_task_runner.py:80} INFO - Job 11986: Subtask processing_tasks_badges.format_to_parquet_badges
+[2022-04-06 03:48:36,113] {logging_mixin.py:109} INFO - Running <TaskInstance: IngestToGCP.processing_tasks_badges.format_to_parquet_badges scheduled__2021-03-01T00:00:00+00:00 [running]> on host 9fe4286b2855
+[2022-04-06 03:48:37,275] {logging_mixin.py:109} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:156 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2022-04-06 03:48:37,536] {taskinstance.py:1448} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=IngestToGCP
+AIRFLOW_CTX_TASK_ID=processing_tasks_badges.format_to_parquet_badges
+AIRFLOW_CTX_EXECUTION_DATE=2021-03-01T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-03-01T00:00:00+00:00
+[2022-04-06 03:48:47,359] {python.py:175} INFO - Done. Returned value was: None
+[2022-04-06 03:48:47,446] {taskinstance.py:1288} INFO - Marking task as SUCCESS. dag_id=IngestToGCP, task_id=processing_tasks_badges.format_to_parquet_badges, execution_date=20210301T000000, start_date=20220406T034834, end_date=20220406T034847
+[2022-04-06 03:48:47,665] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-04-06 03:48:48,142] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check

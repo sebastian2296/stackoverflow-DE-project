@@ -1,0 +1,27 @@
+[2022-04-06 01:17:47,572] {taskinstance.py:1043} INFO - Dependencies all met for <TaskInstance: IngestToGCP.processing_tasks_users.remove_users_parquet scheduled__2015-06-01T00:00:00+00:00 [queued]>
+[2022-04-06 01:17:47,677] {taskinstance.py:1043} INFO - Dependencies all met for <TaskInstance: IngestToGCP.processing_tasks_users.remove_users_parquet scheduled__2015-06-01T00:00:00+00:00 [queued]>
+[2022-04-06 01:17:47,677] {taskinstance.py:1249} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-06 01:17:47,678] {taskinstance.py:1250} INFO - Starting attempt 1 of 1
+[2022-04-06 01:17:47,678] {taskinstance.py:1251} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-06 01:17:47,813] {taskinstance.py:1270} INFO - Executing <Task(BashOperator): processing_tasks_users.remove_users_parquet> on 2015-06-01 00:00:00+00:00
+[2022-04-06 01:17:47,881] {standard_task_runner.py:52} INFO - Started process 126896 to run task
+[2022-04-06 01:17:47,946] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'IngestToGCP', 'processing_tasks_users.remove_users_parquet', 'scheduled__2015-06-01T00:00:00+00:00', '--job-id', '10380', '--raw', '--subdir', 'DAGS_FOLDER/ingest_dag.py', '--cfg-path', '/tmp/tmpyxo93cdj', '--error-file', '/tmp/tmpyjzow0w2']
+[2022-04-06 01:17:47,976] {standard_task_runner.py:80} INFO - Job 10380: Subtask processing_tasks_users.remove_users_parquet
+[2022-04-06 01:17:48,763] {logging_mixin.py:109} INFO - Running <TaskInstance: IngestToGCP.processing_tasks_users.remove_users_parquet scheduled__2015-06-01T00:00:00+00:00 [running]> on host 9fe4286b2855
+[2022-04-06 01:17:49,338] {logging_mixin.py:109} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:156 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2022-04-06 01:17:49,532] {taskinstance.py:1448} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=IngestToGCP
+AIRFLOW_CTX_TASK_ID=processing_tasks_users.remove_users_parquet
+AIRFLOW_CTX_EXECUTION_DATE=2015-06-01T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2015-06-01T00:00:00+00:00
+[2022-04-06 01:17:49,535] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-04-06 01:17:49,562] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'rm /opt/***/users-2015-06.parquet']
+[2022-04-06 01:17:49,870] {subprocess.py:85} INFO - Output:
+[2022-04-06 01:17:49,955] {subprocess.py:93} INFO - Command exited with return code 0
+[2022-04-06 01:17:50,129] {taskinstance.py:1288} INFO - Marking task as SUCCESS. dag_id=IngestToGCP, task_id=processing_tasks_users.remove_users_parquet, execution_date=20150601T000000, start_date=20220406T011747, end_date=20220406T011750
+[2022-04-06 01:17:50,504] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-04-06 01:17:51,040] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

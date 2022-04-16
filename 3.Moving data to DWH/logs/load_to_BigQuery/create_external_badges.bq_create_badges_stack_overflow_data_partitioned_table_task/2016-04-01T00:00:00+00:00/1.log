@@ -1,0 +1,76 @@
+[2022-04-07 19:23:20,428] {taskinstance.py:1043} INFO - Dependencies all met for <TaskInstance: load_to_BigQuery.create_external_badges.bq_create_badges_stack_overflow_data_partitioned_table_task scheduled__2016-04-01T00:00:00+00:00 [queued]>
+[2022-04-07 19:23:20,579] {taskinstance.py:1043} INFO - Dependencies all met for <TaskInstance: load_to_BigQuery.create_external_badges.bq_create_badges_stack_overflow_data_partitioned_table_task scheduled__2016-04-01T00:00:00+00:00 [queued]>
+[2022-04-07 19:23:20,602] {taskinstance.py:1249} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-07 19:23:20,603] {taskinstance.py:1250} INFO - Starting attempt 1 of 1
+[2022-04-07 19:23:20,605] {taskinstance.py:1251} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-07 19:23:21,664] {taskinstance.py:1270} INFO - Executing <Task(BigQueryInsertJobOperator): create_external_badges.bq_create_badges_stack_overflow_data_partitioned_table_task> on 2016-04-01 00:00:00+00:00
+[2022-04-07 19:23:21,688] {standard_task_runner.py:52} INFO - Started process 3260 to run task
+[2022-04-07 19:23:21,748] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'load_to_BigQuery', 'create_external_badges.bq_create_badges_stack_overflow_data_partitioned_table_task', 'scheduled__2016-04-01T00:00:00+00:00', '--job-id', '12799', '--raw', '--subdir', 'DAGS_FOLDER/load_to_BigQuery_dag.py', '--cfg-path', '/tmp/tmp1lgguytb', '--error-file', '/tmp/tmpamet6phw']
+[2022-04-07 19:23:21,749] {standard_task_runner.py:80} INFO - Job 12799: Subtask create_external_badges.bq_create_badges_stack_overflow_data_partitioned_table_task
+[2022-04-07 19:23:22,006] {logging_mixin.py:109} INFO - Running <TaskInstance: load_to_BigQuery.create_external_badges.bq_create_badges_stack_overflow_data_partitioned_table_task scheduled__2016-04-01T00:00:00+00:00 [running]> on host 2c54f2187010
+[2022-04-07 19:23:22,364] {taskinstance.py:1448} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=load_to_BigQuery
+AIRFLOW_CTX_TASK_ID=create_external_badges.bq_create_badges_stack_overflow_data_partitioned_table_task
+AIRFLOW_CTX_EXECUTION_DATE=2016-04-01T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2016-04-01T00:00:00+00:00
+[2022-04-07 19:23:22,366] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2022-04-07 19:23:22,407] {logging_mixin.py:109} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:156 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2022-04-07 19:23:22,462] {bigquery.py:1554} INFO - Inserting job ***_load_to_BigQuery_create_external_badges_bq_create_badges_stack_overflow_data_partitioned_table_task_2016_04_01T00_00_00_00_00_c4032f5febe87a4ae73a48b440fc1732
+[2022-04-07 19:23:23,196] {taskinstance.py:1774} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/google/cloud/operators/bigquery.py", line 2153, in execute
+    job = self._submit_job(hook, job_id)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/google/cloud/operators/bigquery.py", line 2119, in _submit_job
+    retry=self.result_retry,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/google/common/hooks/base_google.py", line 439, in inner_wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/google/cloud/hooks/bigquery.py", line 1560, in insert_job
+    job.result(timeout=timeout, retry=retry)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/bigquery/job/query.py", line 1498, in result
+    do_get_result()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/bigquery/job/query.py", line 1488, in do_get_result
+    super(QueryJob, self).result(retry=retry, timeout=timeout)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/bigquery/job/base.py", line 728, in result
+    return super(_AsyncJob, self).result(timeout=timeout, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/api_core/future/polling.py", line 135, in result
+    raise self._exception
+google.api_core.exceptions.BadRequest: 400 Could not cast literal "date" to type TIMESTAMP at [1:102]
+
+Location: us-central1
+Job ID: airflow_load_to_BigQuery_create_external_badges_bq_create_badges_stack_overflow_data_partitioned_table_task_2016_04_01T00_00_00_00_00_c4032f5febe87a4ae73a48b440fc1732
+
+[2022-04-07 19:23:23,241] {taskinstance.py:1288} INFO - Marking task as FAILED. dag_id=load_to_BigQuery, task_id=create_external_badges.bq_create_badges_stack_overflow_data_partitioned_table_task, execution_date=20160401T000000, start_date=20220407T192320, end_date=20220407T192323
+[2022-04-07 19:23:23,328] {standard_task_runner.py:98} ERROR - Failed to execute job 12799 for task create_external_badges.bq_create_badges_stack_overflow_data_partitioned_table_task (400 Could not cast literal "date" to type TIMESTAMP at [1:102]
+
+Location: us-central1
+Job ID: airflow_load_to_BigQuery_create_external_badges_bq_create_badges_stack_overflow_data_partitioned_table_task_2016_04_01T00_00_00_00_00_c4032f5febe87a4ae73a48b440fc1732
+; 3260)
+[2022-04-07 19:23:23,392] {local_task_job.py:154} INFO - Task exited with return code 1
+[2022-04-07 19:23:23,717] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-04-07 22:16:41,198] {taskinstance.py:1043} INFO - Dependencies all met for <TaskInstance: load_to_BigQuery.create_external_badges.bq_create_badges_stack_overflow_data_partitioned_table_task scheduled__2016-04-01T00:00:00+00:00 [queued]>
+[2022-04-07 22:16:41,275] {taskinstance.py:1043} INFO - Dependencies all met for <TaskInstance: load_to_BigQuery.create_external_badges.bq_create_badges_stack_overflow_data_partitioned_table_task scheduled__2016-04-01T00:00:00+00:00 [queued]>
+[2022-04-07 22:16:41,275] {taskinstance.py:1249} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-07 22:16:41,275] {taskinstance.py:1250} INFO - Starting attempt 1 of 1
+[2022-04-07 22:16:41,275] {taskinstance.py:1251} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-07 22:16:41,973] {taskinstance.py:1270} INFO - Executing <Task(BigQueryInsertJobOperator): create_external_badges.bq_create_badges_stack_overflow_data_partitioned_table_task> on 2016-04-01 00:00:00+00:00
+[2022-04-07 22:16:42,035] {standard_task_runner.py:52} INFO - Started process 5552 to run task
+[2022-04-07 22:16:42,063] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'load_to_BigQuery', 'create_external_badges.bq_create_badges_stack_overflow_data_partitioned_table_task', 'scheduled__2016-04-01T00:00:00+00:00', '--job-id', '14056', '--raw', '--subdir', 'DAGS_FOLDER/load_to_BigQuery_dag.py', '--cfg-path', '/tmp/tmpou2pg8c_', '--error-file', '/tmp/tmp87kv43pg']
+[2022-04-07 22:16:42,078] {standard_task_runner.py:80} INFO - Job 14056: Subtask create_external_badges.bq_create_badges_stack_overflow_data_partitioned_table_task
+[2022-04-07 22:16:42,439] {logging_mixin.py:109} INFO - Running <TaskInstance: load_to_BigQuery.create_external_badges.bq_create_badges_stack_overflow_data_partitioned_table_task scheduled__2016-04-01T00:00:00+00:00 [running]> on host 36107d30f64e
+[2022-04-07 22:16:42,722] {taskinstance.py:1448} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=load_to_BigQuery
+AIRFLOW_CTX_TASK_ID=create_external_badges.bq_create_badges_stack_overflow_data_partitioned_table_task
+AIRFLOW_CTX_EXECUTION_DATE=2016-04-01T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2016-04-01T00:00:00+00:00
+[2022-04-07 22:16:42,724] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2022-04-07 22:16:42,762] {logging_mixin.py:109} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:156 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2022-04-07 22:16:42,810] {bigquery.py:1554} INFO - Inserting job ***_load_to_BigQuery_create_external_badges_bq_create_badges_stack_overflow_data_partitioned_table_task_2016_04_01T00_00_00_00_00_bf9b3f561768a776a3783d538457aa92
+[2022-04-07 22:16:45,206] {taskinstance.py:1288} INFO - Marking task as SUCCESS. dag_id=load_to_BigQuery, task_id=create_external_badges.bq_create_badges_stack_overflow_data_partitioned_table_task, execution_date=20160401T000000, start_date=20220407T221641, end_date=20220407T221645
+[2022-04-07 22:16:45,276] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-04-07 22:16:45,353] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

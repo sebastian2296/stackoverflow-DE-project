@@ -1,0 +1,462 @@
+[2022-04-05 21:15:42,669] {processor.py:163} INFO - Started process (PID=203) to work on /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:15:42,672] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-04-05 21:15:42,674] {logging_mixin.py:109} INFO - [2022-04-05 21:15:42,674] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:15:45,127] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:15:45,505] {logging_mixin.py:109} INFO - [2022-04-05 21:15:45,505] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-04-05 21:15:45,514] {logging_mixin.py:109} INFO - [2022-04-05 21:15:45,514] {dag.py:2417} INFO - Creating ORM DAG for IngestToGCP
+[2022-04-05 21:15:45,526] {logging_mixin.py:109} INFO - [2022-04-05 21:15:45,526] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2008-07-01T00:00:00+00:00
+[2022-04-05 21:15:45,544] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 2.885 seconds
+[2022-04-05 21:16:15,688] {processor.py:163} INFO - Started process (PID=249) to work on /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:16:15,693] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-04-05 21:16:15,694] {logging_mixin.py:109} INFO - [2022-04-05 21:16:15,694] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:16:16,422] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:16:16,439] {logging_mixin.py:109} INFO - [2022-04-05 21:16:16,439] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-04-05 21:16:16,460] {logging_mixin.py:109} INFO - [2022-04-05 21:16:16,460] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2008-07-01T00:00:00+00:00
+[2022-04-05 21:16:16,471] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.788 seconds
+[2022-04-05 21:16:46,780] {processor.py:163} INFO - Started process (PID=330) to work on /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:16:46,783] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-04-05 21:16:46,784] {logging_mixin.py:109} INFO - [2022-04-05 21:16:46,784] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:16:47,573] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:16:47,591] {logging_mixin.py:109} INFO - [2022-04-05 21:16:47,591] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-04-05 21:16:47,612] {logging_mixin.py:109} INFO - [2022-04-05 21:16:47,611] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2008-07-01T00:00:00+00:00
+[2022-04-05 21:16:47,626] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.851 seconds
+[2022-04-05 21:17:18,038] {processor.py:163} INFO - Started process (PID=378) to work on /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:17:18,041] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-04-05 21:17:18,043] {logging_mixin.py:109} INFO - [2022-04-05 21:17:18,042] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:17:19,016] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:17:19,035] {logging_mixin.py:109} INFO - [2022-04-05 21:17:19,034] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-04-05 21:17:19,069] {logging_mixin.py:109} INFO - [2022-04-05 21:17:19,069] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2008-07-01T00:00:00+00:00
+[2022-04-05 21:17:19,082] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 1.051 seconds
+[2022-04-05 21:21:26,273] {processor.py:163} INFO - Started process (PID=201) to work on /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:21:26,278] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-04-05 21:21:26,280] {logging_mixin.py:109} INFO - [2022-04-05 21:21:26,280] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:21:28,924] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:21:29,334] {logging_mixin.py:109} INFO - [2022-04-05 21:21:29,334] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-04-05 21:21:29,348] {logging_mixin.py:109} INFO - [2022-04-05 21:21:29,347] {dag.py:2417} INFO - Creating ORM DAG for IngestToGCP
+[2022-04-05 21:21:29,361] {logging_mixin.py:109} INFO - [2022-04-05 21:21:29,361] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2008-07-01T00:00:00+00:00
+[2022-04-05 21:21:29,378] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 3.115 seconds
+[2022-04-05 21:21:59,792] {processor.py:163} INFO - Started process (PID=248) to work on /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:21:59,798] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-04-05 21:21:59,799] {logging_mixin.py:109} INFO - [2022-04-05 21:21:59,798] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:22:00,688] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:22:00,709] {logging_mixin.py:109} INFO - [2022-04-05 21:22:00,708] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-04-05 21:22:00,733] {logging_mixin.py:109} INFO - [2022-04-05 21:22:00,733] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2008-07-01T00:00:00+00:00
+[2022-04-05 21:22:00,750] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.966 seconds
+[2022-04-05 21:22:30,963] {processor.py:163} INFO - Started process (PID=330) to work on /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:22:30,964] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-04-05 21:22:30,965] {logging_mixin.py:109} INFO - [2022-04-05 21:22:30,965] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:22:31,710] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:22:31,729] {logging_mixin.py:109} INFO - [2022-04-05 21:22:31,729] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-04-05 21:22:31,758] {logging_mixin.py:109} INFO - [2022-04-05 21:22:31,758] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2008-07-01T00:00:00+00:00
+[2022-04-05 21:22:31,771] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.815 seconds
+[2022-04-05 21:23:01,961] {processor.py:163} INFO - Started process (PID=379) to work on /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:23:01,964] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-04-05 21:23:01,965] {logging_mixin.py:109} INFO - [2022-04-05 21:23:01,965] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:23:02,750] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:23:02,767] {logging_mixin.py:109} INFO - [2022-04-05 21:23:02,767] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-04-05 21:23:02,788] {logging_mixin.py:109} INFO - [2022-04-05 21:23:02,788] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2008-07-01T00:00:00+00:00
+[2022-04-05 21:23:02,799] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.844 seconds
+[2022-04-05 21:26:29,378] {processor.py:163} INFO - Started process (PID=203) to work on /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:26:29,385] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-04-05 21:26:29,386] {logging_mixin.py:109} INFO - [2022-04-05 21:26:29,386] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:26:31,863] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:26:31,880] {logging_mixin.py:109} INFO - [2022-04-05 21:26:31,880] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-04-05 21:26:31,900] {logging_mixin.py:109} INFO - [2022-04-05 21:26:31,900] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2008-07-01T00:00:00+00:00
+[2022-04-05 21:26:31,910] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 2.540 seconds
+[2022-04-05 21:27:02,017] {processor.py:163} INFO - Started process (PID=239) to work on /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:27:02,018] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-04-05 21:27:02,019] {logging_mixin.py:109} INFO - [2022-04-05 21:27:02,019] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:27:02,802] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:27:02,821] {logging_mixin.py:109} INFO - [2022-04-05 21:27:02,820] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-04-05 21:27:02,842] {logging_mixin.py:109} INFO - [2022-04-05 21:27:02,842] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2008-07-01T00:00:00+00:00
+[2022-04-05 21:27:02,854] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.842 seconds
+[2022-04-05 21:32:03,319] {processor.py:163} INFO - Started process (PID=200) to work on /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:32:03,328] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-04-05 21:32:03,329] {logging_mixin.py:109} INFO - [2022-04-05 21:32:03,329] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:32:05,887] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:32:05,905] {logging_mixin.py:109} INFO - [2022-04-05 21:32:05,904] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-04-05 21:32:05,926] {logging_mixin.py:109} INFO - [2022-04-05 21:32:05,926] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2008-07-01T00:00:00+00:00
+[2022-04-05 21:32:05,940] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 2.626 seconds
+[2022-04-05 21:32:36,033] {processor.py:163} INFO - Started process (PID=235) to work on /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:32:36,034] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-04-05 21:32:36,035] {logging_mixin.py:109} INFO - [2022-04-05 21:32:36,035] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:32:36,809] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:32:36,832] {logging_mixin.py:109} INFO - [2022-04-05 21:32:36,831] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-04-05 21:32:36,852] {logging_mixin.py:109} INFO - [2022-04-05 21:32:36,852] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2008-07-01T00:00:00+00:00
+[2022-04-05 21:32:36,865] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.837 seconds
+[2022-04-05 21:33:07,125] {processor.py:163} INFO - Started process (PID=367) to work on /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:33:07,128] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-04-05 21:33:07,130] {logging_mixin.py:109} INFO - [2022-04-05 21:33:07,130] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:33:08,047] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:33:08,065] {logging_mixin.py:109} INFO - [2022-04-05 21:33:08,065] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-04-05 21:33:08,090] {logging_mixin.py:109} INFO - [2022-04-05 21:33:08,090] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2008-07-01T00:00:00+00:00
+[2022-04-05 21:33:08,106] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.989 seconds
+[2022-04-05 21:33:38,255] {processor.py:163} INFO - Started process (PID=425) to work on /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:33:38,266] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-04-05 21:33:38,268] {logging_mixin.py:109} INFO - [2022-04-05 21:33:38,267] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:33:39,030] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:33:39,045] {logging_mixin.py:109} INFO - [2022-04-05 21:33:39,045] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-04-05 21:33:39,065] {logging_mixin.py:109} INFO - [2022-04-05 21:33:39,065] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2008-07-01T00:00:00+00:00
+[2022-04-05 21:33:39,077] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.827 seconds
+[2022-04-05 21:34:09,487] {processor.py:163} INFO - Started process (PID=509) to work on /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:34:09,489] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-04-05 21:34:09,491] {logging_mixin.py:109} INFO - [2022-04-05 21:34:09,490] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:34:10,511] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:34:10,535] {logging_mixin.py:109} INFO - [2022-04-05 21:34:10,535] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-04-05 21:34:10,563] {logging_mixin.py:109} INFO - [2022-04-05 21:34:10,562] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2008-07-01T00:00:00+00:00
+[2022-04-05 21:34:10,576] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 1.095 seconds
+[2022-04-05 21:34:40,682] {processor.py:163} INFO - Started process (PID=623) to work on /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:34:40,685] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-04-05 21:34:40,686] {logging_mixin.py:109} INFO - [2022-04-05 21:34:40,686] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:34:41,403] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:34:41,420] {logging_mixin.py:109} INFO - [2022-04-05 21:34:41,420] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-04-05 21:34:41,441] {logging_mixin.py:109} INFO - [2022-04-05 21:34:41,440] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2008-07-01T00:00:00+00:00
+[2022-04-05 21:34:41,452] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.774 seconds
+[2022-04-05 21:35:11,831] {processor.py:163} INFO - Started process (PID=656) to work on /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:35:11,833] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-04-05 21:35:11,834] {logging_mixin.py:109} INFO - [2022-04-05 21:35:11,834] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:35:12,599] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:35:12,614] {logging_mixin.py:109} INFO - [2022-04-05 21:35:12,613] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-04-05 21:35:12,637] {logging_mixin.py:109} INFO - [2022-04-05 21:35:12,637] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2008-07-01T00:00:00+00:00
+[2022-04-05 21:35:12,651] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.825 seconds
+[2022-04-05 21:35:43,057] {processor.py:163} INFO - Started process (PID=699) to work on /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:35:43,071] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-04-05 21:35:43,072] {logging_mixin.py:109} INFO - [2022-04-05 21:35:43,072] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:35:43,785] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:35:43,804] {logging_mixin.py:109} INFO - [2022-04-05 21:35:43,804] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-04-05 21:35:43,831] {logging_mixin.py:109} INFO - [2022-04-05 21:35:43,831] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2008-07-01T00:00:00+00:00
+[2022-04-05 21:35:43,846] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.795 seconds
+[2022-04-05 21:41:12,753] {processor.py:163} INFO - Started process (PID=199) to work on /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:41:12,756] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-04-05 21:41:12,757] {logging_mixin.py:109} INFO - [2022-04-05 21:41:12,757] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:41:14,990] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:41:15,008] {logging_mixin.py:109} INFO - [2022-04-05 21:41:15,008] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-04-05 21:41:15,028] {logging_mixin.py:109} INFO - [2022-04-05 21:41:15,027] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2008-07-01T00:00:00+00:00
+[2022-04-05 21:41:15,039] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 2.292 seconds
+[2022-04-05 21:41:45,138] {processor.py:163} INFO - Started process (PID=232) to work on /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:41:45,139] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-04-05 21:41:45,140] {logging_mixin.py:109} INFO - [2022-04-05 21:41:45,140] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:41:45,851] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:41:45,866] {logging_mixin.py:109} INFO - [2022-04-05 21:41:45,866] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-04-05 21:41:45,885] {logging_mixin.py:109} INFO - [2022-04-05 21:41:45,885] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2008-07-01T00:00:00+00:00
+[2022-04-05 21:41:45,895] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.761 seconds
+[2022-04-05 21:42:16,361] {processor.py:163} INFO - Started process (PID=275) to work on /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:42:16,367] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-04-05 21:42:16,368] {logging_mixin.py:109} INFO - [2022-04-05 21:42:16,368] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:42:17,381] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:42:17,397] {logging_mixin.py:109} INFO - [2022-04-05 21:42:17,397] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-04-05 21:42:17,418] {logging_mixin.py:109} INFO - [2022-04-05 21:42:17,417] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2008-07-01T00:00:00+00:00
+[2022-04-05 21:42:17,429] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 1.073 seconds
+[2022-04-05 21:44:45,618] {processor.py:163} INFO - Started process (PID=203) to work on /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:44:45,624] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-04-05 21:44:45,625] {logging_mixin.py:109} INFO - [2022-04-05 21:44:45,625] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:44:47,989] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:44:48,006] {logging_mixin.py:109} INFO - [2022-04-05 21:44:48,006] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-04-05 21:44:48,027] {logging_mixin.py:109} INFO - [2022-04-05 21:44:48,027] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2008-07-01T00:00:00+00:00
+[2022-04-05 21:44:48,039] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 2.431 seconds
+[2022-04-05 21:45:18,127] {processor.py:163} INFO - Started process (PID=243) to work on /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:45:18,132] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-04-05 21:45:18,134] {logging_mixin.py:109} INFO - [2022-04-05 21:45:18,133] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:45:19,158] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:45:19,187] {logging_mixin.py:109} INFO - [2022-04-05 21:45:19,186] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-04-05 21:45:19,221] {logging_mixin.py:109} INFO - [2022-04-05 21:45:19,220] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2008-07-01T00:00:00+00:00
+[2022-04-05 21:45:19,235] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 1.113 seconds
+[2022-04-05 21:45:49,347] {processor.py:163} INFO - Started process (PID=402) to work on /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:45:49,349] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-04-05 21:45:49,351] {logging_mixin.py:109} INFO - [2022-04-05 21:45:49,350] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:45:50,226] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:45:50,241] {logging_mixin.py:109} INFO - [2022-04-05 21:45:50,241] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-04-05 21:45:50,264] {logging_mixin.py:109} INFO - [2022-04-05 21:45:50,264] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2008-07-01T00:00:00+00:00
+[2022-04-05 21:45:50,274] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.933 seconds
+[2022-04-05 21:46:20,486] {processor.py:163} INFO - Started process (PID=438) to work on /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:46:20,494] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-04-05 21:46:20,495] {logging_mixin.py:109} INFO - [2022-04-05 21:46:20,495] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:46:21,242] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:46:21,258] {logging_mixin.py:109} INFO - [2022-04-05 21:46:21,257] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-04-05 21:46:21,278] {logging_mixin.py:109} INFO - [2022-04-05 21:46:21,278] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2008-07-01T00:00:00+00:00
+[2022-04-05 21:46:21,288] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.807 seconds
+[2022-04-05 21:46:51,793] {processor.py:163} INFO - Started process (PID=570) to work on /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:46:51,795] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-04-05 21:46:51,796] {logging_mixin.py:109} INFO - [2022-04-05 21:46:51,796] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:46:52,682] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:46:52,700] {logging_mixin.py:109} INFO - [2022-04-05 21:46:52,699] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-04-05 21:46:52,722] {logging_mixin.py:109} INFO - [2022-04-05 21:46:52,722] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2008-07-01T00:00:00+00:00
+[2022-04-05 21:46:52,733] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.947 seconds
+[2022-04-05 21:47:22,977] {processor.py:163} INFO - Started process (PID=636) to work on /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:47:22,981] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-04-05 21:47:22,982] {logging_mixin.py:109} INFO - [2022-04-05 21:47:22,982] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:47:23,885] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:47:23,902] {logging_mixin.py:109} INFO - [2022-04-05 21:47:23,901] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-04-05 21:47:23,922] {logging_mixin.py:109} INFO - [2022-04-05 21:47:23,921] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2008-07-01T00:00:00+00:00
+[2022-04-05 21:47:23,933] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.962 seconds
+[2022-04-05 21:49:42,591] {processor.py:163} INFO - Started process (PID=197) to work on /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:49:42,597] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-04-05 21:49:42,598] {logging_mixin.py:109} INFO - [2022-04-05 21:49:42,598] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:49:45,105] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:49:45,125] {logging_mixin.py:109} INFO - [2022-04-05 21:49:45,124] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-04-05 21:49:45,150] {logging_mixin.py:109} INFO - [2022-04-05 21:49:45,150] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2008-07-01T00:00:00+00:00
+[2022-04-05 21:49:45,170] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 2.585 seconds
+[2022-04-05 21:50:15,975] {processor.py:163} INFO - Started process (PID=235) to work on /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:50:15,976] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-04-05 21:50:15,977] {logging_mixin.py:109} INFO - [2022-04-05 21:50:15,977] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:50:16,746] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:50:16,764] {logging_mixin.py:109} INFO - [2022-04-05 21:50:16,763] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-04-05 21:50:16,785] {logging_mixin.py:109} INFO - [2022-04-05 21:50:16,785] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2008-07-01T00:00:00+00:00
+[2022-04-05 21:50:16,797] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.828 seconds
+[2022-04-05 21:50:47,242] {processor.py:163} INFO - Started process (PID=417) to work on /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:50:47,248] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-04-05 21:50:47,249] {logging_mixin.py:109} INFO - [2022-04-05 21:50:47,249] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:50:48,094] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:50:48,110] {logging_mixin.py:109} INFO - [2022-04-05 21:50:48,110] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-04-05 21:50:48,133] {logging_mixin.py:109} INFO - [2022-04-05 21:50:48,133] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2008-07-01T00:00:00+00:00
+[2022-04-05 21:50:48,146] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.909 seconds
+[2022-04-05 21:51:18,470] {processor.py:163} INFO - Started process (PID=461) to work on /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:51:18,476] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-04-05 21:51:18,477] {logging_mixin.py:109} INFO - [2022-04-05 21:51:18,477] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:51:19,276] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:51:19,292] {logging_mixin.py:109} INFO - [2022-04-05 21:51:19,292] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-04-05 21:51:19,317] {logging_mixin.py:109} INFO - [2022-04-05 21:51:19,317] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2008-07-01T00:00:00+00:00
+[2022-04-05 21:51:19,331] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.866 seconds
+[2022-04-05 21:51:49,699] {processor.py:163} INFO - Started process (PID=495) to work on /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:51:49,702] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-04-05 21:51:49,703] {logging_mixin.py:109} INFO - [2022-04-05 21:51:49,703] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:51:50,436] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:51:50,453] {logging_mixin.py:109} INFO - [2022-04-05 21:51:50,453] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-04-05 21:51:50,475] {logging_mixin.py:109} INFO - [2022-04-05 21:51:50,475] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2008-07-01T00:00:00+00:00
+[2022-04-05 21:51:50,487] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.792 seconds
+[2022-04-05 21:52:20,977] {processor.py:163} INFO - Started process (PID=529) to work on /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:52:20,980] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-04-05 21:52:20,981] {logging_mixin.py:109} INFO - [2022-04-05 21:52:20,981] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:52:21,758] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:52:21,775] {logging_mixin.py:109} INFO - [2022-04-05 21:52:21,774] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-04-05 21:52:21,799] {logging_mixin.py:109} INFO - [2022-04-05 21:52:21,799] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2008-07-01T00:00:00+00:00
+[2022-04-05 21:52:21,812] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.841 seconds
+[2022-04-05 21:52:52,233] {processor.py:163} INFO - Started process (PID=573) to work on /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:52:52,235] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-04-05 21:52:52,236] {logging_mixin.py:109} INFO - [2022-04-05 21:52:52,236] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:52:52,967] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:52:52,982] {logging_mixin.py:109} INFO - [2022-04-05 21:52:52,982] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-04-05 21:52:53,001] {logging_mixin.py:109} INFO - [2022-04-05 21:52:53,001] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2008-07-01T00:00:00+00:00
+[2022-04-05 21:52:53,012] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.784 seconds
+[2022-04-05 21:53:23,474] {processor.py:163} INFO - Started process (PID=607) to work on /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:53:23,477] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-04-05 21:53:23,477] {logging_mixin.py:109} INFO - [2022-04-05 21:53:23,477] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:53:24,196] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:53:24,213] {logging_mixin.py:109} INFO - [2022-04-05 21:53:24,213] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-04-05 21:53:24,231] {logging_mixin.py:109} INFO - [2022-04-05 21:53:24,231] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2008-07-01T00:00:00+00:00
+[2022-04-05 21:53:24,242] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.773 seconds
+[2022-04-05 21:53:54,720] {processor.py:163} INFO - Started process (PID=640) to work on /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:53:54,724] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-04-05 21:53:54,725] {logging_mixin.py:109} INFO - [2022-04-05 21:53:54,725] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:53:55,477] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:53:55,497] {logging_mixin.py:109} INFO - [2022-04-05 21:53:55,497] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-04-05 21:53:55,517] {logging_mixin.py:109} INFO - [2022-04-05 21:53:55,516] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2008-07-01T00:00:00+00:00
+[2022-04-05 21:53:55,528] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.813 seconds
+[2022-04-05 21:54:25,968] {processor.py:163} INFO - Started process (PID=681) to work on /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:54:25,970] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-04-05 21:54:25,971] {logging_mixin.py:109} INFO - [2022-04-05 21:54:25,971] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:54:26,887] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:54:26,908] {logging_mixin.py:109} INFO - [2022-04-05 21:54:26,908] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-04-05 21:54:26,932] {logging_mixin.py:109} INFO - [2022-04-05 21:54:26,932] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2008-07-01T00:00:00+00:00
+[2022-04-05 21:54:26,947] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.986 seconds
+[2022-04-05 21:59:21,808] {processor.py:163} INFO - Started process (PID=212) to work on /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:59:21,811] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-04-05 21:59:21,812] {logging_mixin.py:109} INFO - [2022-04-05 21:59:21,812] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:59:24,070] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 21:59:24,087] {logging_mixin.py:109} INFO - [2022-04-05 21:59:24,087] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-04-05 21:59:24,106] {logging_mixin.py:109} INFO - [2022-04-05 21:59:24,106] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2008-08-01T00:00:00+00:00
+[2022-04-05 21:59:24,119] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 2.317 seconds
+[2022-04-05 22:03:26,916] {processor.py:163} INFO - Started process (PID=202) to work on /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:03:26,924] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-04-05 22:03:26,925] {logging_mixin.py:109} INFO - [2022-04-05 22:03:26,925] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:03:29,236] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:03:29,256] {logging_mixin.py:109} INFO - [2022-04-05 22:03:29,255] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-04-05 22:03:29,281] {logging_mixin.py:109} INFO - [2022-04-05 22:03:29,280] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2009-02-01T00:00:00+00:00
+[2022-04-05 22:03:29,299] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 2.390 seconds
+[2022-04-05 22:03:59,652] {processor.py:163} INFO - Started process (PID=445) to work on /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:03:59,665] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-04-05 22:03:59,666] {logging_mixin.py:109} INFO - [2022-04-05 22:03:59,666] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:04:04,279] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:04:04,380] {logging_mixin.py:109} INFO - [2022-04-05 22:04:04,379] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-04-05 22:04:04,540] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 4.903 seconds
+[2022-04-05 22:04:35,071] {processor.py:163} INFO - Started process (PID=992) to work on /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:04:35,094] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-04-05 22:04:35,095] {logging_mixin.py:109} INFO - [2022-04-05 22:04:35,095] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:04:43,648] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:04:43,781] {logging_mixin.py:109} INFO - [2022-04-05 22:04:43,780] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-04-05 22:04:44,024] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 9.009 seconds
+[2022-04-05 22:05:14,249] {processor.py:163} INFO - Started process (PID=1678) to work on /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:05:14,266] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-04-05 22:05:14,267] {logging_mixin.py:109} INFO - [2022-04-05 22:05:14,267] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:05:17,021] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:05:17,182] {logging_mixin.py:109} INFO - [2022-04-05 22:05:17,162] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-04-05 22:05:17,362] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 3.121 seconds
+[2022-04-05 22:05:47,714] {processor.py:163} INFO - Started process (PID=2228) to work on /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:05:47,723] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-04-05 22:05:47,724] {logging_mixin.py:109} INFO - [2022-04-05 22:05:47,724] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:05:51,972] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:05:52,091] {logging_mixin.py:109} INFO - [2022-04-05 22:05:52,091] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-04-05 22:05:52,332] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 4.631 seconds
+[2022-04-05 22:06:22,873] {processor.py:163} INFO - Started process (PID=2770) to work on /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:06:22,885] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-04-05 22:06:22,887] {logging_mixin.py:109} INFO - [2022-04-05 22:06:22,886] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:06:29,603] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:06:29,735] {logging_mixin.py:109} INFO - [2022-04-05 22:06:29,734] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-04-05 22:06:29,923] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 7.077 seconds
+[2022-04-05 22:07:00,335] {processor.py:163} INFO - Started process (PID=3278) to work on /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:07:00,369] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-04-05 22:07:00,371] {logging_mixin.py:109} INFO - [2022-04-05 22:07:00,370] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:07:03,508] {processor.py:654} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:07:03,739] {logging_mixin.py:109} INFO - [2022-04-05 22:07:03,724] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-04-05 22:07:04,017] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 3.687 seconds
+[2022-04-05 22:09:14,449] {processor.py:163} INFO - Started process (PID=199) to work on /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:09:14,466] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-04-05 22:09:14,467] {logging_mixin.py:109} INFO - [2022-04-05 22:09:14,467] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:09:19,587] {processor.py:652} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:09:19,650] {logging_mixin.py:109} INFO - [2022-04-05 22:09:19,650] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-04-05 22:09:19,718] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 5.274 seconds
+[2022-04-05 22:09:50,216] {processor.py:163} INFO - Started process (PID=470) to work on /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:09:50,229] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-04-05 22:09:50,230] {logging_mixin.py:109} INFO - [2022-04-05 22:09:50,230] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:09:53,953] {processor.py:652} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:09:53,998] {logging_mixin.py:109} INFO - [2022-04-05 22:09:53,997] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-04-05 22:09:54,063] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 3.861 seconds
+[2022-04-05 22:10:24,431] {processor.py:163} INFO - Started process (PID=959) to work on /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:10:24,439] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-04-05 22:10:24,441] {logging_mixin.py:109} INFO - [2022-04-05 22:10:24,440] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:10:28,026] {processor.py:652} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:10:28,150] {logging_mixin.py:109} INFO - [2022-04-05 22:10:28,149] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-04-05 22:10:28,284] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 3.859 seconds
+[2022-04-05 22:10:58,580] {processor.py:163} INFO - Started process (PID=1311) to work on /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:10:58,586] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-04-05 22:10:58,588] {logging_mixin.py:109} INFO - [2022-04-05 22:10:58,587] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:11:03,860] {processor.py:652} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:11:04,038] {logging_mixin.py:109} INFO - [2022-04-05 22:11:04,038] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-04-05 22:11:04,281] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 5.715 seconds
+[2022-04-05 22:11:35,198] {processor.py:163} INFO - Started process (PID=1722) to work on /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:11:35,235] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-04-05 22:11:35,236] {logging_mixin.py:109} INFO - [2022-04-05 22:11:35,236] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:11:40,539] {processor.py:652} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:11:40,733] {logging_mixin.py:109} INFO - [2022-04-05 22:11:40,732] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-04-05 22:11:40,902] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 5.724 seconds
+[2022-04-05 22:12:11,221] {processor.py:163} INFO - Started process (PID=2430) to work on /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:12:11,224] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-04-05 22:12:11,225] {logging_mixin.py:109} INFO - [2022-04-05 22:12:11,225] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:12:12,713] {processor.py:652} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:12:12,830] {logging_mixin.py:109} INFO - [2022-04-05 22:12:12,829] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-04-05 22:12:12,920] {logging_mixin.py:109} INFO - [2022-04-05 22:12:12,920] {dag.py:2937} INFO - Setting next_dagrun for IngestToGCP to 2009-09-01T00:00:00+00:00
+[2022-04-05 22:12:12,947] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 1.742 seconds
+[2022-04-05 22:12:43,680] {processor.py:163} INFO - Started process (PID=2710) to work on /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:12:43,683] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-04-05 22:12:43,684] {logging_mixin.py:109} INFO - [2022-04-05 22:12:43,684] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:12:47,947] {processor.py:652} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:12:48,020] {logging_mixin.py:109} INFO - [2022-04-05 22:12:48,019] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-04-05 22:12:48,060] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 4.387 seconds
+[2022-04-05 22:13:18,307] {processor.py:163} INFO - Started process (PID=3444) to work on /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:13:18,325] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-04-05 22:13:18,326] {logging_mixin.py:109} INFO - [2022-04-05 22:13:18,326] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:13:22,083] {processor.py:652} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:13:22,164] {logging_mixin.py:109} INFO - [2022-04-05 22:13:22,164] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-04-05 22:13:22,255] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 3.960 seconds
+[2022-04-05 22:13:52,733] {processor.py:163} INFO - Started process (PID=3750) to work on /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:13:52,737] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-04-05 22:13:52,739] {logging_mixin.py:109} INFO - [2022-04-05 22:13:52,738] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:13:55,473] {processor.py:652} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:13:55,552] {logging_mixin.py:109} INFO - [2022-04-05 22:13:55,552] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-04-05 22:13:55,618] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 2.908 seconds
+[2022-04-05 22:14:26,179] {processor.py:163} INFO - Started process (PID=4250) to work on /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:14:26,210] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-04-05 22:14:26,224] {logging_mixin.py:109} INFO - [2022-04-05 22:14:26,223] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:14:28,693] {processor.py:652} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:14:28,799] {logging_mixin.py:109} INFO - [2022-04-05 22:14:28,798] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-04-05 22:14:28,890] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 2.718 seconds
+[2022-04-05 22:14:59,613] {processor.py:163} INFO - Started process (PID=4476) to work on /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:14:59,616] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-04-05 22:14:59,617] {logging_mixin.py:109} INFO - [2022-04-05 22:14:59,617] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:15:00,440] {processor.py:652} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:15:00,490] {logging_mixin.py:109} INFO - [2022-04-05 22:15:00,490] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-04-05 22:15:00,533] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.924 seconds
+[2022-04-05 22:15:30,815] {processor.py:163} INFO - Started process (PID=4519) to work on /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:15:30,824] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-04-05 22:15:30,825] {logging_mixin.py:109} INFO - [2022-04-05 22:15:30,825] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:15:31,612] {processor.py:652} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:15:31,652] {logging_mixin.py:109} INFO - [2022-04-05 22:15:31,652] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-04-05 22:15:31,686] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.875 seconds
+[2022-04-05 22:16:02,032] {processor.py:163} INFO - Started process (PID=4552) to work on /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:16:02,035] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-04-05 22:16:02,036] {logging_mixin.py:109} INFO - [2022-04-05 22:16:02,036] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:16:02,787] {processor.py:652} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:16:02,815] {logging_mixin.py:109} INFO - [2022-04-05 22:16:02,815] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-04-05 22:16:02,843] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.816 seconds
+[2022-04-05 22:16:33,242] {processor.py:163} INFO - Started process (PID=4596) to work on /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:16:33,245] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-04-05 22:16:33,246] {logging_mixin.py:109} INFO - [2022-04-05 22:16:33,246] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:16:34,009] {processor.py:652} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:16:34,036] {logging_mixin.py:109} INFO - [2022-04-05 22:16:34,036] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-04-05 22:16:34,070] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.832 seconds
+[2022-04-05 22:17:04,469] {processor.py:163} INFO - Started process (PID=4631) to work on /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:17:04,471] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-04-05 22:17:04,472] {logging_mixin.py:109} INFO - [2022-04-05 22:17:04,472] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:17:05,213] {processor.py:652} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:17:05,240] {logging_mixin.py:109} INFO - [2022-04-05 22:17:05,239] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-04-05 22:17:05,274] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.810 seconds
+[2022-04-05 22:17:35,699] {processor.py:163} INFO - Started process (PID=4673) to work on /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:17:35,703] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-04-05 22:17:35,704] {logging_mixin.py:109} INFO - [2022-04-05 22:17:35,704] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:17:36,636] {processor.py:652} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:17:36,667] {logging_mixin.py:109} INFO - [2022-04-05 22:17:36,667] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-04-05 22:17:36,700] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 1.006 seconds
+[2022-04-05 22:18:06,843] {processor.py:163} INFO - Started process (PID=4706) to work on /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:18:06,845] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-04-05 22:18:06,846] {logging_mixin.py:109} INFO - [2022-04-05 22:18:06,846] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:18:07,625] {processor.py:652} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:18:07,658] {logging_mixin.py:109} INFO - [2022-04-05 22:18:07,658] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-04-05 22:18:07,687] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.849 seconds
+[2022-04-05 22:18:38,089] {processor.py:163} INFO - Started process (PID=4747) to work on /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:18:38,091] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-04-05 22:18:38,092] {logging_mixin.py:109} INFO - [2022-04-05 22:18:38,092] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:18:38,859] {processor.py:652} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:18:38,886] {logging_mixin.py:109} INFO - [2022-04-05 22:18:38,886] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-04-05 22:18:38,924] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.840 seconds
+[2022-04-05 22:19:09,048] {processor.py:163} INFO - Started process (PID=4775) to work on /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:19:09,051] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-04-05 22:19:09,052] {logging_mixin.py:109} INFO - [2022-04-05 22:19:09,052] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:19:09,828] {processor.py:652} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:19:09,856] {logging_mixin.py:109} INFO - [2022-04-05 22:19:09,855] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-04-05 22:19:09,883] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.840 seconds
+[2022-04-05 22:19:40,040] {processor.py:163} INFO - Started process (PID=4814) to work on /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:19:40,043] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-04-05 22:19:40,044] {logging_mixin.py:109} INFO - [2022-04-05 22:19:40,044] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:19:40,829] {processor.py:652} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:19:40,857] {logging_mixin.py:109} INFO - [2022-04-05 22:19:40,856] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-04-05 22:19:40,884] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.850 seconds
+[2022-04-05 22:20:11,000] {processor.py:163} INFO - Started process (PID=4843) to work on /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:20:11,001] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-04-05 22:20:11,002] {logging_mixin.py:109} INFO - [2022-04-05 22:20:11,002] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:20:11,759] {processor.py:652} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:20:11,802] {logging_mixin.py:109} INFO - [2022-04-05 22:20:11,802] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-04-05 22:20:11,836] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.842 seconds
+[2022-04-05 22:20:41,942] {processor.py:163} INFO - Started process (PID=4882) to work on /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:20:41,945] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-04-05 22:20:41,946] {logging_mixin.py:109} INFO - [2022-04-05 22:20:41,946] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:20:42,785] {processor.py:652} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:20:42,811] {logging_mixin.py:109} INFO - [2022-04-05 22:20:42,811] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-04-05 22:20:42,839] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.902 seconds
+[2022-04-05 22:21:12,935] {processor.py:163} INFO - Started process (PID=4911) to work on /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:21:12,938] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-04-05 22:21:12,939] {logging_mixin.py:109} INFO - [2022-04-05 22:21:12,939] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:21:13,760] {processor.py:652} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:21:13,791] {logging_mixin.py:109} INFO - [2022-04-05 22:21:13,790] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-04-05 22:21:13,826] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.897 seconds
+[2022-04-05 22:21:44,048] {processor.py:163} INFO - Started process (PID=4949) to work on /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:21:44,055] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-04-05 22:21:44,060] {logging_mixin.py:109} INFO - [2022-04-05 22:21:44,059] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:21:45,678] {processor.py:652} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:21:45,730] {logging_mixin.py:109} INFO - [2022-04-05 22:21:45,730] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-04-05 22:21:45,771] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 1.742 seconds
+[2022-04-05 22:22:15,905] {processor.py:163} INFO - Started process (PID=4977) to work on /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:22:15,907] {processor.py:642} INFO - Processing file /opt/airflow/dags/ingest_dag.py for tasks to queue
+[2022-04-05 22:22:15,908] {logging_mixin.py:109} INFO - [2022-04-05 22:22:15,908] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:22:16,797] {processor.py:652} INFO - DAG(s) dict_keys(['IngestToGCP']) retrieved from /opt/airflow/dags/ingest_dag.py
+[2022-04-05 22:22:16,826] {logging_mixin.py:109} INFO - [2022-04-05 22:22:16,826] {dag.py:2398} INFO - Sync 1 DAGs
+[2022-04-05 22:22:16,856] {processor.py:171} INFO - Processing /opt/airflow/dags/ingest_dag.py took 0.957 seconds

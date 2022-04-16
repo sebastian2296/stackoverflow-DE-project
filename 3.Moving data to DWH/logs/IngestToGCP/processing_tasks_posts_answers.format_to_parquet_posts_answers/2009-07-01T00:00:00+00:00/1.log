@@ -1,0 +1,101 @@
+[2022-04-05 22:06:52,022] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: IngestToGCP.processing_tasks_posts_answers.format_to_parquet_posts_answers scheduled__2009-07-01T00:00:00+00:00 [queued]>
+[2022-04-05 22:06:52,092] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: IngestToGCP.processing_tasks_posts_answers.format_to_parquet_posts_answers scheduled__2009-07-01T00:00:00+00:00 [queued]>
+[2022-04-05 22:06:52,092] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-05 22:06:52,092] {taskinstance.py:1244} INFO - Starting attempt 1 of 1
+[2022-04-05 22:06:52,093] {taskinstance.py:1245} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-05 22:06:52,156] {taskinstance.py:1264} INFO - Executing <Task(PythonOperator): processing_tasks_posts_answers.format_to_parquet_posts_answers> on 2009-07-01 00:00:00+00:00
+[2022-04-05 22:06:52,183] {standard_task_runner.py:52} INFO - Started process 3216 to run task
+[2022-04-05 22:06:52,221] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'IngestToGCP', 'processing_tasks_posts_answers.format_to_parquet_posts_answers', 'scheduled__2009-07-01T00:00:00+00:00', '--job-id', '8235', '--raw', '--subdir', 'DAGS_FOLDER/ingest_dag.py', '--cfg-path', '/tmp/tmpvphmvori', '--error-file', '/tmp/tmpgbsfjkpi']
+[2022-04-05 22:06:52,222] {standard_task_runner.py:77} INFO - Job 8235: Subtask processing_tasks_posts_answers.format_to_parquet_posts_answers
+[2022-04-05 22:06:52,450] {logging_mixin.py:109} INFO - Running <TaskInstance: IngestToGCP.processing_tasks_posts_answers.format_to_parquet_posts_answers scheduled__2009-07-01T00:00:00+00:00 [running]> on host c460da24ecb6
+[2022-04-05 22:06:52,577] {logging_mixin.py:109} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:156 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2022-04-05 22:06:52,654] {taskinstance.py:1431} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=IngestToGCP
+AIRFLOW_CTX_TASK_ID=processing_tasks_posts_answers.format_to_parquet_posts_answers
+AIRFLOW_CTX_EXECUTION_DATE=2009-07-01T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2009-07-01T00:00:00+00:00
+[2022-04-05 22:07:03,549] {local_task_job.py:82} ERROR - Received SIGTERM. Terminating subprocesses
+[2022-04-05 22:07:03,619] {process_utils.py:124} INFO - Sending Signals.SIGTERM to group 3216. PIDs of all processes in the group: [3216]
+[2022-04-05 22:07:03,620] {process_utils.py:75} INFO - Sending the signal Signals.SIGTERM to group 3216
+[2022-04-05 22:07:03,770] {taskinstance.py:1413} ERROR - Received SIGTERM. Terminating subprocesses.
+[2022-04-05 22:07:05,478] {taskinstance.py:1718} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1334, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1460, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1516, in _execute_task
+    result = execute_callable(context=context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 174, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 188, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/format_to_parquet.py", line 120, in parquetize
+    table.to_parquet(path)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/util/_decorators.py", line 207, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/frame.py", line 2685, in to_parquet
+    **kwargs,
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/parquet.py", line 423, in to_parquet
+    **kwargs,
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/parquet.py", line 195, in write
+    table, path_or_handle, compression=compression, **kwargs
+  File "/home/airflow/.local/lib/python3.7/site-packages/pyarrow/parquet.py", line 2034, in write_table
+    writer.write_table(table, row_group_size=row_group_size)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pyarrow/parquet.py", line 701, in write_table
+    self.writer.write_table(table, row_group_size=row_group_size)
+  File "pyarrow/_parquet.pyx", line 1451, in pyarrow._parquet.ParquetWriter.write_table
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1415, in signal_handler
+    raise AirflowException("Task received SIGTERM signal")
+airflow.exceptions.AirflowException: Task received SIGTERM signal
+[2022-04-05 22:07:05,578] {taskinstance.py:1282} INFO - Marking task as FAILED. dag_id=IngestToGCP, task_id=processing_tasks_posts_answers.format_to_parquet_posts_answers, execution_date=20090701T000000, start_date=20220405T220652, end_date=20220405T220705
+[2022-04-05 22:07:05,689] {standard_task_runner.py:92} ERROR - Failed to execute job 8235 for task processing_tasks_posts_answers.format_to_parquet_posts_answers
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/task/task_runner/standard_task_runner.py", line 85, in _start_by_fork
+    args.func(args, dag=self.dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/cli_parser.py", line 48, in command
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/cli.py", line 92, in wrapper
+    return f(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 298, in task_run
+    _run_task_by_selected_method(args, dag, ti)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 107, in _run_task_by_selected_method
+    _run_raw_task(args, ti)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 184, in _run_raw_task
+    error_file=args.error_file,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1334, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1460, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1516, in _execute_task
+    result = execute_callable(context=context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 174, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 188, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/format_to_parquet.py", line 120, in parquetize
+    table.to_parquet(path)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/util/_decorators.py", line 207, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/frame.py", line 2685, in to_parquet
+    **kwargs,
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/parquet.py", line 423, in to_parquet
+    **kwargs,
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/parquet.py", line 195, in write
+    table, path_or_handle, compression=compression, **kwargs
+  File "/home/airflow/.local/lib/python3.7/site-packages/pyarrow/parquet.py", line 2034, in write_table
+    writer.write_table(table, row_group_size=row_group_size)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pyarrow/parquet.py", line 701, in write_table
+    self.writer.write_table(table, row_group_size=row_group_size)
+  File "pyarrow/_parquet.pyx", line 1451, in pyarrow._parquet.ParquetWriter.write_table
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1415, in signal_handler
+    raise AirflowException("Task received SIGTERM signal")
+airflow.exceptions.AirflowException: Task received SIGTERM signal
+[2022-04-05 22:07:05,759] {process_utils.py:70} INFO - Process psutil.Process(pid=3216, status='terminated', exitcode=1, started='22:06:51') (3216) terminated with exit code 1
+[2022-04-05 22:07:05,759] {local_task_job.py:154} INFO - Task exited with return code 143
+[2022-04-05 22:07:06,202] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

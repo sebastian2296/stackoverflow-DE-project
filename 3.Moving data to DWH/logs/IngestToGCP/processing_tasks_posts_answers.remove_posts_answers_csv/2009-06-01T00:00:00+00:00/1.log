@@ -1,0 +1,34 @@
+[2022-04-05 22:09:19,853] {taskinstance.py:1043} INFO - Dependencies all met for <TaskInstance: IngestToGCP.processing_tasks_posts_answers.remove_posts_answers_csv scheduled__2009-06-01T00:00:00+00:00 [queued]>
+[2022-04-05 22:09:19,877] {taskinstance.py:1043} INFO - Dependencies all met for <TaskInstance: IngestToGCP.processing_tasks_posts_answers.remove_posts_answers_csv scheduled__2009-06-01T00:00:00+00:00 [queued]>
+[2022-04-05 22:09:19,877] {taskinstance.py:1249} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-05 22:09:19,877] {taskinstance.py:1250} INFO - Starting attempt 1 of 1
+[2022-04-05 22:09:19,877] {taskinstance.py:1251} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-05 22:09:19,899] {taskinstance.py:1270} INFO - Executing <Task(BashOperator): processing_tasks_posts_answers.remove_posts_answers_csv> on 2009-06-01 00:00:00+00:00
+[2022-04-05 22:09:19,921] {standard_task_runner.py:52} INFO - Started process 232 to run task
+[2022-04-05 22:09:19,945] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'IngestToGCP', 'processing_tasks_posts_answers.remove_posts_answers_csv', 'scheduled__2009-06-01T00:00:00+00:00', '--job-id', '8248', '--raw', '--subdir', 'DAGS_FOLDER/ingest_dag.py', '--cfg-path', '/tmp/tmplmm6enu5', '--error-file', '/tmp/tmpnsioy469']
+[2022-04-05 22:09:19,948] {standard_task_runner.py:80} INFO - Job 8248: Subtask processing_tasks_posts_answers.remove_posts_answers_csv
+[2022-04-05 22:09:20,104] {logging_mixin.py:109} INFO - Running <TaskInstance: IngestToGCP.processing_tasks_posts_answers.remove_posts_answers_csv scheduled__2009-06-01T00:00:00+00:00 [running]> on host 6e0f007959f8
+[2022-04-05 22:09:20,243] {logging_mixin.py:109} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:156 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2022-04-05 22:09:20,311] {taskinstance.py:1448} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=IngestToGCP
+AIRFLOW_CTX_TASK_ID=processing_tasks_posts_answers.remove_posts_answers_csv
+AIRFLOW_CTX_EXECUTION_DATE=2009-06-01T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2009-06-01T00:00:00+00:00
+[2022-04-05 22:09:20,313] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-04-05 22:09:20,314] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'rm /opt/***/posts_answers-2009-06.csv']
+[2022-04-05 22:09:20,349] {subprocess.py:85} INFO - Output:
+[2022-04-05 22:09:20,357] {subprocess.py:89} INFO - rm: cannot remove '/opt/***/posts_answers-2009-06.csv': No such file or directory
+[2022-04-05 22:09:20,357] {subprocess.py:93} INFO - Command exited with return code 1
+[2022-04-05 22:09:20,384] {taskinstance.py:1774} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 188, in execute
+    f'Bash command failed. The command returned a non-zero exit code {result.exit_code}.'
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2022-04-05 22:09:20,397] {taskinstance.py:1288} INFO - Marking task as FAILED. dag_id=IngestToGCP, task_id=processing_tasks_posts_answers.remove_posts_answers_csv, execution_date=20090601T000000, start_date=20220405T220919, end_date=20220405T220920
+[2022-04-05 22:09:20,433] {standard_task_runner.py:98} ERROR - Failed to execute job 8248 for task processing_tasks_posts_answers.remove_posts_answers_csv (Bash command failed. The command returned a non-zero exit code 1.; 232)
+[2022-04-05 22:09:20,482] {local_task_job.py:154} INFO - Task exited with return code 1
+[2022-04-05 22:09:20,579] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

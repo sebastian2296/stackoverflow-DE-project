@@ -1,0 +1,27 @@
+[2022-04-06 03:37:03,079] {taskinstance.py:1043} INFO - Dependencies all met for <TaskInstance: IngestToGCP.processing_tasks_posts_answers.remove_posts_answers_csv scheduled__2020-09-01T00:00:00+00:00 [queued]>
+[2022-04-06 03:37:03,108] {taskinstance.py:1043} INFO - Dependencies all met for <TaskInstance: IngestToGCP.processing_tasks_posts_answers.remove_posts_answers_csv scheduled__2020-09-01T00:00:00+00:00 [queued]>
+[2022-04-06 03:37:03,108] {taskinstance.py:1249} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-06 03:37:03,108] {taskinstance.py:1250} INFO - Starting attempt 1 of 1
+[2022-04-06 03:37:03,108] {taskinstance.py:1251} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-06 03:37:03,156] {taskinstance.py:1270} INFO - Executing <Task(BashOperator): processing_tasks_posts_answers.remove_posts_answers_csv> on 2020-09-01 00:00:00+00:00
+[2022-04-06 03:37:03,175] {standard_task_runner.py:52} INFO - Started process 221519 to run task
+[2022-04-06 03:37:03,198] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'IngestToGCP', 'processing_tasks_posts_answers.remove_posts_answers_csv', 'scheduled__2020-09-01T00:00:00+00:00', '--job-id', '11852', '--raw', '--subdir', 'DAGS_FOLDER/ingest_dag.py', '--cfg-path', '/tmp/tmpxcjfh8ak', '--error-file', '/tmp/tmpf_r81myu']
+[2022-04-06 03:37:03,200] {standard_task_runner.py:80} INFO - Job 11852: Subtask processing_tasks_posts_answers.remove_posts_answers_csv
+[2022-04-06 03:37:03,631] {logging_mixin.py:109} INFO - Running <TaskInstance: IngestToGCP.processing_tasks_posts_answers.remove_posts_answers_csv scheduled__2020-09-01T00:00:00+00:00 [running]> on host 9fe4286b2855
+[2022-04-06 03:37:04,141] {logging_mixin.py:109} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:156 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2022-04-06 03:37:04,413] {taskinstance.py:1448} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=IngestToGCP
+AIRFLOW_CTX_TASK_ID=processing_tasks_posts_answers.remove_posts_answers_csv
+AIRFLOW_CTX_EXECUTION_DATE=2020-09-01T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2020-09-01T00:00:00+00:00
+[2022-04-06 03:37:04,415] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-04-06 03:37:04,416] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'rm /opt/***/posts_answers-2020-09.csv']
+[2022-04-06 03:37:04,744] {subprocess.py:85} INFO - Output:
+[2022-04-06 03:37:05,672] {subprocess.py:93} INFO - Command exited with return code 0
+[2022-04-06 03:37:06,513] {taskinstance.py:1288} INFO - Marking task as SUCCESS. dag_id=IngestToGCP, task_id=processing_tasks_posts_answers.remove_posts_answers_csv, execution_date=20200901T000000, start_date=20220406T033703, end_date=20220406T033706
+[2022-04-06 03:37:06,958] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-04-06 03:37:07,689] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check

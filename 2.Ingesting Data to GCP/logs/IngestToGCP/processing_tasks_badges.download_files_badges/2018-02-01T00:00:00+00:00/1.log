@@ -1,0 +1,27 @@
+[2022-04-06 02:25:24,932] {taskinstance.py:1043} INFO - Dependencies all met for <TaskInstance: IngestToGCP.processing_tasks_badges.download_files_badges scheduled__2018-02-01T00:00:00+00:00 [queued]>
+[2022-04-06 02:25:24,968] {taskinstance.py:1043} INFO - Dependencies all met for <TaskInstance: IngestToGCP.processing_tasks_badges.download_files_badges scheduled__2018-02-01T00:00:00+00:00 [queued]>
+[2022-04-06 02:25:24,968] {taskinstance.py:1249} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-06 02:25:24,968] {taskinstance.py:1250} INFO - Starting attempt 1 of 1
+[2022-04-06 02:25:24,969] {taskinstance.py:1251} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-06 02:25:25,032] {taskinstance.py:1270} INFO - Executing <Task(BashOperator): processing_tasks_badges.download_files_badges> on 2018-02-01 00:00:00+00:00
+[2022-04-06 02:25:25,122] {standard_task_runner.py:52} INFO - Started process 172442 to run task
+[2022-04-06 02:25:25,373] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'IngestToGCP', 'processing_tasks_badges.download_files_badges', 'scheduled__2018-02-01T00:00:00+00:00', '--job-id', '11085', '--raw', '--subdir', 'DAGS_FOLDER/ingest_dag.py', '--cfg-path', '/tmp/tmp4qq3o88o', '--error-file', '/tmp/tmphr8kuzz1']
+[2022-04-06 02:25:25,375] {standard_task_runner.py:80} INFO - Job 11085: Subtask processing_tasks_badges.download_files_badges
+[2022-04-06 02:25:26,575] {logging_mixin.py:109} INFO - Running <TaskInstance: IngestToGCP.processing_tasks_badges.download_files_badges scheduled__2018-02-01T00:00:00+00:00 [running]> on host 9fe4286b2855
+[2022-04-06 02:25:27,389] {logging_mixin.py:109} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:156 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2022-04-06 02:25:27,610] {taskinstance.py:1448} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=IngestToGCP
+AIRFLOW_CTX_TASK_ID=processing_tasks_badges.download_files_badges
+AIRFLOW_CTX_EXECUTION_DATE=2018-02-01T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2018-02-01T00:00:00+00:00
+[2022-04-06 02:25:27,611] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-04-06 02:25:27,612] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'curl -A "Mozilla Chrome Safari" -sSfl --connect-timeout 5                     --retry 5                     https://storage.googleapis.com/dtc_data_lake_de-stack-overflow/processed/badges-2018-02.csv > /opt/***/badges-2018-02.csv']
+[2022-04-06 02:25:27,761] {subprocess.py:85} INFO - Output:
+[2022-04-06 02:25:28,877] {subprocess.py:93} INFO - Command exited with return code 0
+[2022-04-06 02:25:30,773] {taskinstance.py:1288} INFO - Marking task as SUCCESS. dag_id=IngestToGCP, task_id=processing_tasks_badges.download_files_badges, execution_date=20180201T000000, start_date=20220406T022524, end_date=20220406T022530
+[2022-04-06 02:25:31,129] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-04-06 02:25:31,318] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check

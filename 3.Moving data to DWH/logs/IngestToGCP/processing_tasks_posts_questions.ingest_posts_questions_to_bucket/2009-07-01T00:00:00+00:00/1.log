@@ -1,0 +1,34 @@
+[2022-04-05 22:09:19,849] {taskinstance.py:1043} INFO - Dependencies all met for <TaskInstance: IngestToGCP.processing_tasks_posts_questions.ingest_posts_questions_to_bucket scheduled__2009-07-01T00:00:00+00:00 [queued]>
+[2022-04-05 22:09:19,873] {taskinstance.py:1043} INFO - Dependencies all met for <TaskInstance: IngestToGCP.processing_tasks_posts_questions.ingest_posts_questions_to_bucket scheduled__2009-07-01T00:00:00+00:00 [queued]>
+[2022-04-05 22:09:19,874] {taskinstance.py:1249} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-05 22:09:19,874] {taskinstance.py:1250} INFO - Starting attempt 1 of 1
+[2022-04-05 22:09:19,874] {taskinstance.py:1251} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-05 22:09:19,900] {taskinstance.py:1270} INFO - Executing <Task(PythonOperator): processing_tasks_posts_questions.ingest_posts_questions_to_bucket> on 2009-07-01 00:00:00+00:00
+[2022-04-05 22:09:19,913] {standard_task_runner.py:52} INFO - Started process 231 to run task
+[2022-04-05 22:09:19,927] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'IngestToGCP', 'processing_tasks_posts_questions.ingest_posts_questions_to_bucket', 'scheduled__2009-07-01T00:00:00+00:00', '--job-id', '8249', '--raw', '--subdir', 'DAGS_FOLDER/ingest_dag.py', '--cfg-path', '/tmp/tmpeo6uq7o4', '--error-file', '/tmp/tmp83gs1j9d']
+[2022-04-05 22:09:19,928] {standard_task_runner.py:80} INFO - Job 8249: Subtask processing_tasks_posts_questions.ingest_posts_questions_to_bucket
+[2022-04-05 22:09:20,098] {logging_mixin.py:109} INFO - Running <TaskInstance: IngestToGCP.processing_tasks_posts_questions.ingest_posts_questions_to_bucket scheduled__2009-07-01T00:00:00+00:00 [running]> on host 6e0f007959f8
+[2022-04-05 22:09:20,247] {logging_mixin.py:109} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:156 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2022-04-05 22:09:20,311] {taskinstance.py:1448} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=IngestToGCP
+AIRFLOW_CTX_TASK_ID=processing_tasks_posts_questions.ingest_posts_questions_to_bucket
+AIRFLOW_CTX_EXECUTION_DATE=2009-07-01T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2009-07-01T00:00:00+00:00
+[2022-04-05 22:09:20,485] {taskinstance.py:1774} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 174, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 188, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/upload_to_gcs.py", line 9, in upload_to_gcs
+    blob.upload_from_filename(file_)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/storage/blob.py", line 2720, in upload_from_filename
+    with open(filename, "rb") as file_obj:
+FileNotFoundError: [Errno 2] No such file or directory: 'posts_questions-2009-07.parquet'
+[2022-04-05 22:09:20,521] {taskinstance.py:1288} INFO - Marking task as FAILED. dag_id=IngestToGCP, task_id=processing_tasks_posts_questions.ingest_posts_questions_to_bucket, execution_date=20090701T000000, start_date=20220405T220919, end_date=20220405T220920
+[2022-04-05 22:09:20,553] {standard_task_runner.py:98} ERROR - Failed to execute job 8249 for task processing_tasks_posts_questions.ingest_posts_questions_to_bucket ([Errno 2] No such file or directory: 'posts_questions-2009-07.parquet'; 231)
+[2022-04-05 22:09:20,601] {local_task_job.py:154} INFO - Task exited with return code 1
+[2022-04-05 22:09:20,725] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

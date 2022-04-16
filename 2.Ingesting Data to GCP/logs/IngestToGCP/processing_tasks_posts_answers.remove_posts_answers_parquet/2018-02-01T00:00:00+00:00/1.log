@@ -1,0 +1,27 @@
+[2022-04-06 02:33:06,785] {taskinstance.py:1043} INFO - Dependencies all met for <TaskInstance: IngestToGCP.processing_tasks_posts_answers.remove_posts_answers_parquet scheduled__2018-02-01T00:00:00+00:00 [queued]>
+[2022-04-06 02:33:07,696] {taskinstance.py:1043} INFO - Dependencies all met for <TaskInstance: IngestToGCP.processing_tasks_posts_answers.remove_posts_answers_parquet scheduled__2018-02-01T00:00:00+00:00 [queued]>
+[2022-04-06 02:33:07,697] {taskinstance.py:1249} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-06 02:33:07,774] {taskinstance.py:1250} INFO - Starting attempt 1 of 1
+[2022-04-06 02:33:07,774] {taskinstance.py:1251} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-06 02:33:09,060] {taskinstance.py:1270} INFO - Executing <Task(BashOperator): processing_tasks_posts_answers.remove_posts_answers_parquet> on 2018-02-01 00:00:00+00:00
+[2022-04-06 02:33:09,550] {standard_task_runner.py:52} INFO - Started process 177869 to run task
+[2022-04-06 02:33:09,751] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'IngestToGCP', 'processing_tasks_posts_answers.remove_posts_answers_parquet', 'scheduled__2018-02-01T00:00:00+00:00', '--job-id', '11173', '--raw', '--subdir', 'DAGS_FOLDER/ingest_dag.py', '--cfg-path', '/tmp/tmpdh_blvbn', '--error-file', '/tmp/tmp_j35oklm']
+[2022-04-06 02:33:09,787] {standard_task_runner.py:80} INFO - Job 11173: Subtask processing_tasks_posts_answers.remove_posts_answers_parquet
+[2022-04-06 02:33:11,388] {logging_mixin.py:109} INFO - Running <TaskInstance: IngestToGCP.processing_tasks_posts_answers.remove_posts_answers_parquet scheduled__2018-02-01T00:00:00+00:00 [running]> on host 9fe4286b2855
+[2022-04-06 02:33:13,705] {logging_mixin.py:109} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:156 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2022-04-06 02:33:14,184] {taskinstance.py:1448} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=IngestToGCP
+AIRFLOW_CTX_TASK_ID=processing_tasks_posts_answers.remove_posts_answers_parquet
+AIRFLOW_CTX_EXECUTION_DATE=2018-02-01T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2018-02-01T00:00:00+00:00
+[2022-04-06 02:33:14,187] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-04-06 02:33:14,257] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'rm /opt/***/posts_answers-2018-02.parquet']
+[2022-04-06 02:33:14,536] {subprocess.py:85} INFO - Output:
+[2022-04-06 02:33:14,886] {subprocess.py:93} INFO - Command exited with return code 0
+[2022-04-06 02:33:15,943] {taskinstance.py:1288} INFO - Marking task as SUCCESS. dag_id=IngestToGCP, task_id=processing_tasks_posts_answers.remove_posts_answers_parquet, execution_date=20180201T000000, start_date=20220406T023306, end_date=20220406T023315
+[2022-04-06 02:33:16,128] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-04-06 02:33:16,272] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

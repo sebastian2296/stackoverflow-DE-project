@@ -1,0 +1,29 @@
+[2022-04-06 01:32:55,347] {taskinstance.py:1043} INFO - Dependencies all met for <TaskInstance: IngestToGCP.processing_tasks_posts_questions.remove_posts_questions_csv scheduled__2016-02-01T00:00:00+00:00 [queued]>
+[2022-04-06 01:32:55,724] {taskinstance.py:1043} INFO - Dependencies all met for <TaskInstance: IngestToGCP.processing_tasks_posts_questions.remove_posts_questions_csv scheduled__2016-02-01T00:00:00+00:00 [queued]>
+[2022-04-06 01:32:55,725] {taskinstance.py:1249} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-06 01:32:55,725] {taskinstance.py:1250} INFO - Starting attempt 1 of 1
+[2022-04-06 01:32:55,725] {taskinstance.py:1251} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-06 01:32:56,052] {taskinstance.py:1270} INFO - Executing <Task(BashOperator): processing_tasks_posts_questions.remove_posts_questions_csv> on 2016-02-01 00:00:00+00:00
+[2022-04-06 01:32:56,224] {standard_task_runner.py:52} INFO - Started process 136985 to run task
+[2022-04-06 01:32:56,267] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'IngestToGCP', 'processing_tasks_posts_questions.remove_posts_questions_csv', 'scheduled__2016-02-01T00:00:00+00:00', '--job-id', '10534', '--raw', '--subdir', 'DAGS_FOLDER/ingest_dag.py', '--cfg-path', '/tmp/tmpe3v1hok_', '--error-file', '/tmp/tmpunp74dmd']
+[2022-04-06 01:32:56,305] {standard_task_runner.py:80} INFO - Job 10534: Subtask processing_tasks_posts_questions.remove_posts_questions_csv
+[2022-04-06 01:32:57,816] {logging_mixin.py:109} INFO - Running <TaskInstance: IngestToGCP.processing_tasks_posts_questions.remove_posts_questions_csv scheduled__2016-02-01T00:00:00+00:00 [running]> on host 9fe4286b2855
+[2022-04-06 01:32:58,601] {logging_mixin.py:109} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:156 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2022-04-06 01:32:58,841] {taskinstance.py:1448} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=IngestToGCP
+AIRFLOW_CTX_TASK_ID=processing_tasks_posts_questions.remove_posts_questions_csv
+AIRFLOW_CTX_EXECUTION_DATE=2016-02-01T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2016-02-01T00:00:00+00:00
+[2022-04-06 01:32:58,843] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-04-06 01:32:58,843] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'rm /opt/***/posts_questions-2016-02.csv']
+[2022-04-06 01:32:59,007] {subprocess.py:85} INFO - Output:
+[2022-04-06 01:32:59,929] {subprocess.py:93} INFO - Command exited with return code 0
+[2022-04-06 01:33:01,370] {taskinstance.py:1288} INFO - Marking task as SUCCESS. dag_id=IngestToGCP, task_id=processing_tasks_posts_questions.remove_posts_questions_csv, execution_date=20160201T000000, start_date=20220406T013255, end_date=20220406T013301
+[2022-04-06 01:33:01,475] {local_task_job.py:212} WARNING - State of this instance has been externally set to success. Terminating instance.
+[2022-04-06 01:33:01,483] {process_utils.py:124} INFO - Sending Signals.SIGTERM to group 136985. PIDs of all processes in the group: [136985]
+[2022-04-06 01:33:01,483] {process_utils.py:75} INFO - Sending the signal Signals.SIGTERM to group 136985
+[2022-04-06 01:33:01,628] {process_utils.py:70} INFO - Process psutil.Process(pid=136985, status='terminated', exitcode=0, started='01:32:55') (136985) terminated with exit code 0

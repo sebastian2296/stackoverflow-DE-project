@@ -1,0 +1,23 @@
+[2022-04-07 19:47:45,669] {taskinstance.py:1043} INFO - Dependencies all met for <TaskInstance: load_to_BigQuery.create_external_posts_questions.create_posts_questions_stack_overflow_data_external_table scheduled__2012-03-01T00:00:00+00:00 [queued]>
+[2022-04-07 19:47:45,723] {taskinstance.py:1043} INFO - Dependencies all met for <TaskInstance: load_to_BigQuery.create_external_posts_questions.create_posts_questions_stack_overflow_data_external_table scheduled__2012-03-01T00:00:00+00:00 [queued]>
+[2022-04-07 19:47:45,723] {taskinstance.py:1249} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-07 19:47:45,723] {taskinstance.py:1250} INFO - Starting attempt 2 of 2
+[2022-04-07 19:47:45,724] {taskinstance.py:1251} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-07 19:47:46,247] {taskinstance.py:1270} INFO - Executing <Task(BigQueryCreateExternalTableOperator): create_external_posts_questions.create_posts_questions_stack_overflow_data_external_table> on 2012-03-01 00:00:00+00:00
+[2022-04-07 19:47:46,257] {standard_task_runner.py:52} INFO - Started process 7071 to run task
+[2022-04-07 19:47:46,286] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'load_to_BigQuery', 'create_external_posts_questions.create_posts_questions_stack_overflow_data_external_table', 'scheduled__2012-03-01T00:00:00+00:00', '--job-id', '13191', '--raw', '--subdir', 'DAGS_FOLDER/load_to_BigQuery_dag.py', '--cfg-path', '/tmp/tmp_2mfmpup', '--error-file', '/tmp/tmpnk1z5b6t']
+[2022-04-07 19:47:46,295] {standard_task_runner.py:80} INFO - Job 13191: Subtask create_external_posts_questions.create_posts_questions_stack_overflow_data_external_table
+[2022-04-07 19:47:46,578] {logging_mixin.py:109} INFO - Running <TaskInstance: load_to_BigQuery.create_external_posts_questions.create_posts_questions_stack_overflow_data_external_table scheduled__2012-03-01T00:00:00+00:00 [running]> on host 2c54f2187010
+[2022-04-07 19:47:46,909] {logging_mixin.py:109} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:156 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2022-04-07 19:47:47,037] {taskinstance.py:1448} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=load_to_BigQuery
+AIRFLOW_CTX_TASK_ID=create_external_posts_questions.create_posts_questions_stack_overflow_data_external_table
+AIRFLOW_CTX_EXECUTION_DATE=2012-03-01T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2012-03-01T00:00:00+00:00
+[2022-04-07 19:47:47,039] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2022-04-07 19:47:48,353] {taskinstance.py:1288} INFO - Marking task as SUCCESS. dag_id=load_to_BigQuery, task_id=create_external_posts_questions.create_posts_questions_stack_overflow_data_external_table, execution_date=20120301T000000, start_date=20220407T194745, end_date=20220407T194748
+[2022-04-07 19:47:48,513] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-04-07 19:47:48,746] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check

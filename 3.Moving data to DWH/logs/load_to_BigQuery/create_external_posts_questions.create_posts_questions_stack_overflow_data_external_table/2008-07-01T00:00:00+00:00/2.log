@@ -1,0 +1,44 @@
+[2022-04-07 19:00:42,984] {taskinstance.py:1043} INFO - Dependencies all met for <TaskInstance: load_to_BigQuery.create_external_posts_questions.create_posts_questions_stack_overflow_data_external_table scheduled__2008-07-01T00:00:00+00:00 [queued]>
+[2022-04-07 19:00:43,707] {taskinstance.py:1043} INFO - Dependencies all met for <TaskInstance: load_to_BigQuery.create_external_posts_questions.create_posts_questions_stack_overflow_data_external_table scheduled__2008-07-01T00:00:00+00:00 [queued]>
+[2022-04-07 19:00:43,707] {taskinstance.py:1249} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-07 19:00:43,707] {taskinstance.py:1250} INFO - Starting attempt 2 of 2
+[2022-04-07 19:00:43,707] {taskinstance.py:1251} INFO - 
+--------------------------------------------------------------------------------
+[2022-04-07 19:00:43,769] {taskinstance.py:1270} INFO - Executing <Task(BigQueryCreateExternalTableOperator): create_external_posts_questions.create_posts_questions_stack_overflow_data_external_table> on 2008-07-01 00:00:00+00:00
+[2022-04-07 19:00:43,805] {standard_task_runner.py:52} INFO - Started process 5981 to run task
+[2022-04-07 19:00:43,889] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'load_to_BigQuery', 'create_external_posts_questions.create_posts_questions_stack_overflow_data_external_table', 'scheduled__2008-07-01T00:00:00+00:00', '--job-id', '12322', '--raw', '--subdir', 'DAGS_FOLDER/load_to_BigQuery_dag.py', '--cfg-path', '/tmp/tmp4_85i7ut', '--error-file', '/tmp/tmp7bddd_qp']
+[2022-04-07 19:00:43,894] {standard_task_runner.py:80} INFO - Job 12322: Subtask create_external_posts_questions.create_posts_questions_stack_overflow_data_external_table
+[2022-04-07 19:00:44,231] {logging_mixin.py:109} INFO - Running <TaskInstance: load_to_BigQuery.create_external_posts_questions.create_posts_questions_stack_overflow_data_external_table scheduled__2008-07-01T00:00:00+00:00 [running]> on host a214a02826ce
+[2022-04-07 19:00:44,613] {taskinstance.py:1448} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=load_to_BigQuery
+AIRFLOW_CTX_TASK_ID=create_external_posts_questions.create_posts_questions_stack_overflow_data_external_table
+AIRFLOW_CTX_EXECUTION_DATE=2008-07-01T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2008-07-01T00:00:00+00:00
+[2022-04-07 19:00:44,615] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2022-04-07 19:00:44,616] {taskinstance.py:1774} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/google/cloud/operators/bigquery.py", line 1135, in execute
+    table_resource=self.table_resource,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/google/common/hooks/base_google.py", line 432, in inner_wrapper
+    kwargs['project_id'] = self.project_id
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/google/common/hooks/base_google.py", line 317, in project_id
+    _, project_id = self._get_credentials_and_project_id()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/google/common/hooks/base_google.py", line 247, in _get_credentials_and_project_id
+    delegates=delegates,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/google/cloud/utils/credentials_provider.py", line 321, in get_credentials_and_project_id
+    return _CredentialProvider(*args, **kwargs).get_credentials_and_project()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/google/cloud/utils/credentials_provider.py", line 223, in get_credentials_and_project
+    credentials, project_id = self._get_credentials_using_key_path()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/google/cloud/utils/credentials_provider.py", line 273, in _get_credentials_using_key_path
+    self.key_path, scopes=self.scopes
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/oauth2/service_account.py", line 239, in from_service_account_file
+    filename, require=["client_email", "token_uri"]
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_service_account_info.py", line 72, in from_filename
+    with io.open(filename, "r", encoding="utf-8") as json_file:
+FileNotFoundError: [Errno 2] No such file or directory: '/.google/credentials/google_credentials.json'
+[2022-04-07 19:00:44,731] {taskinstance.py:1288} INFO - Marking task as FAILED. dag_id=load_to_BigQuery, task_id=create_external_posts_questions.create_posts_questions_stack_overflow_data_external_table, execution_date=20080701T000000, start_date=20220407T190043, end_date=20220407T190044
+[2022-04-07 19:00:44,851] {standard_task_runner.py:98} ERROR - Failed to execute job 12322 for task create_external_posts_questions.create_posts_questions_stack_overflow_data_external_table ([Errno 2] No such file or directory: '/.google/credentials/google_credentials.json'; 5981)
+[2022-04-07 19:00:44,902] {local_task_job.py:154} INFO - Task exited with return code 1
+[2022-04-07 19:00:45,312] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

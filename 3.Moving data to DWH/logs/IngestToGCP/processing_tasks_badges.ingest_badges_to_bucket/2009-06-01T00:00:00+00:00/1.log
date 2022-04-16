@@ -1,23 +1,171 @@
-[2022-03-30 19:59:53,914] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: IngestToGCP.processing_tasks_badges.ingest_badges_to_bucket scheduled__2009-06-01T00:00:00+00:00 [queued]>
-[2022-03-30 19:59:53,941] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: IngestToGCP.processing_tasks_badges.ingest_badges_to_bucket scheduled__2009-06-01T00:00:00+00:00 [queued]>
-[2022-03-30 19:59:53,941] {taskinstance.py:1243} INFO - 
+[2022-04-05 22:07:01,730] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: IngestToGCP.processing_tasks_badges.ingest_badges_to_bucket scheduled__2009-06-01T00:00:00+00:00 [queued]>
+[2022-04-05 22:07:01,874] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: IngestToGCP.processing_tasks_badges.ingest_badges_to_bucket scheduled__2009-06-01T00:00:00+00:00 [queued]>
+[2022-04-05 22:07:01,874] {taskinstance.py:1243} INFO - 
 --------------------------------------------------------------------------------
-[2022-03-30 19:59:53,941] {taskinstance.py:1244} INFO - Starting attempt 1 of 1
-[2022-03-30 19:59:53,941] {taskinstance.py:1245} INFO - 
+[2022-04-05 22:07:01,874] {taskinstance.py:1244} INFO - Starting attempt 1 of 1
+[2022-04-05 22:07:01,874] {taskinstance.py:1245} INFO - 
 --------------------------------------------------------------------------------
-[2022-03-30 19:59:53,968] {taskinstance.py:1264} INFO - Executing <Task(PythonOperator): processing_tasks_badges.ingest_badges_to_bucket> on 2009-06-01 00:00:00+00:00
-[2022-03-30 19:59:53,980] {standard_task_runner.py:52} INFO - Started process 3305 to run task
-[2022-03-30 19:59:53,987] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'IngestToGCP', 'processing_tasks_badges.ingest_badges_to_bucket', 'scheduled__2009-06-01T00:00:00+00:00', '--job-id', '195', '--raw', '--subdir', 'DAGS_FOLDER/ingest_dag.py', '--cfg-path', '/tmp/tmp3a5129s7', '--error-file', '/tmp/tmpj3yoxlua']
-[2022-03-30 19:59:53,989] {standard_task_runner.py:77} INFO - Job 195: Subtask processing_tasks_badges.ingest_badges_to_bucket
-[2022-03-30 19:59:54,103] {logging_mixin.py:109} INFO - Running <TaskInstance: IngestToGCP.processing_tasks_badges.ingest_badges_to_bucket scheduled__2009-06-01T00:00:00+00:00 [running]> on host d9825fd5ae59
-[2022-03-30 19:59:54,206] {logging_mixin.py:109} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:156 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
-[2022-03-30 19:59:54,246] {taskinstance.py:1431} INFO - Exporting the following env vars:
+[2022-04-05 22:07:02,019] {taskinstance.py:1264} INFO - Executing <Task(PythonOperator): processing_tasks_badges.ingest_badges_to_bucket> on 2009-06-01 00:00:00+00:00
+[2022-04-05 22:07:02,064] {standard_task_runner.py:52} INFO - Started process 3302 to run task
+[2022-04-05 22:07:02,081] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'IngestToGCP', 'processing_tasks_badges.ingest_badges_to_bucket', 'scheduled__2009-06-01T00:00:00+00:00', '--job-id', '8243', '--raw', '--subdir', 'DAGS_FOLDER/ingest_dag.py', '--cfg-path', '/tmp/tmpdv855anw', '--error-file', '/tmp/tmp_vty61xh']
+[2022-04-05 22:07:02,102] {standard_task_runner.py:77} INFO - Job 8243: Subtask processing_tasks_badges.ingest_badges_to_bucket
+[2022-04-05 22:07:02,344] {logging_mixin.py:109} INFO - Running <TaskInstance: IngestToGCP.processing_tasks_badges.ingest_badges_to_bucket scheduled__2009-06-01T00:00:00+00:00 [running]> on host c460da24ecb6
+[2022-04-05 22:07:03,062] {logging_mixin.py:109} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:156 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2022-04-05 22:07:03,200] {taskinstance.py:1431} INFO - Exporting the following env vars:
 AIRFLOW_CTX_DAG_OWNER=***
 AIRFLOW_CTX_DAG_ID=IngestToGCP
 AIRFLOW_CTX_TASK_ID=processing_tasks_badges.ingest_badges_to_bucket
 AIRFLOW_CTX_EXECUTION_DATE=2009-06-01T00:00:00+00:00
 AIRFLOW_CTX_DAG_RUN_ID=scheduled__2009-06-01T00:00:00+00:00
-[2022-03-30 19:59:57,520] {python.py:175} INFO - Done. Returned value was: None
-[2022-03-30 19:59:57,550] {taskinstance.py:1282} INFO - Marking task as SUCCESS. dag_id=IngestToGCP, task_id=processing_tasks_badges.ingest_badges_to_bucket, execution_date=20090601T000000, start_date=20220330T195953, end_date=20220330T195957
-[2022-03-30 19:59:57,621] {local_task_job.py:154} INFO - Task exited with return code 0
-[2022-03-30 19:59:57,686] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-04-05 22:07:03,539] {local_task_job.py:82} ERROR - Received SIGTERM. Terminating subprocesses
+[2022-04-05 22:07:03,616] {process_utils.py:124} INFO - Sending Signals.SIGTERM to group 3302. PIDs of all processes in the group: [3302]
+[2022-04-05 22:07:03,653] {process_utils.py:75} INFO - Sending the signal Signals.SIGTERM to group 3302
+[2022-04-05 22:07:03,752] {taskinstance.py:1413} ERROR - Received SIGTERM. Terminating subprocesses.
+[2022-04-05 22:07:05,425] {taskinstance.py:1718} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1334, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1460, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1516, in _execute_task
+    result = execute_callable(context=context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 174, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 188, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/upload_to_gcs.py", line 7, in upload_to_gcs
+    bucket = storage_client.get_bucket('dtc_data_lake_de-stack-overflow')
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/storage/client.py", line 770, in get_bucket
+    retry=retry,
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/storage/bucket.py", line 1016, in reload
+    retry=retry,
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/storage/_helpers.py", line 233, in reload
+    _target_object=self,
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/storage/client.py", line 356, in _get_resource
+    _target_object=_target_object,
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/storage/_http.py", line 80, in api_request
+    return call()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/api_core/retry.py", line 291, in retry_wrapped_func
+    on_error=on_error,
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/api_core/retry.py", line 189, in retry_target
+    return target()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/_http.py", line 480, in api_request
+    timeout=timeout,
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/_http.py", line 338, in _make_request
+    method, url, headers, data, target_object, timeout=timeout
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/_http.py", line 376, in _do_request
+    url=url, method=method, headers=headers, data=data, timeout=timeout
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/transport/requests.py", line 486, in request
+    **kwargs
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/adapters.py", line 413, in send
+    conn = self.get_connection(request.url, proxies)
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/adapters.py", line 316, in get_connection
+    conn = self.poolmanager.connection_from_url(url)
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/poolmanager.py", line 299, in connection_from_url
+    u.host, port=u.port, scheme=u.scheme, pool_kwargs=pool_kwargs
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/poolmanager.py", line 245, in connection_from_host
+    return self.connection_from_context(request_context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/poolmanager.py", line 260, in connection_from_context
+    return self.connection_from_pool_key(pool_key, request_context=request_context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/poolmanager.py", line 281, in connection_from_pool_key
+    pool = self._new_pool(scheme, host, port, request_context=request_context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/poolmanager.py", line 213, in _new_pool
+    return pool_cls(host, port, **request_context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 948, in __init__
+    **conn_kw
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 207, in __init__
+    self.pool.put(None)
+  File "/usr/local/lib/python3.7/queue.py", line 151, in put
+    self.not_empty.notify()
+  File "/usr/local/lib/python3.7/threading.py", line 348, in notify
+    waiters_to_notify = _deque(_islice(all_waiters, n))
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1415, in signal_handler
+    raise AirflowException("Task received SIGTERM signal")
+airflow.exceptions.AirflowException: Task received SIGTERM signal
+[2022-04-05 22:07:05,462] {taskinstance.py:1282} INFO - Marking task as FAILED. dag_id=IngestToGCP, task_id=processing_tasks_badges.ingest_badges_to_bucket, execution_date=20090601T000000, start_date=20220405T220701, end_date=20220405T220705
+[2022-04-05 22:07:05,561] {standard_task_runner.py:92} ERROR - Failed to execute job 8243 for task processing_tasks_badges.ingest_badges_to_bucket
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/task/task_runner/standard_task_runner.py", line 85, in _start_by_fork
+    args.func(args, dag=self.dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/cli_parser.py", line 48, in command
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/cli.py", line 92, in wrapper
+    return f(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 298, in task_run
+    _run_task_by_selected_method(args, dag, ti)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 107, in _run_task_by_selected_method
+    _run_raw_task(args, ti)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 184, in _run_raw_task
+    error_file=args.error_file,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1334, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1460, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1516, in _execute_task
+    result = execute_callable(context=context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 174, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 188, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/upload_to_gcs.py", line 7, in upload_to_gcs
+    bucket = storage_client.get_bucket('dtc_data_lake_de-stack-overflow')
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/storage/client.py", line 770, in get_bucket
+    retry=retry,
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/storage/bucket.py", line 1016, in reload
+    retry=retry,
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/storage/_helpers.py", line 233, in reload
+    _target_object=self,
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/storage/client.py", line 356, in _get_resource
+    _target_object=_target_object,
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/storage/_http.py", line 80, in api_request
+    return call()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/api_core/retry.py", line 291, in retry_wrapped_func
+    on_error=on_error,
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/api_core/retry.py", line 189, in retry_target
+    return target()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/_http.py", line 480, in api_request
+    timeout=timeout,
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/_http.py", line 338, in _make_request
+    method, url, headers, data, target_object, timeout=timeout
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/_http.py", line 376, in _do_request
+    url=url, method=method, headers=headers, data=data, timeout=timeout
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/transport/requests.py", line 486, in request
+    **kwargs
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/adapters.py", line 413, in send
+    conn = self.get_connection(request.url, proxies)
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/adapters.py", line 316, in get_connection
+    conn = self.poolmanager.connection_from_url(url)
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/poolmanager.py", line 299, in connection_from_url
+    u.host, port=u.port, scheme=u.scheme, pool_kwargs=pool_kwargs
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/poolmanager.py", line 245, in connection_from_host
+    return self.connection_from_context(request_context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/poolmanager.py", line 260, in connection_from_context
+    return self.connection_from_pool_key(pool_key, request_context=request_context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/poolmanager.py", line 281, in connection_from_pool_key
+    pool = self._new_pool(scheme, host, port, request_context=request_context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/poolmanager.py", line 213, in _new_pool
+    return pool_cls(host, port, **request_context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 948, in __init__
+    **conn_kw
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 207, in __init__
+    self.pool.put(None)
+  File "/usr/local/lib/python3.7/queue.py", line 151, in put
+    self.not_empty.notify()
+  File "/usr/local/lib/python3.7/threading.py", line 348, in notify
+    waiters_to_notify = _deque(_islice(all_waiters, n))
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1415, in signal_handler
+    raise AirflowException("Task received SIGTERM signal")
+airflow.exceptions.AirflowException: Task received SIGTERM signal
+[2022-04-05 22:07:05,652] {process_utils.py:70} INFO - Process psutil.Process(pid=3302, status='terminated', exitcode=1, started='22:07:01') (3302) terminated with exit code 1
+[2022-04-05 22:07:05,653] {local_task_job.py:154} INFO - Task exited with return code 143
+[2022-04-05 22:07:06,044] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

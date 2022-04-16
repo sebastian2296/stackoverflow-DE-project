@@ -1,23 +1,124 @@
-[2022-03-30 19:59:53,100] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: IngestToGCP.processing_tasks_users.ingest_users_to_bucket scheduled__2009-06-01T00:00:00+00:00 [queued]>
-[2022-03-30 19:59:53,153] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: IngestToGCP.processing_tasks_users.ingest_users_to_bucket scheduled__2009-06-01T00:00:00+00:00 [queued]>
-[2022-03-30 19:59:53,153] {taskinstance.py:1243} INFO - 
+[2022-04-05 22:07:02,636] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: IngestToGCP.processing_tasks_users.ingest_users_to_bucket scheduled__2009-06-01T00:00:00+00:00 [queued]>
+[2022-04-05 22:07:02,832] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: IngestToGCP.processing_tasks_users.ingest_users_to_bucket scheduled__2009-06-01T00:00:00+00:00 [queued]>
+[2022-04-05 22:07:02,832] {taskinstance.py:1243} INFO - 
 --------------------------------------------------------------------------------
-[2022-03-30 19:59:53,153] {taskinstance.py:1244} INFO - Starting attempt 1 of 1
-[2022-03-30 19:59:53,153] {taskinstance.py:1245} INFO - 
+[2022-04-05 22:07:02,832] {taskinstance.py:1244} INFO - Starting attempt 1 of 1
+[2022-04-05 22:07:02,832] {taskinstance.py:1245} INFO - 
 --------------------------------------------------------------------------------
-[2022-03-30 19:59:53,205] {taskinstance.py:1264} INFO - Executing <Task(PythonOperator): processing_tasks_users.ingest_users_to_bucket> on 2009-06-01 00:00:00+00:00
-[2022-03-30 19:59:53,243] {standard_task_runner.py:52} INFO - Started process 3294 to run task
-[2022-03-30 19:59:53,278] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'IngestToGCP', 'processing_tasks_users.ingest_users_to_bucket', 'scheduled__2009-06-01T00:00:00+00:00', '--job-id', '192', '--raw', '--subdir', 'DAGS_FOLDER/ingest_dag.py', '--cfg-path', '/tmp/tmpfenvchxv', '--error-file', '/tmp/tmpaqe4h47c']
-[2022-03-30 19:59:53,279] {standard_task_runner.py:77} INFO - Job 192: Subtask processing_tasks_users.ingest_users_to_bucket
-[2022-03-30 19:59:53,494] {logging_mixin.py:109} INFO - Running <TaskInstance: IngestToGCP.processing_tasks_users.ingest_users_to_bucket scheduled__2009-06-01T00:00:00+00:00 [running]> on host d9825fd5ae59
-[2022-03-30 19:59:53,674] {logging_mixin.py:109} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:156 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
-[2022-03-30 19:59:53,750] {taskinstance.py:1431} INFO - Exporting the following env vars:
-AIRFLOW_CTX_DAG_OWNER=***
-AIRFLOW_CTX_DAG_ID=IngestToGCP
-AIRFLOW_CTX_TASK_ID=processing_tasks_users.ingest_users_to_bucket
-AIRFLOW_CTX_EXECUTION_DATE=2009-06-01T00:00:00+00:00
-AIRFLOW_CTX_DAG_RUN_ID=scheduled__2009-06-01T00:00:00+00:00
-[2022-03-30 19:59:57,013] {python.py:175} INFO - Done. Returned value was: None
-[2022-03-30 19:59:57,036] {taskinstance.py:1282} INFO - Marking task as SUCCESS. dag_id=IngestToGCP, task_id=processing_tasks_users.ingest_users_to_bucket, execution_date=20090601T000000, start_date=20220330T195953, end_date=20220330T195957
-[2022-03-30 19:59:57,091] {local_task_job.py:154} INFO - Task exited with return code 0
-[2022-03-30 19:59:57,159] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-04-05 22:07:02,940] {taskinstance.py:1264} INFO - Executing <Task(PythonOperator): processing_tasks_users.ingest_users_to_bucket> on 2009-06-01 00:00:00+00:00
+[2022-04-05 22:07:02,971] {standard_task_runner.py:52} INFO - Started process 3304 to run task
+[2022-04-05 22:07:03,021] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'IngestToGCP', 'processing_tasks_users.ingest_users_to_bucket', 'scheduled__2009-06-01T00:00:00+00:00', '--job-id', '8245', '--raw', '--subdir', 'DAGS_FOLDER/ingest_dag.py', '--cfg-path', '/tmp/tmpl4ulwuk_', '--error-file', '/tmp/tmplg9v4isg']
+[2022-04-05 22:07:03,023] {standard_task_runner.py:77} INFO - Job 8245: Subtask processing_tasks_users.ingest_users_to_bucket
+[2022-04-05 22:07:03,397] {logging_mixin.py:109} INFO - Running <TaskInstance: IngestToGCP.processing_tasks_users.ingest_users_to_bucket scheduled__2009-06-01T00:00:00+00:00 [running]> on host c460da24ecb6
+[2022-04-05 22:07:03,533] {local_task_job.py:82} ERROR - Received SIGTERM. Terminating subprocesses
+[2022-04-05 22:07:03,637] {process_utils.py:124} INFO - Sending Signals.SIGTERM to group 3304. PIDs of all processes in the group: [3304]
+[2022-04-05 22:07:03,637] {process_utils.py:75} INFO - Sending the signal Signals.SIGTERM to group 3304
+[2022-04-05 22:07:03,723] {taskinstance.py:1413} ERROR - Received SIGTERM. Terminating subprocesses.
+[2022-04-05 22:07:05,557] {taskinstance.py:1718} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1334, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1420, in _execute_task_with_callbacks
+    self.clear_xcom_data()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 797, in clear_xcom_data
+    session=session,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 67, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/xcom.py", line 437, in clear
+    return query.delete()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 3926, in delete
+    delete_op.exec_()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/persistence.py", line 1697, in exec_
+    self._do_exec()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/persistence.py", line 1930, in _do_exec
+    self._execute_stmt(delete_stmt)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/persistence.py", line 1702, in _execute_stmt
+    self.result = self.query._execute_crud(stmt, self.mapper)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 3568, in _execute_crud
+    return conn.execute(stmt, self._params)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1011, in execute
+    return meth(self, multiparams, params)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/sql/elements.py", line 298, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1130, in _execute_clauseelement
+    distilled_params,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1317, in _execute_context
+    e, statement, parameters, cursor, context
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1514, in _handle_dbapi_exception
+    util.raise_(exc_info[1], with_traceback=exc_info[2])
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1277, in _execute_context
+    cursor, statement, parameters, context
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/default.py", line 608, in do_execute
+    cursor.execute(statement, parameters)
+  File "/usr/local/lib/python3.7/encodings/utf_8.py", line 15, in decode
+    def decode(input, errors='strict'):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1415, in signal_handler
+    raise AirflowException("Task received SIGTERM signal")
+airflow.exceptions.AirflowException: Task received SIGTERM signal
+[2022-04-05 22:07:05,669] {taskinstance.py:1282} INFO - Marking task as FAILED. dag_id=IngestToGCP, task_id=processing_tasks_users.ingest_users_to_bucket, execution_date=20090601T000000, start_date=20220405T220702, end_date=20220405T220705
+[2022-04-05 22:07:05,911] {standard_task_runner.py:92} ERROR - Failed to execute job 8245 for task processing_tasks_users.ingest_users_to_bucket
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/task/task_runner/standard_task_runner.py", line 85, in _start_by_fork
+    args.func(args, dag=self.dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/cli_parser.py", line 48, in command
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/cli.py", line 92, in wrapper
+    return f(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 298, in task_run
+    _run_task_by_selected_method(args, dag, ti)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 107, in _run_task_by_selected_method
+    _run_raw_task(args, ti)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 184, in _run_raw_task
+    error_file=args.error_file,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1334, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1420, in _execute_task_with_callbacks
+    self.clear_xcom_data()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 797, in clear_xcom_data
+    session=session,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 67, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/xcom.py", line 437, in clear
+    return query.delete()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 3926, in delete
+    delete_op.exec_()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/persistence.py", line 1697, in exec_
+    self._do_exec()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/persistence.py", line 1930, in _do_exec
+    self._execute_stmt(delete_stmt)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/persistence.py", line 1702, in _execute_stmt
+    self.result = self.query._execute_crud(stmt, self.mapper)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 3568, in _execute_crud
+    return conn.execute(stmt, self._params)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1011, in execute
+    return meth(self, multiparams, params)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/sql/elements.py", line 298, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1130, in _execute_clauseelement
+    distilled_params,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1317, in _execute_context
+    e, statement, parameters, cursor, context
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1514, in _handle_dbapi_exception
+    util.raise_(exc_info[1], with_traceback=exc_info[2])
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1277, in _execute_context
+    cursor, statement, parameters, context
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/default.py", line 608, in do_execute
+    cursor.execute(statement, parameters)
+  File "/usr/local/lib/python3.7/encodings/utf_8.py", line 15, in decode
+    def decode(input, errors='strict'):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1415, in signal_handler
+    raise AirflowException("Task received SIGTERM signal")
+airflow.exceptions.AirflowException: Task received SIGTERM signal
+[2022-04-05 22:07:06,003] {process_utils.py:70} INFO - Process psutil.Process(pid=3304, status='terminated', exitcode=1, started='22:07:02') (3304) terminated with exit code 1
+[2022-04-05 22:07:06,004] {local_task_job.py:154} INFO - Task exited with return code 143
+[2022-04-05 22:07:06,249] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check
