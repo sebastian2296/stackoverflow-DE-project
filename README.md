@@ -1,9 +1,3 @@
-# Architecture Diagram
-
-![alt text](https://github.com/sebastian2296/stackoverflow-DE-project/blob/main/img/architecture-diagram.jpg)
-
-
-
 # Problem 
 
 This project aims to show some interesting statistics of the Stack-Overflow's
@@ -55,7 +49,7 @@ Also make sure that these APIs are activated:
 * https://console.cloud.google.com/apis/library/iamcredentials.googleapis.com
 
 
-**2** Add Credentials Environment Variable to `.bashrc` file
+**2**. Add Credentials Environment Variable to `.bashrc` file
 
 Create  `GOOGLE_APPLICATION_CREDENTIALS` environment varaible and link it to your credentials path (`$HOME/.google/credentials/` ).
 
@@ -111,12 +105,11 @@ for each one of our datasets: `badges`, `posts_questions`,`posts_answers` and `u
 
 # Dashboard
 
+![alt text](https://github.com/sebastian2296/stackoverflow-DE-project/blob/main/img/1_dashboard.PNG)
 
-
+![alt text](https://github.com/sebastian2296/stackoverflow-DE-project/blob/main/img/2_dashboard.PNG)
 
 You can check the dashboard [here](https://datastudio.google.com/reporting/d2fa6d93-faf8-4243-aacf-4cd29f3ae7e7)
 
 
-Special thanks to DataTalks Club for making an awesome Data Engineering Course :) 
-
-
+Special thanks to [DataTalks](https://datatalks.club/) Club for making an awesome [Data Engineering Course](https://github.com/DataTalksClub/data-engineering-zoomcamp) :) 
