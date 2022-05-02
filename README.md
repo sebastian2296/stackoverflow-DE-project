@@ -1,3 +1,7 @@
+# Architecture Diagram
+
+![alt text](https://github.com/sebastian2296/stackoverflow-DE-project/blob/main/img/architecture-diagram.jpg)
+
 # Problem 
 
 This project aims to show some interesting statistics of the Stack-Overflow's
@@ -112,4 +116,4 @@ for each one of our datasets: `badges`, `posts_questions`,`posts_answers` and `u
 You can check the dashboard [here](https://datastudio.google.com/reporting/d2fa6d93-faf8-4243-aacf-4cd29f3ae7e7)
 
 
-Special thanks to [DataTalks](https://datatalks.club/) Club for making an awesome [Data Engineering Course](https://github.com/DataTalksClub/data-engineering-zoomcamp) :) 
+Special thanks to [DataTalks Club](https://datatalks.club/) for making an awesome [Data Engineering Course](https://github.com/DataTalksClub/data-engineering-zoomcamp) :) 
