@@ -77,7 +77,7 @@ Create  `GOOGLE_APPLICATION_CREDENTIALS` environment varaible and link it to you
     ```
 **4**.
 
-- Create a `/processed`, `/parquet` and `/BigQuery` folders inside your bucket.
+- Create `/processed`, `/parquet` and `/BigQuery` folders inside your bucket.
 
 **5**. cd into `1.Environment Setup (Iac)/BigQuery_dataset_to_GCS` and run the scripts in the following order:
 
