@@ -75,8 +75,11 @@ Create  `GOOGLE_APPLICATION_CREDENTIALS` environment varaible and link it to you
     ```sh
     terraform apply
     ```
+**4**.
 
-**4**. cd into `1.Environment Setup (Iac)/BigQuery_dataset_to_GCS` and run the scripts in the following order:
+- Create a `/processed`, `/parquet` and `/BigQuery` folders inside your bucket.
+
+**5**. cd into `1.Environment Setup (Iac)/BigQuery_dataset_to_GCS` and run the scripts in the following order:
 
 - `python3 bq_dataset_to_GCS.py` to transfer uneven csv files into our bucket.
 - `python3 format_files_by_date.py`to group our data by month and year in csv files.
