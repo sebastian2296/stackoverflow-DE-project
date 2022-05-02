@@ -26,7 +26,7 @@ INPUT_FILETYPE = "parquet"
 PARTITION_COL = 'creation_date'
 
 
-with DAG('load_to_BigQuery', start_date=days_ago(0), schedule_interval="@once", catchup=True, concurrency=20, max_active_runs=4) as \
+with DAG('load_to_BigQuery', start_date=days_ago(0), schedule_interval="@monthly", catchup=True, concurrency=20, max_active_runs=4) as \
 dag: 
     for table in tables:
 

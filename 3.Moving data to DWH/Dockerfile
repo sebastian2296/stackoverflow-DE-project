@@ -32,7 +32,8 @@ ENV PATH="${SPARK_HOME}/bin:${PATH}"
 ENV PYTHONPATH="${SPARK_HOME}/python/:$PYTHONPATH"
 
 RUN cd "${SPARK_HOME}/jars" && \
-    curl -O https://storage.googleapis.com/hadoop-lib/gcs/gcs-connector-hadoop3-latest.jar
+    curl -O https://storage.googleapis.com/hadoop-lib/gcs/gcs-connector-hadoop3-latest.jar \
+    && curl -O https://storage.googleapis.com/spark-lib/bigquery/spark-bigquery-with-dependencies_2.12-0.24.2.jar
 
 RUN apt-get update -qq && apt-get install vim -qqq
 SHELL ["/bin/bash", "-o", "pipefail", "-e", "-u", "-x", "-c"]

@@ -71,7 +71,7 @@ x-airflow-common:
     - ./dags:/opt/airflow/dags
     - ./logs:/opt/airflow/logs
     - ./plugins:/opt/airflow/plugins
-    - /home/sebastian/.google/credentials/:/.google/credentials:ro
+    - /home/sebastian2296/.google/credentials/:/.google/credentials:ro
     - ./notebooks:/opt/airflow/notebooks  
       
   user: "${AIRFLOW_UID:-50000}:0"
@@ -299,7 +299,7 @@ services:
     volumes:
       - ./notebooks:/opt/airflow/notebooks
       - ./dags:/opt/airflow/dags
-      - /home/sebastian/.google/credentials/:/.google/credentials:ro
+      - /home/sebastian2296/.google/credentials/:/.google/credentials:ro
       
 volumes:
   postgres-db-volume:
